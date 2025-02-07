@@ -7,8 +7,17 @@ import { useState } from "react";
 
 const routes = [
   { name: { es: "Inicio", en: "Home" }, path: "/" },
-  { name: { es: "Obras", en: "Artwork" }, path: "/obras" },
-  { name: { es: "Exposiciones", en: "Exhibitions" }, path: "/exposiciones" },
+  {
+    name: { es: "Obras", en: "Artwork" },
+    path: "/obras",
+    submenu: [
+      { name: { es: "Pintura", en: "Painting" }, path: "/obras/pintura" },
+      { name: { es: "Cerámica", en: "Ceramics" }, path: "/obras/ceramica" },
+      { name: { es: "Escultura", en: "Sculpture" }, path: "/obras/escultura" },
+      { name: { es: "Arte Digital", en: "Digital Art" }, path: "/obras/digital" },
+      { name: { es: "Técnica Mixta", en: "Mixed Media" }, path: "/obras/mixta" },
+    ],
+  },
   { name: { es: "Clases", en: "Classes" }, path: "/clases" },
   { name: { es: "Arteterapia", en: "Art Therapy" }, path: "/arteterapia" },
   { name: { es: "Sobre mí", en: "About" }, path: "/sobre-mi" },
@@ -17,9 +26,10 @@ const routes = [
 
 export function Navbar() {
   const [language, setLanguage] = useState<"es" | "en">("es");
+  const [showSubmenu, setShowSubmenu] = useState(false);
 
   const toggleLanguage = () => {
-    setLanguage(prev => prev === "es" ? "en" : "es");
+    setLanguage((prev) => (prev === "es" ? "en" : "es"));
   };
 
   return (
@@ -32,13 +42,42 @@ export function Navbar() {
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-6">
           {routes.map((route) => (
-            <Link
+            <div
               key={route.path}
-              to={route.path}
-              className="text-sm font-medium hover:text-primary transition-colors"
+              className="relative group"
+              onMouseEnter={() => route.submenu && setShowSubmenu(true)}
+              onMouseLeave={() => route.submenu && setShowSubmenu(false)}
             >
-              {route.name[language]}
-            </Link>
+              {route.submenu ? (
+                <>
+                  <span className="text-sm font-medium hover:text-primary transition-colors cursor-pointer">
+                    {route.name[language]}
+                  </span>
+                  <div
+                    className={`absolute top-full left-0 bg-background border rounded-lg shadow-lg py-2 mt-2 min-w-[200px] ${
+                      showSubmenu ? "block" : "hidden"
+                    }`}
+                  >
+                    {route.submenu.map((subItem) => (
+                      <Link
+                        key={subItem.path}
+                        to={subItem.path}
+                        className="block px-4 py-2 text-sm hover:bg-accent transition-colors"
+                      >
+                        {subItem.name[language]}
+                      </Link>
+                    ))}
+                  </div>
+                </>
+              ) : (
+                <Link
+                  to={route.path}
+                  className="text-sm font-medium hover:text-primary transition-colors"
+                >
+                  {route.name[language]}
+                </Link>
+              )}
+            </div>
           ))}
           <Button
             variant="ghost"
@@ -60,15 +99,34 @@ export function Navbar() {
           </SheetTrigger>
           <SheetContent>
             <div className="flex flex-col gap-4 mt-8">
-              {routes.map((route) => (
-                <Link
-                  key={route.path}
-                  to={route.path}
-                  className="text-lg font-medium hover:text-primary transition-colors"
-                >
-                  {route.name[language]}
-                </Link>
-              ))}
+              {routes.map((route) =>
+                route.submenu ? (
+                  <div key={route.path} className="space-y-2">
+                    <span className="text-lg font-medium text-muted-foreground">
+                      {route.name[language]}
+                    </span>
+                    <div className="pl-4 space-y-2">
+                      {route.submenu.map((subItem) => (
+                        <Link
+                          key={subItem.path}
+                          to={subItem.path}
+                          className="block text-sm hover:text-primary transition-colors"
+                        >
+                          {subItem.name[language]}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                ) : (
+                  <Link
+                    key={route.path}
+                    to={route.path}
+                    className="text-lg font-medium hover:text-primary transition-colors"
+                  >
+                    {route.name[language]}
+                  </Link>
+                )
+              )}
               <Button
                 variant="ghost"
                 onClick={toggleLanguage}
