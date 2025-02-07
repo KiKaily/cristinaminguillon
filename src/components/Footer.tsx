@@ -31,9 +31,9 @@ export function Footer() {
           <div>
             <h3 className="font-semibold text-lg mb-4">Contacto</h3>
             <div className="space-y-2 text-muted-foreground">
-              <p>Email: info@arteyhistoria.com</p>
+              <p>Email: <a href="mailto:cminguillon1@gmail.com">cminguillon@gmail.com</a></p>
               <p>Tel: +34 600 000 000</p>
-              <p>Madrid, España</p>
+              <p>Orba, España</p>
             </div>
           </div>
 
@@ -73,16 +73,13 @@ export function Footer() {
 
           {/* Social & Legal */}
           <div>
-            <h3 className="font-semibold text-lg mb-4">Síguenos</h3>
+            <h3 className="font-semibold text-lg mb-4">¿Conectamos?</h3>
             <div className="flex gap-4 mb-6">
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="https://www.facebook.com/cristina.minguillon.3" className="text-muted-foreground hover:text-primary transition-colors">
                 <Facebook className="h-5 w-5" />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="https://www.instagram.com/crisminguillon/" className="text-muted-foreground hover:text-primary transition-colors">
                 <Instagram className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                <Twitter className="h-5 w-5" />
               </a>
             </div>
             <div className="space-y-2">
