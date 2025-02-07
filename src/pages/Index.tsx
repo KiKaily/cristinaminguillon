@@ -1,5 +1,6 @@
 
 import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
 import { EventHero } from "@/components/EventHero";
 
 const Index = () => {
@@ -22,6 +23,7 @@ const Index = () => {
           <div className="absolute inset-0 bg-background/20 backdrop-blur-sm" />
         </section>
       </main>
+      <Footer />
     </>
   );
 };

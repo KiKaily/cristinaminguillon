@@ -9,6 +9,8 @@ import AboutMe from "./pages/AboutMe";
 import Contact from "./pages/Contact";
 import Classes from "./pages/Classes";
 import ArtTherapy from "./pages/ArtTherapy";
+import Exhibitions from "./pages/Exhibitions";
+import PaidContent from "./pages/PaidContent";
 import Painting from "./pages/artwork/Painting";
 import Ceramics from "./pages/artwork/Ceramics";
 import Sculpture from "./pages/artwork/Sculpture";
@@ -30,6 +32,8 @@ const App = () => (
           <Route path="/contacto" element={<Contact />} />
           <Route path="/clases" element={<Classes />} />
           <Route path="/arteterapia" element={<ArtTherapy />} />
+          <Route path="/exposiciones" element={<Exhibitions />} />
+          <Route path="/contenido-premium" element={<PaidContent />} />
           <Route path="/obras/pintura" element={<Painting />} />
           <Route path="/obras/ceramica" element={<Ceramics />} />
           <Route path="/obras/escultura" element={<Sculpture />} />

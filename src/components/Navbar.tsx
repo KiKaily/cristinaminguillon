@@ -18,6 +18,7 @@ const routes = [
       { name: { es: "Técnica Mixta", en: "Mixed Media" }, path: "/obras/mixta" },
     ],
   },
+  { name: { es: "Expos", en: "Exhibitions" }, path: "/exposiciones" },
   { name: { es: "Clases", en: "Classes" }, path: "/clases" },
   { name: { es: "Arteterapia", en: "Art Therapy" }, path: "/arteterapia" },
   { name: { es: "Sobre mí", en: "About" }, path: "/sobre-mi" },
