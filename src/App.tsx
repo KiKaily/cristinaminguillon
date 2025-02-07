@@ -11,11 +11,11 @@ import Classes from "./pages/Classes";
 import ArtTherapy from "./pages/ArtTherapy";
 import Exhibitions from "./pages/Exhibitions";
 import PaidContent from "./pages/PaidContent";
-import Painting from "./pages/artwork/Painting";
-import Ceramics from "./pages/artwork/Ceramics";
-import Sculpture from "./pages/artwork/Sculpture";
-import Digital from "./pages/artwork/Digital";
-import Mixed from "./pages/artwork/Mixed";
+import textil from "./pages/artwork/textil";
+import Cerceramica from "./pages/artwork/ceramica";
+import liborsartista from "./pages/artwork/librosartista";
+import ilustracion from "./pages/artwork/ilustracion";
+import papel from "./pages/artwork/papel";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
