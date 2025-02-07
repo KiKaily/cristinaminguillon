@@ -18,7 +18,7 @@ const Contact = () => {
           </CardHeader>
           <CardContent className="space-y-4">
             <p className="text-lg text-muted-foreground">
-              Próximamente formulario de contacto...
+            <a href="mailto:cminguillon1@gmail.com">cminguillon1@gmail.com</a>
             </p>
           </CardContent>
         </Card>

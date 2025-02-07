@@ -51,7 +51,7 @@ const Classes = () => {
         <section className="text-center mb-12">
           <Link to="/contenido-premium">
             <Button size="lg" className="animate-pulse">
-              Acceder al Contenido Premium
+              Acceder al Contenido de Pago
             </Button>
           </Link>
         </section>
@@ -78,9 +78,13 @@ const Classes = () => {
               <div className="prose max-w-none mb-6">
                 <h2 className="text-2xl font-semibold mb-4">Sobre las Clases</h2>
                 <p className="text-muted-foreground">
-                  En nuestras clases de historia del arte, combinamos teoría y práctica para 
-                  ofrecer una experiencia de aprendizaje única. A través de análisis de obras, 
-                  contexto histórico y técnicas artísticas, descubrirás el fascinante mundo del arte.
+                ¿Qué tienen en común para ti el arte de las pinturas rupestres y el arte de nuestro tiempo?</p>
+
+                <p className="text-muted-foreground">Esta es una de las muchas preguntas que pueden escucharse cuando nos reunimos a ver, hablar, investigar y descubrir artistas y obras.</p>
+
+                <p className="text-muted-foreground">En los talleres de arte repasamos la historia, los hechos objetivos, la crónica histórica y también, lo que nos trasmiten obras y artistas a cada una de las personas que asistimos. Las diferentes miradas enriquecen, completan y amplían la propia.</p>
+
+                <p className="text-muted-foreground">Los talleres de arte son flexibles y variados en propuestas y actividades, motivan a quienes asisten a participar activamente en su propia formación. Son dinámicos y abiertos al debate, a compartir opiniones, información y propuestas. Hacemos visitas a distintos lugares que nos vinculan al arte y a la vida: galerías, museos, centros culturales, escuelas, edificios, recorridos por la ciudad, estudios de artistas, conciertos, mercados…</p>
                 </p>
               </div>
               <div className="relative w-full aspect-video rounded-lg overflow-hidden">

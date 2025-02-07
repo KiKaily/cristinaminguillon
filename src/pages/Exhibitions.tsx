@@ -19,7 +19,7 @@ const Exhibitions = () => {
               <div className="space-y-4">
                 <div className="flex items-center gap-2">
                   <Badge variant="secondary">Actual</Badge>
-                  <span className="text-lg">"Naturaleza y Color" - Galería Arte Nuevo</span>
+                  <span className="text-lg">"Babel" - Exposición de Cerámica</span>
                 </div>
               </div>
             </CardContent>
