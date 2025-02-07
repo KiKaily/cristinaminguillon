@@ -1,19 +1,27 @@
 
-import { Menu } from "lucide-react";
+import { Menu, Globe } from "lucide-react";
 import { Button } from "./ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
-import { cn } from "@/lib/utils";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const routes = [
-  { name: "Inicio", path: "/" },
-  { name: "Obras", path: "/obras" },
-  { name: "Exposiciones", path: "/exposiciones" },
-  { name: "Clases", path: "/clases" },
-  { name: "Sobre mí", path: "/sobre-mi" },
+  { name: { es: "Inicio", en: "Home" }, path: "/" },
+  { name: { es: "Obras", en: "Artwork" }, path: "/obras" },
+  { name: { es: "Exposiciones", en: "Exhibitions" }, path: "/exposiciones" },
+  { name: { es: "Clases", en: "Classes" }, path: "/clases" },
+  { name: { es: "Arteterapia", en: "Art Therapy" }, path: "/arteterapia" },
+  { name: { es: "Sobre mí", en: "About" }, path: "/sobre-mi" },
+  { name: { es: "Contacto", en: "Contact" }, path: "/contacto" },
 ];
 
 export function Navbar() {
+  const [language, setLanguage] = useState<"es" | "en">("es");
+
+  const toggleLanguage = () => {
+    setLanguage(prev => prev === "es" ? "en" : "es");
+  };
+
   return (
     <header className="fixed top-0 w-full z-50 border-b bg-background/80 backdrop-blur-sm">
       <nav className="container mx-auto px-4 h-16 flex items-center justify-between">
@@ -29,9 +37,18 @@ export function Navbar() {
               to={route.path}
               className="text-sm font-medium hover:text-primary transition-colors"
             >
-              {route.name}
+              {route.name[language]}
             </Link>
           ))}
+          <Button
+            variant="ghost"
+            size="icon"
+            onClick={toggleLanguage}
+            className="ml-2"
+            title={language === "es" ? "Switch to English" : "Cambiar a Español"}
+          >
+            <Globe className="h-5 w-5" />
+          </Button>
         </div>
 
         {/* Mobile Menu */}
@@ -49,9 +66,17 @@ export function Navbar() {
                   to={route.path}
                   className="text-lg font-medium hover:text-primary transition-colors"
                 >
-                  {route.name}
+                  {route.name[language]}
                 </Link>
               ))}
+              <Button
+                variant="ghost"
+                onClick={toggleLanguage}
+                className="justify-start"
+              >
+                <Globe className="h-5 w-5 mr-2" />
+                {language === "es" ? "Switch to English" : "Cambiar a Español"}
+              </Button>
             </div>
           </SheetContent>
         </Sheet>

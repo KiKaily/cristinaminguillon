@@ -20,7 +20,9 @@ const App = () => (
           <Route path="/obras" element={<NotFound />} />
           <Route path="/exposiciones" element={<NotFound />} />
           <Route path="/clases" element={<NotFound />} />
+          <Route path="/arteterapia" element={<NotFound />} />
           <Route path="/sobre-mi" element={<NotFound />} />
+          <Route path="/contacto" element={<NotFound />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
