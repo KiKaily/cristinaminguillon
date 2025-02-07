@@ -13,7 +13,7 @@ export function EventHero() {
             <span className="text-sm font-medium">Exposición Actual</span>
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 text-balance">
-            "Naturaleza y Color"
+            "Babel - Exposición de Cerámica"
           </h1>
           <p className="text-lg text-muted-foreground mb-8 text-balance">
             Una exploración de la belleza natural a través del color y la forma.
@@ -24,7 +24,7 @@ export function EventHero() {
               Ver Detalles
             </Button>
             <Button size="lg" variant="outline" className="hover-lift">
-              Reservar Visita
+              Reservar Visita Guiada
             </Button>
           </div>
         </div>

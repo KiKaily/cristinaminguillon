@@ -8,14 +8,14 @@ import { useState } from "react";
 const routes = [
   { name: { es: "Inicio", en: "Home" }, path: "/" },
   {
-    name: { es: "Obras", en: "Artwork" },
+    name: { es: "Arte", en: "Artwork" },
     path: "/obras",
     submenu: [
-      { name: { es: "Pintura", en: "Painting" }, path: "/obras/pintura" },
-      { name: { es: "Cerámica", en: "Ceramics" }, path: "/obras/ceramica" },
-      { name: { es: "Escultura", en: "Sculpture" }, path: "/obras/escultura" },
-      { name: { es: "Arte Digital", en: "Digital Art" }, path: "/obras/digital" },
-      { name: { es: "Técnica Mixta", en: "Mixed Media" }, path: "/obras/mixta" },
+      { name: { es: "Ilustración", en: "Ilustration" }, path: "/arte/ilustracion" },
+      { name: { es: "Cerámica", en: "Ceramics" }, path: "/arte/ceramica" },
+      { name: { es: "Papel", en: "Paper" }, path: "/arte/papel" },
+      { name: { es: "Textil", en: "Textile" }, path: "/arte/textil" },
+      { name: { es: "Libros de Artista", en: "Artists Books" }, path: "/arte/librosartista" },
     ],
   },
   { name: { es: "Expos", en: "Exhibitions" }, path: "/exposiciones" },
