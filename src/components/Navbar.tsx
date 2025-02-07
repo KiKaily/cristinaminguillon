@@ -27,7 +27,7 @@ const routes = [
 
 export function Navbar() {
   const [language, setLanguage] = useState<"es" | "en">("es");
-  const [showSubmenu, setShowSubmenu] = useState(false);
+  const [showSubmenu, setShowSubmenu] = useState("");
 
   const toggleLanguage = () => {
     setLanguage((prev) => (prev === "es" ? "en" : "es"));
@@ -46,8 +46,8 @@ export function Navbar() {
             <div
               key={route.path}
               className="relative group"
-              onMouseEnter={() => route.submenu && setShowSubmenu(true)}
-              onMouseLeave={() => route.submenu && setShowSubmenu(false)}
+              onMouseEnter={() => route.submenu && setShowSubmenu(route.path)}
+              onMouseLeave={() => setShowSubmenu("")}
             >
               {route.submenu ? (
                 <>
@@ -56,7 +56,7 @@ export function Navbar() {
                   </span>
                   <div
                     className={`absolute top-full left-0 bg-background border rounded-lg shadow-lg py-2 mt-2 min-w-[200px] ${
-                      showSubmenu ? "block" : "hidden"
+                      showSubmenu === route.path ? "block" : "hidden"
                     }`}
                   >
                     {route.submenu.map((subItem) => (

@@ -47,6 +47,15 @@ const Classes = () => {
           </Card>
         </section>
 
+        {/* Botón de contenido premium */}
+        <section className="text-center mb-12">
+          <Link to="/contenido-premium">
+            <Button size="lg" className="animate-pulse">
+              Acceder al Contenido Premium
+            </Button>
+          </Link>
+        </section>
+
         {/* Testimonios */}
         <section className="mb-12">
           <h2 className="text-2xl font-semibold mb-6">Lo que dicen mis alumnos</h2>
@@ -85,15 +94,6 @@ const Classes = () => {
               </div>
             </CardContent>
           </Card>
-        </section>
-
-        {/* Botón de contenido premium */}
-        <section className="text-center">
-          <Link to="/contenido-premium">
-            <Button size="lg" className="animate-pulse">
-              Acceder al Contenido Premium
-            </Button>
-          </Link>
         </section>
       </main>
       <Footer />

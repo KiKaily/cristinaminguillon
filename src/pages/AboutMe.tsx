@@ -1,5 +1,6 @@
 
 import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 
 const AboutMe = () => {
@@ -35,6 +36,7 @@ const AboutMe = () => {
           </div>
         </div>
       </main>
+      <Footer />
     </>
   );
 };
