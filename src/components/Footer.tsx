@@ -5,22 +5,22 @@ import { Facebook, Instagram, Twitter } from "lucide-react";
 export function Footer() {
   const routes = [
     { name: { es: "Inicio", en: "Home" }, path: "/" },
-  {
-    name: { es: "Arte", en: "Artwork" },
-    path: "/obras",
-    submenu: [
-      { name: { es: "Ilustración", en: "Ilustration" }, path: "/arte/ilustracion" },
-      { name: { es: "Cerámica", en: "Ceramics" }, path: "/arte/ceramica" },
-      { name: { es: "Papel", en: "Paper" }, path: "/arte/papel" },
-      { name: { es: "Textil", en: "Textile" }, path: "/arte/textil" },
-      { name: { es: "Libros de Artista", en: "Artists Books" }, path: "/arte/librosartista" },
-    ],
-  },
-  { name: { es: "Expos", en: "Exhibitions" }, path: "/exposiciones" },
-  { name: { es: "Clases", en: "Classes" }, path: "/clases" },
-  { name: { es: "Arteterapia", en: "Art Therapy" }, path: "/arteterapia" },
-  { name: { es: "Sobre mí", en: "About" }, path: "/sobre-mi" },
-  { name: { es: "Contacto", en: "Contact" }, path: "/contacto" },
+    {
+      name: { es: "Obras", en: "Artwork" },
+      path: "/obras",
+      submenu: [
+        { name: { es: "Pintura", en: "Painting" }, path: "/obras/pintura" },
+        { name: { es: "Cerámica", en: "Ceramics" }, path: "/obras/ceramica" },
+        { name: { es: "Escultura", en: "Sculpture" }, path: "/obras/escultura" },
+        { name: { es: "Arte Digital", en: "Digital Art" }, path: "/obras/digital" },
+        { name: { es: "Técnica Mixta", en: "Mixed Media" }, path: "/obras/mixta" },
+      ],
+    },
+    { name: { es: "Expos", en: "Exhibitions" }, path: "/exposiciones" },
+    { name: { es: "Clases", en: "Classes" }, path: "/clases" },
+    { name: { es: "Arteterapia", en: "Art Therapy" }, path: "/arteterapia" },
+    { name: { es: "Sobre mí", en: "About" }, path: "/sobre-mi" },
+    { name: { es: "Contacto", en: "Contact" }, path: "/contacto" },
   ];
 
   return (
@@ -31,9 +31,9 @@ export function Footer() {
           <div>
             <h3 className="font-semibold text-lg mb-4">Contacto</h3>
             <div className="space-y-2 text-muted-foreground">
-              <p>Email: cminguillon@gmail.com</p>
+              <p>Email: info@arteyhistoria.com</p>
               <p>Tel: +34 600 000 000</p>
-              <p>Orba, España</p>
+              <p>Madrid, España</p>
             </div>
           </div>
 
@@ -73,13 +73,16 @@ export function Footer() {
 
           {/* Social & Legal */}
           <div>
-            <h3 className="font-semibold text-lg mb-4">¿Conectamos?</h3>
+            <h3 className="font-semibold text-lg mb-4">Síguenos</h3>
             <div className="flex gap-4 mb-6">
-              <a href="https://www.facebook.com/cristina.minguillon.3" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
                 <Facebook className="h-5 w-5" />
               </a>
-              <a href="https://www.instagram.com/crisminguillon/" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
                 <Instagram className="h-5 w-5" />
+              </a>
+              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <Twitter className="h-5 w-5" />
               </a>
             </div>
             <div className="space-y-2">

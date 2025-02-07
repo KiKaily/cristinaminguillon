@@ -8,14 +8,14 @@ import { useState } from "react";
 const routes = [
   { name: { es: "Inicio", en: "Home" }, path: "/" },
   {
-    name: { es: "Arte", en: "Artwork" },
+    name: { es: "Obras", en: "Artwork" },
     path: "/obras",
     submenu: [
-      { name: { es: "Ilustración", en: "Ilustration" }, path: "/arte/ilustracion" },
-      { name: { es: "Cerámica", en: "Ceramics" }, path: "/arte/ceramica" },
-      { name: { es: "Papel", en: "Paper" }, path: "/arte/papel" },
-      { name: { es: "Textil", en: "Textile" }, path: "/arte/textil" },
-      { name: { es: "Libros de Artista", en: "Artists Books" }, path: "/arte/librosartista" },
+      { name: { es: "Pintura", en: "Painting" }, path: "/obras/pintura" },
+      { name: { es: "Cerámica", en: "Ceramics" }, path: "/obras/ceramica" },
+      { name: { es: "Escultura", en: "Sculpture" }, path: "/obras/escultura" },
+      { name: { es: "Arte Digital", en: "Digital Art" }, path: "/obras/digital" },
+      { name: { es: "Técnica Mixta", en: "Mixed Media" }, path: "/obras/mixta" },
     ],
   },
   { name: { es: "Expos", en: "Exhibitions" }, path: "/exposiciones" },
@@ -27,7 +27,7 @@ const routes = [
 
 export function Navbar() {
   const [language, setLanguage] = useState<"es" | "en">("es");
-  const [showSubmenu, setShowSubmenu] = useState("");
+  const [showSubmenu, setShowSubmenu] = useState(false);
 
   const toggleLanguage = () => {
     setLanguage((prev) => (prev === "es" ? "en" : "es"));
@@ -46,8 +46,8 @@ export function Navbar() {
             <div
               key={route.path}
               className="relative group"
-              onMouseEnter={() => route.submenu && setShowSubmenu(route.path)}
-              onMouseLeave={() => setShowSubmenu("")}
+              onMouseEnter={() => route.submenu && setShowSubmenu(true)}
+              onMouseLeave={() => route.submenu && setShowSubmenu(false)}
             >
               {route.submenu ? (
                 <>
@@ -56,7 +56,7 @@ export function Navbar() {
                   </span>
                   <div
                     className={`absolute top-full left-0 bg-background border rounded-lg shadow-lg py-2 mt-2 min-w-[200px] ${
-                      showSubmenu === route.path ? "block" : "hidden"
+                      showSubmenu ? "block" : "hidden"
                     }`}
                   >
                     {route.submenu.map((subItem) => (

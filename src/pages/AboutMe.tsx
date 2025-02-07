@@ -1,6 +1,5 @@
 
 import { Navbar } from "@/components/Navbar";
-import { Footer } from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 
 const AboutMe = () => {
@@ -10,30 +9,32 @@ const AboutMe = () => {
       <main className="min-h-screen pt-20 container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-8">
           <div className="space-y-6">
-            <h1 className="text-4xl font-bold">Cristina Minguillón</h1>
-            <h2 className="text-4xl font-bold">MADRID, 1959</h2>
+            <h1 className="text-4xl font-bold">Sobre mí</h1>
             <p className="text-lg text-muted-foreground">
-            Licenciada en Historia del Arte (UAM, 1996) / Grado en Educación con Mención en inglés (CJC, 2013) (Adaptación del título de 1984) / Arteterapeuta Gestalt (Escuela de Arteterapia Humanista. Madrid. 2015-2019) / Curso de Teatro Terapéutico Gestalt con Claudia Fres (2019) / Curso de pintura de técnicas contemporáneas de Neus Frigola (Escuela de Cerámica de La Bisbal, 2019) / Curso de Iniciación al SAT de Claudio Naranjo (2017) / Taller de Pintura Creativa con Katharina Widmer (2017) / Curso de Iniciación a la Comunicación No Violenta (2017) / Experto en Enseñanzas Artísticas (UCM, 1997) / Experto en desarrollo de Proyectos Editoriales (UCM, 2003) / Estudios en la Escuela de Cerámica de Madrid (1980-1983) / Curso de Ayudante de Documentación de la Biblioteca Nacional (1978).
+              Soy una artista apasionada por explorar diferentes formas de expresión
+              artística. Mi trabajo abarca desde la pintura hasta la cerámica,
+              siempre buscando nuevas formas de comunicar y conectar a través del arte.
             </p>
             <p className="text-lg text-muted-foreground">
-            Arteterapeuta Gestalt grupal e individual (2019) / Profesora de Historia del Arte en distintos Centros Culturales (Desde 2007) / Ilustradora para distintas editoriales (Desde 1990) / Profesora de expresión plástica en inglés (2012-2017) / Documentalista en la Biblioteca del Palacio Real (Catalogación de grabados y dibujos) / Bibliotecaria en el Instituto de Patrimonio Cultural de España (Catalogación de libros y folletos de arte) / Presidenta del Consejo General del Libro Infantil y Juvenil / Profesora de Talleres de animación a la lectura en distintas bibliotecas municipales españolas / Profesora de cerámica (INEM) / Cooperativista y profesora de la Granja Escuela Huerta de la Limpia. Guadalajara / Profesora de arte del Colegio Nuestra Señora Santa María (Madrid).
+              Con más de una década de experiencia en la enseñanza, combino mi
+              práctica artística con la docencia, compartiendo conocimientos y
+              experiencias con mis estudiantes.
             </p>
           </div>
           <div className="grid gap-4">
             <img
-              src="/cris1.png"
+              src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158"
               alt="Artista en su estudio"
               className="rounded-lg object-cover w-full h-[300px]"
             />
             <img
-              src="/cris1.png"
+              src="https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b"
               alt="Proceso creativo"
               className="rounded-lg object-cover w-full h-[300px]"
             />
           </div>
         </div>
       </main>
-      <Footer />
     </>
   );
 };

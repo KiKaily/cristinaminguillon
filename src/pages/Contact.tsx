@@ -1,6 +1,5 @@
 
 import { Navbar } from "@/components/Navbar";
-import { Footer } from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Mail } from "lucide-react";
 
@@ -18,12 +17,11 @@ const Contact = () => {
           </CardHeader>
           <CardContent className="space-y-4">
             <p className="text-lg text-muted-foreground">
-            <a href="mailto:cminguillon1@gmail.com">cminguillon1@gmail.com</a>
+              Próximamente formulario de contacto...
             </p>
           </CardContent>
         </Card>
       </main>
-      <Footer />
     </>
   );
 };
