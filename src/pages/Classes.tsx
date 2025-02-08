@@ -51,7 +51,7 @@ const Classes = () => {
         <section className="text-center mb-12">
           <Link to="/contenido-premium">
             <Button size="lg" className="animate-pulse">
-              Acceder al Contenido de Pago
+              Acceder a los cursos y clases
             </Button>
           </Link>
         </section>
