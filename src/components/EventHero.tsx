@@ -16,8 +16,17 @@ export function EventHero() {
             "Babel"
           </h1>
           <p className="text-lg text-muted-foreground mb-8 text-balance">
-            Una exposición de cerámica. Exploración de la belleza natural a través del color y la forma.
-            Exposición de pinturas y cerámicas.
+            Una exposición de cerámica.
+          </p>
+          <p className="text-lg text-muted-foreground mb-8 text-balance">
+          Dicen que los supervivientes del Diluvio Universal quisieron agradecer a Yahweh seguir con vida y construyeron juntos una torre tan alta que llegara a la 
+          morada de su dios.
+          </p>
+          <p className="text-lg text-muted-foreground mb-8 text-balance">
+          Imagino aquella construcción tosca, rudimentaria e imperfecta, hecha con materiales humildes, frágil, con múltiples facetas, recovecos, entradas y salidas, grietas, desprendimientos y caídas, una construcción llena de dudas, arrepentimientos y miedos, sostenida por ilusiones y esperanzas en el futuro…
+          </p>
+          <p className="text-lg text-muted-foreground mb-8 text-balance">
+          Enterado Yahweh de la construcción de la torre, lo sintió como un acto de soberbia, montó en cólera y pensó en la manera de impedir que se volviera a repetir un proyecto parecido. Y creó las distintas lenguas para impedir que los humanos se entendieran y fuera difícil construir algo juntos.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="hover-lift">
