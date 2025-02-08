@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -18,6 +17,8 @@ import Sculpture from "./pages/artwork/Sculpture";
 import Digital from "./pages/artwork/Digital";
 import Mixed from "./pages/artwork/Mixed";
 import NotFound from "./pages/NotFound";
+import PasswordProtectedContent from "./pages/PasswordProtectedContent";
+import Shop from "./pages/Shop";
 
 const queryClient = new QueryClient();
 
@@ -55,6 +56,8 @@ const App = () => {
             <Route path="/arteterapia" element={<ArtTherapy />} />
             <Route path="/exposiciones" element={<Exhibitions />} />
             <Route path="/contenido-premium" element={<PaidContent />} />
+            <Route path="/contenido/:contentId" element={<PasswordProtectedContent />} />
+            <Route path="/tienda" element={<Shop />} />
             <Route path="/obras/pintura" element={<Painting />} />
             <Route path="/obras/ceramica" element={<Ceramics />} />
             <Route path="/obras/escultura" element={<Sculpture />} />

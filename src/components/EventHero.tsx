@@ -5,7 +5,7 @@ import { Card, CardContent } from "./ui/card";
 
 export function EventHero() {
   return (
-    <section className="relative min-h-[70vh] flex items-center justify-center bg-gradient-to-b from-background to-secondary">
+    <section className="relative min-h-[70vh] flex items-center justify-center">
       <div className="container mx-auto px-4 py-20 mt-16">
         <div className="max-w-3xl mx-auto text-center fade-in">
           <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full mb-6">
@@ -45,6 +45,17 @@ export function EventHero() {
             </CardContent>
           </Card>
         </div>
+
+        <section className="mt-16">
+          <h2 className="text-2xl font-semibold mb-6">Próximas Exposiciones</h2>
+          <div className="grid gap-6">
+            <Card>
+              <CardContent className="pt-6">
+                <li>Próximamente...</li>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
       </div>
     </section>
   );

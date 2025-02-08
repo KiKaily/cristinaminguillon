@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { Facebook, Instagram } from "lucide-react";
 
@@ -19,6 +18,7 @@ export function Footer() {
     { name: { es: "Expos", en: "Exhibitions" }, path: "/exposiciones" },
     { name: { es: "Cursos", en: "Courses" }, path: "/clases" },
     { name: { es: "Arteterapia", en: "Art Therapy" }, path: "/arteterapia" },
+    { name: { es: "Tienda", en: "Shop" }, path: "/tienda" },
     { name: { es: "Sobre mí", en: "About" }, path: "/sobre-mi" },
     { name: { es: "Contacto", en: "Contact" }, path: "/contacto" },
   ];
