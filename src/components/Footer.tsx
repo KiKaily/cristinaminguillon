@@ -1,23 +1,23 @@
 
 import { Link } from "react-router-dom";
-import { Facebook, Instagram, Twitter } from "lucide-react";
+import { Facebook, Instagram } from "lucide-react";
 
 export function Footer() {
   const routes = [
     { name: { es: "Inicio", en: "Home" }, path: "/" },
     {
-      name: { es: "Obras", en: "Artwork" },
+      name: { es: "Arte", en: "Art" },
       path: "/obras",
       submenu: [
-        { name: { es: "Pintura", en: "Painting" }, path: "/obras/pintura" },
+        { name: { es: "Ilustración", en: "Illustration" }, path: "/obras/pintura" },
         { name: { es: "Cerámica", en: "Ceramics" }, path: "/obras/ceramica" },
-        { name: { es: "Escultura", en: "Sculpture" }, path: "/obras/escultura" },
-        { name: { es: "Arte Digital", en: "Digital Art" }, path: "/obras/digital" },
-        { name: { es: "Técnica Mixta", en: "Mixed Media" }, path: "/obras/mixta" },
+        { name: { es: "Textil", en: "Textile" }, path: "/obras/escultura" },
+        { name: { es: "Libros de Artista", en: "Artist Books" }, path: "/obras/digital" },
+        { name: { es: "Papel", en: "Paper" }, path: "/obras/mixta" },
       ],
     },
     { name: { es: "Expos", en: "Exhibitions" }, path: "/exposiciones" },
-    { name: { es: "Clases", en: "Classes" }, path: "/clases" },
+    { name: { es: "Cursos", en: "Courses" }, path: "/clases" },
     { name: { es: "Arteterapia", en: "Art Therapy" }, path: "/arteterapia" },
     { name: { es: "Sobre mí", en: "About" }, path: "/sobre-mi" },
     { name: { es: "Contacto", en: "Contact" }, path: "/contacto" },
@@ -26,7 +26,7 @@ export function Footer() {
   return (
     <footer className="bg-accent/50 mt-20">
       <div className="container mx-auto px-4 py-12">
-        <div className="grid md:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-3 gap-8">
           {/* Contact Info */}
           <div>
             <h3 className="font-semibold text-lg mb-4">Contacto</h3>
@@ -37,34 +37,30 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Navigation */}
-          <div className="md:col-span-2">
+          {/* Navigation - Single Column */}
+          <div>
             <h3 className="font-semibold text-lg mb-4">Navegación</h3>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="space-y-2">
               {routes.map((route) => (
                 <div key={route.path}>
-                  {route.submenu ? (
-                    <div className="space-y-2">
-                      <span className="font-medium">{route.name.es}</span>
-                      <div className="pl-4 space-y-1">
-                        {route.submenu.map((subItem) => (
-                          <Link
-                            key={subItem.path}
-                            to={subItem.path}
-                            className="block text-sm text-muted-foreground hover:text-primary transition-colors"
-                          >
-                            {subItem.name.es}
-                          </Link>
-                        ))}
-                      </div>
+                  <Link
+                    to={route.path}
+                    className="text-muted-foreground hover:text-primary transition-colors"
+                  >
+                    {route.name.es}
+                  </Link>
+                  {route.submenu && (
+                    <div className="pl-4 space-y-1 mt-1">
+                      {route.submenu.map((subItem) => (
+                        <Link
+                          key={subItem.path}
+                          to={subItem.path}
+                          className="block text-sm text-muted-foreground hover:text-primary transition-colors"
+                        >
+                          {subItem.name.es}
+                        </Link>
+                      ))}
                     </div>
-                  ) : (
-                    <Link
-                      to={route.path}
-                      className="text-muted-foreground hover:text-primary transition-colors"
-                    >
-                      {route.name.es}
-                    </Link>
                   )}
                 </div>
               ))}

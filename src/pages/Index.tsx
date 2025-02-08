@@ -7,7 +7,7 @@ const Index = () => {
   return (
     <>
       <Navbar />
-      <main className="min-h-screen">
+      <main className="min-h-screen pt-[8%]">
         <EventHero />
         <section className="relative w-full h-[60vh] overflow-hidden">
           <video
@@ -16,6 +16,7 @@ const Index = () => {
             loop
             playsInline
             className="w-full h-full object-cover"
+            poster="/placeholder.svg"
           >
             <source src="/placeholder-video.mp4" type="video/mp4" />
             Tu navegador no soporta el elemento de video.
