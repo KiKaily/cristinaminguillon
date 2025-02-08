@@ -1,12 +1,12 @@
-
 import { Navbar } from "@/components/Navbar";
 import { Card, CardContent } from "@/components/ui/card";
+import { Footer } from "@/components/Footer";
 
 const AboutMe = () => {
   return (
     <>
       <Navbar />
-      <main className="min-h-screen pt-20 container mx-auto px-4">
+      <main className="min-h-screen pt-[8%] container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-8">
           <div className="space-y-6">
             <h1 className="text-4xl font-bold">Sobre mí</h1>
@@ -35,6 +35,7 @@ const AboutMe = () => {
           </div>
         </div>
       </main>
+      <Footer />
     </>
   );
 };

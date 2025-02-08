@@ -1,7 +1,7 @@
-
 import { Navbar } from "@/components/Navbar";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Footer } from "@/components/Footer";
 
 const testimonials = [
   {
@@ -18,7 +18,7 @@ const ArtTherapy = () => {
   return (
     <>
       <Navbar />
-      <main className="min-h-screen pt-20 container mx-auto px-4">
+      <main className="min-h-screen pt-[8%] container mx-auto px-4">
         {/* Próximos cursos */}
         <section className="mb-12">
           <Card className="bg-accent">
@@ -77,6 +77,7 @@ const ArtTherapy = () => {
           </div>
         </section>
       </main>
+      <Footer />
     </>
   );
 };

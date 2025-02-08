@@ -2,7 +2,7 @@
 import { Menu, Globe } from "lucide-react";
 import { Button } from "./ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 const routes = [
@@ -29,6 +29,7 @@ export function Navbar() {
   const [language, setLanguage] = useState<"es" | "en">("es");
   const [showSubmenu, setShowSubmenu] = useState(false);
   let submenuTimer: NodeJS.Timeout;
+  const navigate = useNavigate();
 
   const handleMouseEnter = () => {
     setShowSubmenu(true);
@@ -40,7 +41,12 @@ export function Navbar() {
   const handleMouseLeave = () => {
     submenuTimer = setTimeout(() => {
       setShowSubmenu(false);
-    }, 3000);
+    }, 1000);
+  };
+
+  const handleNavigation = (path: string) => {
+    navigate(path);
+    window.scrollTo(0, 0);
   };
 
   useEffect(() => {
@@ -58,9 +64,9 @@ export function Navbar() {
   return (
     <header className="fixed top-0 w-full z-50 border-b bg-background/80 backdrop-blur-sm">
       <nav className="container mx-auto px-4 h-16 flex items-center justify-between">
-        <Link to="/" className="font-semibold text-lg">
+        <button onClick={() => handleNavigation("/")} className="font-semibold text-lg">
           Cristina Minguillón
-        </Link>
+        </button>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-6">
@@ -82,23 +88,23 @@ export function Navbar() {
                     }`}
                   >
                     {route.submenu.map((subItem) => (
-                      <Link
+                      <button
                         key={subItem.path}
-                        to={subItem.path}
-                        className="block px-4 py-2 text-sm hover:bg-accent transition-colors"
+                        onClick={() => handleNavigation(subItem.path)}
+                        className="block w-full text-left px-4 py-2 text-sm hover:bg-accent transition-colors"
                       >
                         {subItem.name[language]}
-                      </Link>
+                      </button>
                     ))}
                   </div>
                 </>
               ) : (
-                <Link
-                  to={route.path}
+                <button
+                  onClick={() => handleNavigation(route.path)}
                   className="text-sm font-medium hover:text-primary transition-colors"
                 >
                   {route.name[language]}
-                </Link>
+                </button>
               )}
             </div>
           ))}
@@ -130,24 +136,24 @@ export function Navbar() {
                     </span>
                     <div className="pl-4 space-y-2">
                       {route.submenu.map((subItem) => (
-                        <Link
+                        <button
                           key={subItem.path}
-                          to={subItem.path}
+                          onClick={() => handleNavigation(subItem.path)}
                           className="block text-sm hover:text-primary transition-colors"
                         >
                           {subItem.name[language]}
-                        </Link>
+                        </button>
                       ))}
                     </div>
                   </div>
                 ) : (
-                  <Link
+                  <button
                     key={route.path}
-                    to={route.path}
-                    className="text-lg font-medium hover:text-primary transition-colors"
+                    onClick={() => handleNavigation(route.path)}
+                    className="text-lg font-medium hover:text-primary transition-colors text-left"
                   >
                     {route.name[language]}
-                  </Link>
+                  </button>
                 )
               )}
               <Button
