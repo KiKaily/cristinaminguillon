@@ -47,11 +47,28 @@ const Exhibitions = () => {
               <Card>
                 <CardContent className="pt-6">
                   <ul className="list-disc pl-5 space-y-2">
-                    <li>Exposición "Naturaleza Viva" - Galería Modern Art - 2023</li>
-                    <li>Retrospectiva "Caminos" - Centro Cultural - 2022</li>
-                    <li>Muestra "Texturas" - Espacio de Arte - 2021</li>
-                    <li>Exposición "Fragmentos" - Galería Nueva - 2020</li>
-                    <li>Colección "Memorias" - Museo Municipal - 2019</li>
+                  <li>Cerámicas. (Febrero-Marzo 2025). Centro Cultural Carmen Conde. Majadahonda. Madrid.</li>
+		<li>Babel. Cerámicas. (Enero-Febrero 2025). Centro Cultural Paco Rabal. Puente de Vallecas. Madrid.</li>
+		<li>Babel. Cerámicas. (Enero 2025). Centro Cultural Pablo Ruiz Picasso. Colmenar Viejo. Madrid.</li>
+		<li>KAIRÓS. Cerámicas. (Febrero-Marzo 2023). Ca Lambert. Jávea. Alicante.</li>
+		<li>Barro y Silencio. Cerámicas (Enero-febrero 2023). Casa Cultura. Dénia.</li>
+		<li>Silencio. Cerámicas. (Diciembre 2021-Febrero 2022) CC Portal de la Marina. 
+			Ondara. Alicante</li>
+		<li>Encuentros y despedidas (Febrero-Marzo 2022) Códigos del Arte. Denia. 
+			Alicante.</li>
+		<li>Tierra (Diciembre 2021-Enero 2022) Códigos del Arte. Denia. Alicante.</li>
+		<li>Tierra (2019). Obra sobre papel. Espacio D’artés (Soto del Real)</li>
+		<li>Familiando (2019). Obra textil. La Caña (Madrid)</li>
+		<li>Familiando (2018). Obra textil. Espacio D’artés (Soto del Real)</li>
+		<li>Emergiendo (abril-mayo 2018). Obra sobre papel. Espacio D’artés (Soto del 
+			   Real. Madrid)</li>
+		<li>Cerámica (2016). C.C. Lope de Vega (Madrid)</li>
+		<li>ADDRESS (2013). Escultura. Espacio Andrés Delgado (Madrid)</li>
+		<li>Cerámica (1989). Café El Globo. Guadalajara</li>
+		<li>Cerámica (1985) Club Náutico de Vigo</li>
+		<li>Cerámica (1984). Café El Ratón. Madrid</li>
+		<li>Minguillón-Dibujos (1983). Café Entreacto (C/Martín de los Heros, 22. 
+			  Madrid)</li>
                   </ul>
                 </CardContent>
               </Card>
@@ -65,11 +82,35 @@ const Exhibitions = () => {
               <Card>
                 <CardContent className="pt-6">
                   <ul className="list-disc pl-5 space-y-2">
-                    <li>Bienal de Arte Contemporáneo - 2023</li>
-                    <li>Muestra Internacional "Artistas Emergentes" - 2022</li>
-                    <li>Exposición "Diálogos" - Fundación Arte - 2021</li>
-                    <li>Colectiva "Nuevas Miradas" - Galería Central - 2020</li>
-                    <li>Muestra "Conexiones" - Centro de Arte - 2019</li>
+                  <li>Esculturas frente al mar. (Julio-octubre 2022). Paseo Marina de Denia, 
+			Alicante.</li>
+		<li>ADAMA. Exposición colectiva. (Septiembre 2021) Casa Cultura. Denia. 
+			Alicante.</li>
+		<li>Muestra de Arte Contemporáneo ARTESON 6. (julio-agosto 2021) Antiguo
+			Hospital de San Andrés (Mombeltrán. Ávila)</li>
+		<li>Muestra de Arte Contemporáneo PALACIO 14 (julio-agosto 2021) Palacio
+			del Infante Luis de Borbón (Arenas de San Pedro. Ávila)</li>
+		<li>Artistas internacionales en Mallorca (Julio 2018). Collage. Galería Eka Moor.</li>
+		<li>Artistas internacionales en Madrid (Junio 2018). Collage. Galería Eka Moor.</li>
+		<li>Arte de mujer (marzo 2018). Cerámica. Casa de Cultura de Soto del Real.</li>
+		<li>Salón de primavera (marzo-abril 2018). Cerámica. Santana Art Gallery (Madrid).</li>
+		<li>MAGRAMA (2015). Cerámica. Ministerio de Agricultura.</li>
+		<li>El alma del silencio (2014) Cerámica. C.C. La Despernada (V. de la Cañada).</li>
+		<li>El arte que devino en libro (2013). Libros de artista. Tres en Suma (Madrid).</li>
+		<li>ADDRESS (2013). Escultura. Espacio Andrés Delgado (Madrid).</li>
+		<li>Ilustrísima (2013). Museo ABC (Madrid).</li>
+		<li>Infancia, todas las infancias (2007. XXX Salón del Libro Infantil y Juvenil) 
+			Ilustración.</li>
+		<li>Ilustrado Don Quijote (2005. APIM) Ilustración. Biblioteca Nacional.</li>
+		<li>Homenaje a Montserrat del Amo (Amigos del Libro Infantil) Ilustración.</li>
+		<li>La mar de libros (XXXI Salón del Libro Infantil y Juvenil) Ilustración.</li>
+		<li>Ratón Pérez y el diente de un Rey (2000. Amigos del Libro) Ilustración.</li>
+		<li>Caperucita ilustrada (1998. Amigos del Libro) Ilustración. Biblioteca 
+			Nacional.</li>
+		<li>Pintando poesía (1998). Ilustración. Centro Isabel de Farnesio (Aranjuez).</li>
+		<li>Pintando adrede al 27 (1998. APIM). Ilustración. C.C. de la Villa (Madrid).</li>
+		<li>Pintando poesía (1998. APIM) Ilustración. Círculo de Bellas Artes.</li>
+		<li>Arte Urbano (1984). Cerámica. Plaza Pablo Ruiz Picasso. Madrid.</li>
                   </ul>
                 </CardContent>
               </Card>

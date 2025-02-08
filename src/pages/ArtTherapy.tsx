@@ -73,7 +73,7 @@ const ArtTherapy = () => {
           </div>
           <div>
             <img
-              src="https://images.unsplash.com/photo-1501286353178-1ec881214838"
+              src="/logoescuela.png"
               alt="Sesión de arteterapia"
               className="rounded-lg object-cover w-full h-[400px]"
             />
@@ -88,7 +88,7 @@ const ArtTherapy = () => {
           </div>
           <div>
             <img
-              src="https://images.unsplash.com/photo-1501286353178-1ec881214838"
+              src="/art01.jpg"
               alt="Sesión de arteterapia"
               className="rounded-lg object-cover w-full h-[400px]"
             />
@@ -96,7 +96,7 @@ const ArtTherapy = () => {
           
           <div>
             <img
-              src="https://images.unsplash.com/photo-1501286353178-1ec881214838"
+              src="/art02.jpg"
               alt="Sesión de arteterapia"
               className="rounded-lg object-cover w-full h-[400px]"
             />
@@ -104,7 +104,7 @@ const ArtTherapy = () => {
           
           <div>
             <img
-              src="https://images.unsplash.com/photo-1501286353178-1ec881214838"
+              src="/art03.jpg"
               alt="Sesión de arteterapia"
               className="rounded-lg object-cover w-full h-[400px]"
             />
