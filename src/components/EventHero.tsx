@@ -41,7 +41,7 @@ export function EventHero() {
           <Card className="hover-lift">
             <CardContent className="p-6">
               <h3 className="font-semibold mb-2">Horario</h3>
-              <p className="text-muted-foreground">Lun-Vier, 10:00 - 20:00</p>
+              <p className="text-muted-foreground">Lunes a Viernes, de 10:00 a 20:00</p>
             </CardContent>
           </Card>
         </div>

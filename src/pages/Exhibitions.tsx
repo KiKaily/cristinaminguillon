@@ -19,7 +19,7 @@ const Exhibitions = () => {
               <div className="space-y-4">
                 <div className="flex items-center gap-2">
                   <Badge variant="secondary">Actual</Badge>
-                  <span className="text-lg">"Naturaleza y Color" - Galería Arte Nuevo</span>
+                  <span className="text-lg">"Cerámicas". (Febrero-Marzo 2025). Centro Cultural Carmen Conde. Majadahonda.</span>
                 </div>
               </div>
             </CardContent>
@@ -32,7 +32,7 @@ const Exhibitions = () => {
           <div className="grid gap-6">
             <Card>
               <CardContent className="pt-6">
-                <h3 className="text-lg font-medium mb-2">Próximamente</h3>
+                <li>Próximamente...</li>
               </CardContent>
             </Card>
           </div>

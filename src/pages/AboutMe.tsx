@@ -20,12 +20,12 @@ const AboutMe = () => {
           </div>
           <div className="grid gap-4">
             <img
-              src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158"
+              src="/me.png"
               alt="Artista en su estudio"
               className="rounded-lg object-cover w-full h-[300px]"
             />
             <img
-              src="https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b"
+              src="/me2.jpg"
               alt="Proceso creativo"
               className="rounded-lg object-cover w-full h-[300px]"
             />

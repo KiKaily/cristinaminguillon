@@ -90,13 +90,15 @@ const Classes = () => {
                 <p className="text-muted-foreground">
                 Los talleres de arte son flexibles y variados en propuestas y actividades, motivan a quienes asisten a participar activamente en su propia formación. Son dinámicos y abiertos al debate, a compartir opiniones, información y propuestas. Hacemos visitas a distintos lugares que nos vinculan al arte y a la vida: galerías, museos, centros culturales, escuelas, edificios, recorridos por la ciudad, estudios de artistas, conciertos, mercados…
                 </p>
+                <br></br>
+                <h2 className="text-2xl font-semibold mb-4">Clase gratuita de muestra</h2>
               </div>
               <div className="relative w-full aspect-video rounded-lg overflow-hidden">
                 <video
                   className="w-full h-full object-cover"
                   controls
                 >
-                  <source src="/sample-class.mp4" type="video/mp4" />
+                  <source src="/placeholder-video.mp4" type="video/mp4" />
                   Tu navegador no soporta el elemento de video.
                 </video>
               </div>
