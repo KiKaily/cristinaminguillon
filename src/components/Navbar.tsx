@@ -3,7 +3,7 @@ import { Menu, Globe } from "lucide-react";
 import { Button } from "./ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const routes = [
   { name: { es: "Inicio", en: "Home" }, path: "/" },
@@ -28,6 +28,28 @@ const routes = [
 export function Navbar() {
   const [language, setLanguage] = useState<"es" | "en">("es");
   const [showSubmenu, setShowSubmenu] = useState(false);
+  let submenuTimer: NodeJS.Timeout;
+
+  const handleMouseEnter = () => {
+    setShowSubmenu(true);
+    if (submenuTimer) {
+      clearTimeout(submenuTimer);
+    }
+  };
+
+  const handleMouseLeave = () => {
+    submenuTimer = setTimeout(() => {
+      setShowSubmenu(false);
+    }, 3000);
+  };
+
+  useEffect(() => {
+    return () => {
+      if (submenuTimer) {
+        clearTimeout(submenuTimer);
+      }
+    };
+  }, []);
 
   const toggleLanguage = () => {
     setLanguage((prev) => (prev === "es" ? "en" : "es"));
@@ -37,7 +59,7 @@ export function Navbar() {
     <header className="fixed top-0 w-full z-50 border-b bg-background/80 backdrop-blur-sm">
       <nav className="container mx-auto px-4 h-16 flex items-center justify-between">
         <Link to="/" className="font-semibold text-lg">
-          Arte & Historia
+          Cristina Minguillón
         </Link>
 
         {/* Desktop Menu */}
@@ -46,8 +68,8 @@ export function Navbar() {
             <div
               key={route.path}
               className="relative group"
-              onMouseEnter={() => route.submenu && setShowSubmenu(true)}
-              onMouseLeave={() => route.submenu && setShowSubmenu(false)}
+              onMouseEnter={route.submenu ? handleMouseEnter : undefined}
+              onMouseLeave={route.submenu ? handleMouseLeave : undefined}
             >
               {route.submenu ? (
                 <>

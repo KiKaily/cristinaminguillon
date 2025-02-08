@@ -25,7 +25,7 @@ const Classes = () => {
   return (
     <>
       <Navbar />
-      <main className="min-h-screen pt-20 container mx-auto px-4">
+      <main className="min-h-screen pt-[8%] container mx-auto px-4">
         {/* Ofertas y próximas fechas */}
         <section className="mb-12">
           <Card className="bg-accent">
@@ -45,6 +45,15 @@ const Classes = () => {
               </div>
             </CardContent>
           </Card>
+        </section>
+
+        {/* Botón de contenido de pago */}
+        <section className="text-center mb-12">
+          <Link to="/contenido-premium">
+            <Button size="lg" className="animate-pulse">
+              Acceder al Contenido de Pago
+            </Button>
+          </Link>
         </section>
 
         {/* Testimonios */}
@@ -85,15 +94,6 @@ const Classes = () => {
               </div>
             </CardContent>
           </Card>
-        </section>
-
-        {/* Botón de contenido premium */}
-        <section className="text-center">
-          <Link to="/contenido-premium">
-            <Button size="lg" className="animate-pulse">
-              Acceder al Contenido Premium
-            </Button>
-          </Link>
         </section>
       </main>
       <Footer />
