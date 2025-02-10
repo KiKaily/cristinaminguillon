@@ -16,7 +16,7 @@ const Index = () => {
             className="w-full h-full object-cover"
             poster="/placeholder.svg"
           >
-            <source src="/placeholder-video.mp4" type="video/mp4" />
+            <source src="/index-video.mp4" type="video/mp4" />
             Tu navegador no soporta el elemento de video.
           </video>
           <div className="absolute inset-0 bg-background/20 backdrop-blur-sm" />
