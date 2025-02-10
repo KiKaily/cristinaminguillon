@@ -13,6 +13,7 @@ const Index = () => {
           <video
             controls
             playsInline
+            muted
             className="w-full h-full object-cover"
             poster="/placeholder.svg"
           >
