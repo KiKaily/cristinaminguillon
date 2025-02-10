@@ -102,7 +102,7 @@ const Ceramics = () => {
           <div className="absolute inset-0 bg-background/20 backdrop-blur-sm" />
         </section>
               <p className="text-muted-foreground">
-              Ver <a href="https://cristinaminguillon.com/images/Kairos.pdf" target="_blank" rel="noopener noreferrer" className="hover:underline">PDF</a> de exposición completa "KAIRÓS"              
+              <a href="https://cristinaminguillon.com/images/Kairos.pdf" target="_blank" rel="noopener noreferrer" className="hover:underline">Ver PDF de exposición completa "KAIRÓS".</a>              
               </p>
               <p className="text-muted-foreground">
               A la deriva, a la merced del oleaje y de las circunstancias de estos tiempos, una mujer crea y con sus lágrimas riega las semillas, así como a la tierra que ahora es barro, vasija y vientre… refugio de los sueños compartidos, espacio protector de la fragilidad de la vida. Ella, la piedra y el fuego, son testigos de los constructos humanos, de la ferocidad de las ambiciones que con sus dientes han devorado, en años, milenios de creación. La obra de Cristina Minguillón es, en sí y en su proceso, un ejercicio de reivindicación del silencio, una oda a la soledad elegida, a la existencia pacífica que observa serena el eterno devenir de las mareas.              
