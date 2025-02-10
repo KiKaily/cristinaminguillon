@@ -31,7 +31,7 @@ export function Footer() {
   return (
     <footer className="bg-accent/50 mt-20">
       <div className="container mx-auto px-4 py-12">
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-4 gap-8">
           <div>
             <h3 className="font-semibold text-lg mb-4">Contacto</h3>
             <div className="space-y-2 text-muted-foreground">
@@ -45,36 +45,40 @@ export function Footer() {
           <div>
             <h3 className="font-semibold text-lg mb-4">Navegación</h3>
             <div className="space-y-2">
-              {routes.map((route) => (
-                <div key={route.path}>
-                  {route.name.es === "Arte" ? (
-                    <span className="text-muted-foreground">{route.name.es}</span>
-                  ) : (
-                    <Link
-                      to={route.path}
-                      onClick={() => handleNavigation(route.path)}
-                      className="text-muted-foreground hover:text-primary transition-colors"
-                    >
-                      {route.name.es}
-                    </Link>
-                  )}
-                  {route.submenu && route.name.es === "Arte" && (
-                    <div className="pl-4 space-y-1 mt-1">
-                      {route.submenu.map((subItem) => (
-                        <Link
-                          key={subItem.path}
-                          to={subItem.path}
-                          onClick={() => handleNavigation(subItem.path)}
-                          className="block text-sm text-muted-foreground hover:text-primary transition-colors"
-                        >
-                          {subItem.name.es}
-                        </Link>
-                      ))}
-                    </div>
-                  )}
-                </div>
-              ))}
+              <Link
+                to="/"
+                onClick={() => handleNavigation("/")}
+                className="block text-muted-foreground hover:text-primary transition-colors"
+              >
+                Inicio
+              </Link>
+              <span className="block text-muted-foreground">Arte</span>
+              <div className="pl-4 space-y-1 mt-1">
+                {routes.find(r => r.name.es === "Arte")?.submenu?.map((subItem) => (
+                  <Link
+                    key={subItem.path}
+                    to={subItem.path}
+                    onClick={() => handleNavigation(subItem.path)}
+                    className="block text-sm text-muted-foreground hover:text-primary transition-colors"
+                  >
+                    {subItem.name.es}
+                  </Link>
+                ))}
+              </div>
             </div>
+          </div>
+
+          <div className="space-y-2">
+            {routes.slice(2, 9).map((route) => (
+              <Link
+                key={route.path}
+                to={route.path}
+                onClick={() => handleNavigation(route.path)}
+                className="block text-muted-foreground hover:text-primary transition-colors"
+              >
+                {route.name.es}
+              </Link>
+            ))}
           </div>
 
           <div>

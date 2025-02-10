@@ -7,12 +7,13 @@ const Index = () => {
   return (
     <>
       <Navbar />
-      <main className="min-h-screen pt-[4%]">
+      <main className="min-h-screen">
         <EventHero />
         <section className="relative w-full h-[60vh] overflow-hidden">
           <video
             controls
             playsInline
+            autoPlay
             muted
             className="w-full h-full object-cover"
             poster="/placeholder.svg"
