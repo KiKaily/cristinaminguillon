@@ -30,8 +30,18 @@ const routes = [
 export function Navbar() {
   const [language, setLanguage] = useState<"es" | "en">("es");
   const [showSubmenu, setShowSubmenu] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   let submenuTimer: NodeJS.Timeout;
   const navigate = useNavigate();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const handleMouseEnter = () => {
     setShowSubmenu(true);
@@ -64,7 +74,7 @@ export function Navbar() {
   };
 
   return (
-    <header className="fixed top-0 w-full z-50 border-b bg-background/80 backdrop-blur-sm">
+    <header className={`fixed top-0 w-full z-50 border-b ${isScrolled ? 'bg-background shadow-md' : 'bg-background'}`}>
       <nav className="container mx-auto px-4 h-16 flex items-center justify-between">
         <button onClick={() => handleNavigation("/")} className="font-homemade text-xl">
           Cristina Minguillón
@@ -173,3 +183,4 @@ export function Navbar() {
     </header>
   );
 }
+
