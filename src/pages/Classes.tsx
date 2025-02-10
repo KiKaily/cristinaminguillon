@@ -101,6 +101,57 @@ const Classes = () => {
                   <source src="/placeholder-video.mp4" type="video/mp4" />
                   Tu navegador no soporta el elemento de video.
                 </video>
+
+                <p className="text-muted-foreground">
+                Dentro de los cursos, están incluidos encuentros mensuales con artistas en sus estudios y exposiciones.
+                </p>
+
+                <div className="grid md:grid-cols-3 gap-4">
+                <img
+                  src="/sal02.jpg"
+                  alt="Naturaleza 1"
+                  className="w-full h-[300px] object-cover rounded-lg"
+                />
+                <img
+                  src="/sal05.jpg"
+                  alt="Naturaleza 2"
+                  className="w-full h-[300px] object-cover rounded-lg"
+                />
+                <img
+                  src="/sal06.jpg"
+                  alt="Naturaleza 2"
+                  className="w-full h-[300px] object-cover rounded-lg"
+                />
+
+                <img
+                  src="/sal07.jpg"
+                  alt="Naturaleza 1"
+                  className="w-full h-[300px] object-cover rounded-lg"
+                />
+                <img
+                  src="/sal08.jpg"
+                  alt="Naturaleza 2"
+                  className="w-full h-[300px] object-cover rounded-lg"
+                />
+                <img
+                  src="/sal09.jpg"
+                  alt="Naturaleza 2"
+                  className="w-full h-[300px] object-cover rounded-lg"
+                />
+              </div>
+              <div className="grid md:grid-cols-1 gap-4">
+                <img
+                  src="/CURSO1.jpg"
+                  alt="Naturaleza 1"
+                  className="w-full h-[300px] object-cover rounded-lg"
+                />
+              </div>
+              <div className="grid md:grid-cols-1 gap-4">
+                <img
+                  src="/CURSO2.jpg"
+                  alt="Naturaleza 1"
+                  className="w-full h-[300px] object-cover rounded-lg"
+                />
               </div>
             </CardContent>
           </Card>
