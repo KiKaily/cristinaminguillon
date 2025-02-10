@@ -38,7 +38,7 @@ export function Footer() {
               <p>Email: <a href="mailto:cminguillon1@gmail.com">cminguillon@gmail.com</a></p>
               <p>Tel: +34 600 000 000</p>
               <p>Orba, Alicante</p>
-              <p>web creada por <a href="https://recrear.com" target="_blank" rel="noopener noreferrer" className="hover:underline">recrear.com</a></p>
+              <p>web creada por <a href="https://rcrear.com" target="_blank" rel="noopener noreferrer" className="hover:underline">rcrear.com</a></p>
             </div>
           </div>
 
