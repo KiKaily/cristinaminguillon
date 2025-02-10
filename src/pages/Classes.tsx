@@ -101,6 +101,7 @@ const Classes = () => {
                   <source src="/placeholder-video.mp4" type="video/mp4" />
                   Tu navegador no soporta el elemento de video.
                 </video>
+                <div className="prose max-w-none mb-6">
                 </div>
                 <p className="text-muted-foreground">
                 Dentro de los cursos, están incluidos encuentros mensuales con artistas en sus estudios y exposiciones.
@@ -152,6 +153,7 @@ const Classes = () => {
                   alt="Naturaleza 1"
                   className="w-full h-[300px] object-cover rounded-lg"
                 />
+              </div>
               </div>
             </CardContent>
           </Card>
