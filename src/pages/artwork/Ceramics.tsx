@@ -87,6 +87,20 @@ const Ceramics = () => {
                   className="w-full h-[300px] object-cover rounded-lg"
                 />
               </div>
+              <section className="relative w-full h-[60vh] overflow-hidden">
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="w-full h-full object-cover"
+            poster="/placeholder.svg"
+          >
+            <source src="https://drive.google.com/file/d/1ScCoTClDvuBqJks1gc3Fg5CWSy_T_yHv/view?t=2" type="video/mp4" />
+            Tu navegador no soporta el elemento de video.
+          </video>
+          <div className="absolute inset-0 bg-background/20 backdrop-blur-sm" />
+        </section>
               <p className="text-muted-foreground">
               Ver <a href="https://cristinaminguillon.com/images/Kairos.pdf" target="_blank" rel="noopener noreferrer" className="hover:underline">PDF</a> de exposición completa "KAIRÓS"              
               </p>
