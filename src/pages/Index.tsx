@@ -11,9 +11,7 @@ const Index = () => {
         <EventHero />
         <section className="relative w-full h-[60vh] overflow-hidden">
           <video
-            autoPlay
-            muted
-            loop
+            controls
             playsInline
             className="w-full h-full object-cover"
             poster="/placeholder.svg"

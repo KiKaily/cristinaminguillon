@@ -11,6 +11,7 @@ import Classes from "./pages/Classes";
 import ArtTherapy from "./pages/ArtTherapy";
 import Exhibitions from "./pages/Exhibitions";
 import PaidContent from "./pages/PaidContent";
+import ArticlesAndVideos from "./pages/ArticlesAndVideos";
 import Painting from "./pages/artwork/Painting";
 import Ceramics from "./pages/artwork/Ceramics";
 import Sculpture from "./pages/artwork/Sculpture";
@@ -55,6 +56,7 @@ const App = () => {
             <Route path="/clases" element={<Classes />} />
             <Route path="/arteterapia" element={<ArtTherapy />} />
             <Route path="/exposiciones" element={<Exhibitions />} />
+            <Route path="/videos-articulos" element={<ArticlesAndVideos />} />
             <Route path="/contenido-premium" element={<PaidContent />} />
             <Route path="/contenido/:contentId" element={<PasswordProtectedContent />} />
             <Route path="/tienda" element={<Shop />} />

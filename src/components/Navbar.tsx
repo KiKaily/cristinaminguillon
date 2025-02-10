@@ -22,6 +22,7 @@ const routes = [
   { name: { es: "Cursos", en: "Courses" }, path: "/clases" },
   { name: { es: "Arteterapia", en: "Art Therapy" }, path: "/arteterapia" },
   { name: { es: "Tienda", en: "Shop" }, path: "/tienda" },
+  { name: { es: "Videos y artículos", en: "Videos and Articles" }, path: "/videos-articulos" },
   { name: { es: "Sobre mí", en: "About" }, path: "/sobre-mi" },
   { name: { es: "Contacto", en: "Contact" }, path: "/contacto" },
 ];

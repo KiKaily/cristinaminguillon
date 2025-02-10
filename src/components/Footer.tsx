@@ -19,42 +19,52 @@ export function Footer() {
     { name: { es: "Cursos", en: "Courses" }, path: "/clases" },
     { name: { es: "Arteterapia", en: "Art Therapy" }, path: "/arteterapia" },
     { name: { es: "Tienda", en: "Shop" }, path: "/tienda" },
+    { name: { es: "Videos y artículos", en: "Videos and Articles" }, path: "/videos-articulos" },
     { name: { es: "Sobre mí", en: "About" }, path: "/sobre-mi" },
     { name: { es: "Contacto", en: "Contact" }, path: "/contacto" },
   ];
+
+  const handleNavigation = (path: string) => {
+    window.scrollTo(0, 0);
+  };
 
   return (
     <footer className="bg-accent/50 mt-20">
       <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-3 gap-8">
-          {/* Contact Info */}
           <div>
             <h3 className="font-semibold text-lg mb-4">Contacto</h3>
             <div className="space-y-2 text-muted-foreground">
               <p>Email: <a href="mailto:cminguillon1@gmail.com">cminguillon@gmail.com</a></p>
               <p>Tel: +34 600 000 000</p>
-              <p>Orba, España</p>
+              <p>Orba, Alicante</p>
+              <p>web creada por <a href="https://recrear.com" target="_blank" rel="noopener noreferrer" className="hover:underline">recrear.com</a></p>
             </div>
           </div>
 
-          {/* Navigation - Single Column */}
           <div>
             <h3 className="font-semibold text-lg mb-4">Navegación</h3>
             <div className="space-y-2">
               {routes.map((route) => (
                 <div key={route.path}>
-                  <Link
-                    to={route.path}
-                    className="text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    {route.name.es}
-                  </Link>
-                  {route.submenu && (
+                  {route.name.es === "Arte" ? (
+                    <span className="text-muted-foreground">{route.name.es}</span>
+                  ) : (
+                    <Link
+                      to={route.path}
+                      onClick={() => handleNavigation(route.path)}
+                      className="text-muted-foreground hover:text-primary transition-colors"
+                    >
+                      {route.name.es}
+                    </Link>
+                  )}
+                  {route.submenu && route.name.es === "Arte" && (
                     <div className="pl-4 space-y-1 mt-1">
                       {route.submenu.map((subItem) => (
                         <Link
                           key={subItem.path}
                           to={subItem.path}
+                          onClick={() => handleNavigation(subItem.path)}
                           className="block text-sm text-muted-foreground hover:text-primary transition-colors"
                         >
                           {subItem.name.es}
@@ -67,7 +77,6 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Social & Legal */}
           <div>
             <h3 className="font-semibold text-lg mb-4">¿Conectamos?</h3>
             <div className="flex gap-4 mb-6">
