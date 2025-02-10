@@ -12,10 +12,17 @@ const Sculpture = () => {
         <div className="space-y-8">
           <Card>
             <CardContent className="p-6 space-y-4">
+            <div className="grid md:grid-cols-1 gap-4">
+                <img
+                  src="/add.png"
+                  alt="Naturaleza 1"
+                  className="w-full h-[300px] object-cover rounded-lg"
+                />
+              </div>
               <h2 className="text-2xl font-semibold">A D DRESS</h2>
-              <h3 className="text-xl text-muted-foreground">ste trabajo es el resultado del juego con dos palabras inglesas: ADDRESS, domicilio y A DRESS, vestido.</h3>
+              <h3 className="text-xl text-muted-foreground">Este trabajo es el resultado del juego con dos palabras inglesas: ADDRESS, domicilio y A DRESS, vestido.</h3>
               <p className="text-muted-foreground">
-              Es una reflexión sobre la casa y cómo nos relacionamos con ella. La casa forma parte de nuestra identidad y es un reflejo de cómo somos, del momento que estamos viviendo, de lo que hacemos, de nuestro lugar en el mundo, de nuestras creencias, de lo que queremos ser…
+              Una reflexión sobre la casa y cómo nos relacionamos con ella. La casa forma parte de nuestra identidad y es un reflejo de cómo somos, del momento que estamos viviendo, de lo que hacemos, de nuestro lugar en el mundo, de nuestras creencias, de lo que queremos ser…
               </p>
               <p className="text-muted-foreground">
               La casa nos protege, nos envuelve y nos cubre como un vestido. En la casa nos sentimos a salvo de las inclemencias del tiempo, de la violencia, de los otros, de la lucha y la insedguridad. ¡Casa! gritan los niños para ser inmunes en el pilla pilla.              </p>
@@ -43,7 +50,7 @@ const Sculpture = () => {
               <div className="absolute inset-0 bg-background/20 backdrop-blur-sm" />
               </section>
               <img
-                src="/ADD01.jpg"
+                src="/add01.jpg"
                 alt="Serie Texturas"
                 className="w-full h-[400px] object-cover rounded-lg"
               />
