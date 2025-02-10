@@ -12,35 +12,23 @@ const Painting = () => {
         <div className="space-y-8">
           <Card>
             <CardContent className="p-6 space-y-4">
-              <h2 className="text-2xl font-semibold">Serie Imaginarios</h2>
-              <h3 className="text-xl text-muted-foreground">Mundos ilustrados</h3>
+              <h2 className="text-2xl font-semibold">Desde 1990 ilustro libros para distintas editoriales y autoediciones, dirigidos a público infantil y adulto.</h2>
               <p className="text-muted-foreground">
-                Una serie de ilustraciones que exploran diferentes mundos y narrativas
-                a través del dibujo y el color.
+              <a href="http://www.ilustradores.com/component/content/article/13-cristina-minguillon/23-cristina-minguillon.html" target="_blank" rel="noopener noreferrer" className="hover:underline">Ver más en ilustradores.com</a>              
               </p>
-              <img
-                src="/art01.jpg"
-                alt="Serie Imaginarios"
-                className="w-full h-[400px] object-cover rounded-lg"
-              />
-            </CardContent>
-          </Card>
-
-          <Card>
-            <CardContent className="p-6 space-y-4">
-              <h2 className="text-2xl font-semibold">Colección Trazos</h2>
-              <h3 className="text-xl text-muted-foreground">El arte de la línea</h3>
-              <p className="text-muted-foreground">
-                Ilustraciones que celebran diferentes técnicas y estilos del dibujo.
-              </p>
-              <div className="grid md:grid-cols-2 gap-4">
+              <div className="grid md:grid-cols-3 gap-4">
                 <img
-                  src="/art02.jpg"
+                  src="/ilu03.png"
                   alt="Trazos 1"
                   className="w-full h-[300px] object-cover rounded-lg"
                 />
                 <img
-                  src="/art03.jpg"
+                  src="/ilu01.jpg"
+                  alt="Trazos 2"
+                  className="w-full h-[300px] object-cover rounded-lg"
+                />
+                <img
+                  src="/ilu2.jpg"
                   alt="Trazos 2"
                   className="w-full h-[300px] object-cover rounded-lg"
                 />

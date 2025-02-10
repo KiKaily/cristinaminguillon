@@ -12,36 +12,23 @@ const Digital = () => {
         <div className="space-y-8">
           <Card>
             <CardContent className="p-6 space-y-4">
-              <h2 className="text-2xl font-semibold">Serie Narrativas</h2>
-              <h3 className="text-xl text-muted-foreground">Historias en papel</h3>
               <p className="text-muted-foreground">
-                Una colección de libros de artista que exploran diferentes narrativas
-                y formas de contar historias a través del arte.
+              Desde 1990 ilustro libros para distintas editoriales y autoediciones, dirigidos a público infantil y adulto. Los libros de artista son pequeñas joyas, piezas únicas en las que todo está permitido y me permito todo. No hay formato, tamaño, material ni temática a los que deba ceñirme. Son la libertad.
               </p>
-              <img
-                src="/art01.jpg"
-                alt="Serie Narrativas"
-                className="w-full h-[400px] object-cover rounded-lg"
-              />
-            </CardContent>
-          </Card>
-
-          <Card>
-            <CardContent className="p-6 space-y-4">
-              <h2 className="text-2xl font-semibold">Colección Páginas</h2>
-              <h3 className="text-xl text-muted-foreground">El arte del libro</h3>
-              <p className="text-muted-foreground">
-                Obras que exploran diferentes técnicas y formatos del libro como objeto artístico.
-              </p>
-              <div className="grid md:grid-cols-2 gap-4">
+              <div className="grid md:grid-cols-3 gap-4">
                 <img
-                  src="/art02.jpg"
+                  src="/lib01.jpg"
                   alt="Páginas 1"
                   className="w-full h-[300px] object-cover rounded-lg"
                 />
                 <img
-                  src="/art03.jpg"
+                  src="/lib02.jpg"
                   alt="Páginas 2"
+                  className="w-full h-[300px] object-cover rounded-lg"
+                />
+                <img
+                  src="/lib03.jpg"
+                  alt="Páginas 1"
                   className="w-full h-[300px] object-cover rounded-lg"
                 />
               </div>
