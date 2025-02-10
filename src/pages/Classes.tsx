@@ -101,7 +101,7 @@ const Classes = () => {
                   <source src="/placeholder-video.mp4" type="video/mp4" />
                   Tu navegador no soporta el elemento de video.
                 </video>
-
+                </div>
                 <p className="text-muted-foreground">
                 Dentro de los cursos, están incluidos encuentros mensuales con artistas en sus estudios y exposiciones.
                 </p>
