@@ -1,3 +1,4 @@
+
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
@@ -6,7 +7,7 @@ const Mixed = () => {
   return (
     <>
       <Navbar />
-      <main className="min-h-screen pt-[8%] md:pt-[8%] container mx-auto px-4">
+      <main className="min-h-screen pt-[8%] container mx-auto px-4">
         <h1 className="text-4xl font-bold mb-8">Papel</h1>
         <div className="space-y-8">
           <Card>
