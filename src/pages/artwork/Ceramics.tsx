@@ -12,39 +12,87 @@ const Ceramics = () => {
         <div className="space-y-8">
           <Card>
             <CardContent className="p-6 space-y-4">
-              <h2 className="text-2xl font-semibold">Serie Babel</h2>
-              <h3 className="text-xl text-muted-foreground">Explorando las formas orgánicas</h3>
+              <h2 className="text-2xl font-semibold">BARRO Y SILENCIO</h2>
+              <h3 className="text-xl text-muted-foreground">Obras realizadas entre 2013-2017.</h3>
               <p className="text-muted-foreground">
-                Una serie de piezas que exploran la relación entre la forma orgánica y la geometría, 
-                inspiradas en la naturaleza y la arquitectura antigua.
+              Exposición realizada en Denia en enero de 2023.
               </p>
-              <img
-                src="/art01.jpg"
-                alt="Serie Babel"
-                className="w-full h-[400px] object-cover rounded-lg"
-              />
+              <div className="grid md:grid-cols-3 gap-4">
+                <img
+                  src="/kai02.jpg"
+                  alt="Naturaleza 1"
+                  className="w-full h-[300px] object-cover rounded-lg"
+                />
+                <img
+                  src="/kai01.jpg"
+                  alt="Naturaleza 2"
+                  className="w-full h-[300px] object-cover rounded-lg"
+                />
+                <img
+                  src="/kai03.jpg"
+                  alt="Naturaleza 2"
+                  className="w-full h-[300px] object-cover rounded-lg"
+                />
+
+                <img
+                  src="/kai04.jpg"
+                  alt="Naturaleza 1"
+                  className="w-full h-[300px] object-cover rounded-lg"
+                />
+                <img
+                  src="/kai05.jpg"
+                  alt="Naturaleza 2"
+                  className="w-full h-[300px] object-cover rounded-lg"
+                />
+                <img
+                  src="/kai06.jpg"
+                  alt="Naturaleza 2"
+                  className="w-full h-[300px] object-cover rounded-lg"
+                />
+              </div>
+              <p className="text-muted-foreground">
+              *Las primeras 5 fotos hechas por ©Daniela Burtsch. dbutsch@ariadnefilme.de www.danielabutsch.eu
+              </p>
             </CardContent>
           </Card>
 
           <Card>
             <CardContent className="p-6 space-y-4">
-              <h2 className="text-2xl font-semibold">Colección Naturaleza</h2>
-              <h3 className="text-xl text-muted-foreground">La belleza de lo natural</h3>
+              <h2 className="text-2xl font-semibold">KAIRÓS</h2>
+              <h3 className="text-xl text-muted-foreground">Exposición en Jávea de febrero a marzo de 2023</h3>
               <p className="text-muted-foreground">
-                Piezas que celebran las texturas y patrones encontrados en la naturaleza.
+              “Hay un concepto en griego para el momento crítico, especial, que puede cambiar las cosas: kairós. Expresa el sentimiento de que cualquier crisis es ambivalente y fácilmente puede inclinarse tanto a la fatalidad como a la fortuna. Es una intuición de la fragilidad humana, de las encrucijadas que esconden su signo”.
               </p>
+              <p className="text-muted-foreground">
+              Alejandro Gándara. Dioses contra microbios, 2020.              </p>
+              <p className="text-muted-foreground">
+              “Este es un viaje pegado a la tierra, que agarra el barro para agarrarse a la vida.              </p>
+              <p className="text-muted-foreground">
+              En el principio, el silencio. Una esfera suspendida en el aire marca el tiempo como un péndulo en la mano de Dios. Piezas de barro refractario, horadadas y cosidas con cuerda, recuerdan a las celosías de los monasterios, los hábitos de los monjes, el recogimiento en la penumbra. Sunt lacrimae rerum (Virgilio. La Eneida, siglo I a.C.). Hay lágrimas en las cosas, contienen el aliento de quien las creó, el tiempo que dedicó a pensarlas y a darles forma.              </p>
+              <p className="text-muted-foreground">
+              El sonido llega a través del mar. Con él llegan también conchas, piedras y residuos plásticos. Y la luz del Mediterráneo. Barro porcelánico, suave, del color de la sal. Y el jolgorio de la gente, la vida ahí fuera. Flores, telas de colores, campanas de cristal que protegen, pero dejan ver lo que hay dentro. La piedra se transforma en seres intermedios que abren la boca y nos desafían. Detente. Escucha.              </p>
+              <p className="text-muted-foreground">
+              Este edificio tan hermoso alberga una exposición y algo más. Una intuición, una oportunidad.”              </p>
+              <p className="text-muted-foreground">
+              Jana García González. Febrero, 2023              </p>
               <div className="grid md:grid-cols-2 gap-4">
                 <img
-                  src="/art02.jpg"
+                  src="/kai07.jpg"
                   alt="Naturaleza 1"
                   className="w-full h-[300px] object-cover rounded-lg"
                 />
                 <img
-                  src="/art03.jpg"
+                  src="/kai09.jpg"
                   alt="Naturaleza 2"
                   className="w-full h-[300px] object-cover rounded-lg"
                 />
               </div>
+              <p className="text-muted-foreground">
+              Ver <a href="https://cristinaminguillon.com/images/Kairos.pdf" target="_blank" rel="noopener noreferrer" className="hover:underline">PDF</a> de exposición completa "KAIRÓS"              
+              </p>
+              <p className="text-muted-foreground">
+              A la deriva, a la merced del oleaje y de las circunstancias de estos tiempos, una mujer crea y con sus lágrimas riega las semillas, así como a la tierra que ahora es barro, vasija y vientre… refugio de los sueños compartidos, espacio protector de la fragilidad de la vida. Ella, la piedra y el fuego, son testigos de los constructos humanos, de la ferocidad de las ambiciones que con sus dientes han devorado, en años, milenios de creación. La obra de Cristina Minguillón es, en sí y en su proceso, un ejercicio de reivindicación del silencio, una oda a la soledad elegida, a la existencia pacífica que observa serena el eterno devenir de las mareas.              
+              </p>
             </CardContent>
           </Card>
         </div>
