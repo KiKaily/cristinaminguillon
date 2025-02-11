@@ -17,8 +17,8 @@ const Painting = () => {
               <a href="http://www.ilustradores.com/component/content/article/13-cristina-minguillon/23-cristina-minguillon.html" target="_blank" rel="noopener noreferrer" className="hover:underline">Ver más en ilustradores.com</a>              
               </p>
 
-              <br></br>
-              
+              <div className="my-4"></div>
+
               <div className="grid md:grid-cols-3 gap-4">
                 <img
                   src="/ilu03.png"

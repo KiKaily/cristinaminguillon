@@ -6,7 +6,7 @@ const AboutMe = () => {
   return (
     <>
       <Navbar />
-      <main className="min-h-screen pt-[8%] container mx-auto px-4">
+      <main className="min-h-screen pt-[10%] md:pt-[8%] container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-8">
           <div className="space-y-6">
             <h1 className="text-4xl font-bold">Cristina Minguillón</h1>

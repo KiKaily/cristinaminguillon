@@ -18,7 +18,7 @@ const Ceramics = () => {
               Exposición realizada en Denia en enero de 2023.
               </p>
 
-              <br></br>
+              <div className="my-4"></div>
 
               <div className="grid md:grid-cols-3 gap-4">
                 <img
@@ -79,7 +79,7 @@ const Ceramics = () => {
               <p className="text-muted-foreground">
               Jana García González. Febrero, 2023              </p>
 
-              <br></br>
+              <div className="my-4"></div>
 
               <div className="grid md:grid-cols-2 gap-4">
                 <img
@@ -106,8 +106,8 @@ const Ceramics = () => {
               Tu navegador no soporta el elemento de video.
               </video>
 
-              <br></br>
-              
+              <div className="my-4"></div>
+
               <div className="absolute inset-0 bg-background/20 backdrop-blur-sm" />
               </section>
               <p className="text-muted-foreground">

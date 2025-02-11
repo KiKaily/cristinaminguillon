@@ -36,7 +36,7 @@ const Sculpture = () => {
               En este juego, el buzón es una maqueta de la casa, su imagen exterior y quiere recibe y da información sobre nosotros y sobre lo que ocurre dentro de ella. El buzón, como la casa, es un territorio íntimo y personal, inviolable pero a la vez frágil y vulnerable.
               </p>
 
-              <br></br>
+              <div className="my-4"></div>
 
               <section className="relative w-full h-[60vh] overflow-hidden">
               <video
@@ -70,7 +70,7 @@ const Sculpture = () => {
               Un proyecto en colaboración con Carmen Minguillón, mi tía Cuca, mi madrina, cuando cumplía sus 100 años de vida, ya con pocas fuerzas. Tenía que ser bordado porque ella siempre creó con hilos y agujas, ganchillos y perlés…Yo nunca aprendí. En estas obras estamos las dos, sus últimas puntadas y las que hice yo por primera vez. Y nuestras miradas a la familia. Tardes de charla con hilos de colores que añoro cada día.
               </p>
 
-              <br></br>
+              <div className="my-4"></div>
 
               <div className="grid md:grid-cols-3 gap-4">
                 <img

@@ -8,7 +8,7 @@ const Exhibitions = () => {
   return (
     <>
       <Navbar />
-      <main className="min-h-screen pt-[8%] container mx-auto px-4">
+      <main className="min-h-screen pt-[10%] md:pt-[8%] container mx-auto px-4">
         {/* Current Exhibition */}
         <section className="mb-12">
           <Card className="bg-accent">

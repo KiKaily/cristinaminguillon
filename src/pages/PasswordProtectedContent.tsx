@@ -78,7 +78,7 @@ const PasswordProtectedContent = () => {
   return (
     <>
       <Navbar />
-      <main className="min-h-screen pt-20 container mx-auto px-4 max-w-md">
+      <main className="min-h-screen pt-[10%] md:pt-[8%] container mx-auto px-4">
         <Card>
           <CardHeader>
             <CardTitle>Acceso Protegido</CardTitle>

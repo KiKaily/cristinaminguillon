@@ -13,7 +13,7 @@ const ArticlesAndVideos = () => {
   return (
     <>
       <Navbar />
-      <main className="min-h-screen pt-[8%] md:pt-[8%] container mx-auto px-4">
+      <main className="min-h-screen pt-[10%] md:pt-[8%] container mx-auto px-4">
         <h1 className="text-4xl font-bold mb-8">Videos y Artículos</h1>
         
         <section className="mb-12">

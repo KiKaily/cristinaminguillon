@@ -14,7 +14,7 @@ const Mixed = () => {
             <CardContent className="p-6 space-y-4">
               <h2 className="text-2xl font-semibold">TIERRA</h2>
 
-              <br></br>
+              <div className="my-4"></div>
 
               <div className="grid md:grid-cols-3 gap-4">
                 <img
@@ -54,7 +54,7 @@ const Mixed = () => {
             <CardContent className="p-6 space-y-4">
               <h2 className="text-2xl font-semibold">ENCUENTROS Y DESPEDIDAS</h2>
 
-              <br></br>
+              <div className="my-4"></div>
 
               <div className="grid md:grid-cols-3 gap-4">
                 <img
@@ -99,7 +99,7 @@ const Mixed = () => {
               Serie realizada en acuarela sobre papel en el periodo de pandemia a partir de la vivencia del miedo provocado por la difusión de las noticias sobre el efecto de algo invisible y el poder que llegó a tener en nuestras vidas. influyendo en cómo nos comportamos, lo que sentimos, nuestras dependencias, relaciones. actitudes, decisiones...
               </p>
 
-              <br></br>
+              <div className="my-4"></div>
 
               <div className="grid md:grid-cols-3 gap-4">
                 <img
@@ -134,7 +134,7 @@ const Mixed = () => {
                   className="w-full h-[300px] object-cover rounded-lg"
                 />
 
-<img
+                <img
                   src="/inv07.jpg"
                   alt="Naturaleza 1"
                   className="w-full h-[300px] object-cover rounded-lg"

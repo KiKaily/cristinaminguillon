@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <>
       <Navbar />
-      <main className="min-h-screen pt-[8%] container mx-auto px-4">
+      <main className="min-h-screen pt-[10%] md:pt-[8%] container mx-auto px-4">
         <Card className="max-w-2xl mx-auto">
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
