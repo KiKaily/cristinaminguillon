@@ -100,9 +100,12 @@ const Classes = () => {
         </video>
       </div>
 
-      <div className="my-4"></div>
+      <div className="my-10 bg-red-500"> {/* Añadido un fondo rojo para visualizar el div */}
+                                                 {/* Este div debería tener un margen vertical de 2.5rem (40px) */}
+              </div>
 
       <div className="prose max-w-none mb-6">
+      <h2 className="text-2xl font-semibold mb-4">Salidas</h2>
         <p className="text-muted-foreground">
           Dentro de los cursos, están incluidos encuentros mensuales con artistas en sus estudios y exposiciones.
         </p>
