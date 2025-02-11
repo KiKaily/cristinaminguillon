@@ -154,7 +154,7 @@ const Classes = () => {
         <img
           src="/CURSO1.jpg"
           alt="Naturaleza 1"
-          className="w-full h-[300px] object-cover rounded-lg"
+          className="w-full h-full object-cover rounded-lg"
         />
       </div>
 
@@ -171,7 +171,7 @@ const Classes = () => {
         <img
           src="/CURSO2.jpg"
           alt="Naturaleza 1"
-          className="w-full h-[300px] object-cover rounded-lg"
+          className="w-full h-full object-cover rounded-lg"
         />
       </div>
     </CardContent>
