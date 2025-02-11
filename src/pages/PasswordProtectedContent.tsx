@@ -9,12 +9,12 @@ import { Button } from "@/components/ui/button";
 import { useToast } from "@/components/ui/use-toast";
 
 const contentPasswords: { [key: string]: string } = {
-  "curso-historia": "historia123",
-  "masterclass": "masterclass123",
-  "tecnicas": "tecnicas123",
-  "analisis": "analisis123",
-  "recursos": "recursos123",
-  "workshops": "workshops123"
+  "curso-historia": "historia6291",
+  "masterclass": "masterclass6291",
+  "tecnicas": "tecnicas6291",
+  "analisis": "analisis6291",
+  "recursos": "recursos6291",
+  "workshops": "workshops6291"
 };
 
 const contentTitles: { [key: string]: string } = {
