@@ -22,17 +22,17 @@ const Painting = () => {
               <div className="grid md:grid-cols-3 gap-4">
                 <img
                   src="/ilu03.png"
-                  alt="Trazos 1"
+                  alt="Ilustración 1"
                   className="w-full h-full object-cover rounded-lg"
                 />
                 <img
                   src="/ilu01.jpg"
-                  alt="Trazos 2"
+                  alt="Ilustración 2"
                   className="w-full h-full object-cover rounded-lg"
                 />
                 <img
-                  src="/ilu2.jpg"
-                  alt="Trazos 2"
+                  src="/ilu02.jpg"
+                  alt="Ilustración 3"
                   className="w-full h-full object-cover rounded-lg"
                 />
               </div>

@@ -38,21 +38,19 @@ const Sculpture = () => {
               <div className="my-4"></div>
 
               <section className="relative w-full h-[60vh] overflow-hidden">
-              <video
-              autoPlay
-              muted
-              loop
-              playsInline
-              className="w-full h-full object-cover"
-              poster="/placeholder.svg"
-              >
-              <source src="https://youtu.be/svIT5eXHKBY" type="video/mp4" />
-              Tu navegador no soporta el elemento de video.
-              </video>
+              <iframe
+              className="w-full h-full"
+              src="https://www.youtube.com/embed/svIT5eXHKBY"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              ></iframe>
               <div className="absolute inset-0 bg-background/20 backdrop-blur-sm" />
               </section>
+              <div className="grid md:grid-cols-1 gap-4"></div>
               <img
-                src="/add01.jpg"
+                src="/add01.png"
                 alt="Serie Texturas"
                 className="w-full h-full object-cover rounded-lg"
               />

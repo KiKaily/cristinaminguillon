@@ -104,7 +104,7 @@ const Ceramics = () => {
               className="w-full h-full object-cover"
               poster="/placeholder.svg"
               >
-              <source src="https://drive.google.com/file/d/1ScCoTClDvuBqJks1gc3Fg5CWSy_T_yHv/view?t=2" type="video/mp4" />
+              <source src="https://drive.google.com/uc?export=download&id=1ScCoTClDvuBqJks1gc3Fg5CWSy_T_yHv" type="video/mp4" />
               Tu navegador no soporta el elemento de video.
               </video>
 
