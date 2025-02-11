@@ -142,6 +142,13 @@ const Classes = () => {
           className="w-full h-[300px] object-cover rounded-lg"
         />
       </div>
+      <div className="prose max-w-none mb-6">
+      <h2 className="text-2xl font-semibold mb-4">Cursos Pasados</h2>
+        <p className="text-muted-foreground">
+          """---Explicación de estos dos carteles o eliminarlos.---""""
+        </p>
+      </div>        
+
       <div className="grid md:grid-cols-1 gap-4">
         <img
           src="/CURSO1.jpg"
@@ -149,6 +156,9 @@ const Classes = () => {
           className="w-full h-[300px] object-cover rounded-lg"
         />
       </div>
+      <div className="prose max-w-none mb-6">
+      </div>         
+
       <div className="grid md:grid-cols-1 gap-4">
         <img
           src="/CURSO2.jpg"
