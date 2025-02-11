@@ -32,7 +32,7 @@ export function Footer() {
     <footer className="bg-accent/50 mt-20">
       <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-4 gap-8">
-          <div className="border-r border-gray-700 pr-4">
+          <div className="border-r border-brown-700 pr-4">
             <h3 className="font-semibold text-lg mb-4">Contacto</h3>
             <div className="space-y-2 text-muted-foreground">
               <p>Email: <a href="mailto:cminguillon1@gmail.com">cminguillon@gmail.com</a></p>
@@ -42,7 +42,7 @@ export function Footer() {
             </div>
           </div>
 
-          <div className="border-r border-gray-700 pr-4">
+          <div className="pr-4">
             <h3 className="font-semibold text-lg mb-4">Navegación</h3>
             <div className="space-y-2">
               <Link
@@ -68,7 +68,7 @@ export function Footer() {
             </div>
           </div>
 
-          <div className="pr-4 space-y-2">
+          <div className="border-r border-brown-700 pr-4 space-y-2">
             {routes.slice(2, 9).map((route) => (
               <Link
                 key={route.path}
@@ -81,7 +81,7 @@ export function Footer() {
             ))}
           </div>
 
-          <div className="border-r border-gray-700 pr-4">
+          <div className="pr-4">
             <h3 className="font-semibold text-lg mb-4">¿Conectamos?</h3>
             <div className="flex gap-4 mb-6">
               <a href="https://www.facebook.com/cristina.minguillon.3" className="text-muted-foreground hover:text-primary transition-colors">
