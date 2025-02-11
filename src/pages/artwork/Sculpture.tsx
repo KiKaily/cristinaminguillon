@@ -19,7 +19,6 @@ const Sculpture = () => {
                   className="w-[400px] h-full object-cover rounded-lg"
                 />
               </div>
-              <h2 className="text-2xl font-semibold">A D DRESS</h2>
               <h3 className="text-xl text-muted-foreground">Este trabajo es el resultado del juego con dos palabras inglesas: ADDRESS, domicilio y A DRESS, vestido.</h3>
               <p className="text-muted-foreground">
               Una reflexión sobre la casa y cómo nos relacionamos con ella. La casa forma parte de nuestra identidad y es un reflejo de cómo somos, del momento que estamos viviendo, de lo que hacemos, de nuestro lugar en el mundo, de nuestras creencias, de lo que queremos ser…
