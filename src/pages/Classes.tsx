@@ -100,9 +100,7 @@ const Classes = () => {
         </video>
       </div>
 
-      <div className="my-10 bg-red-500"> {/* Añadido un fondo rojo para visualizar el div */}
-                                                 {/* Este div debería tener un margen vertical de 2.5rem (40px) */}
-              </div>
+      <div className="my-10"></div>
 
       <div className="prose max-w-none mb-6">
       <h2 className="text-2xl font-semibold mb-4">Salidas</h2>
@@ -142,6 +140,9 @@ const Classes = () => {
           className="w-full h-[300px] object-cover rounded-lg"
         />
       </div>
+
+      <div className="my-10"></div>
+
       <div className="prose max-w-none mb-6">
       <h2 className="text-2xl font-semibold mb-4">Cursos Pasados</h2>
         <p className="text-muted-foreground">
@@ -156,7 +157,14 @@ const Classes = () => {
           className="w-full h-[300px] object-cover rounded-lg"
         />
       </div>
+
+      <div className="my-10"></div>
+      
       <div className="prose max-w-none mb-6">
+      <h2 className="text-2xl font-semibold mb-4">Cursos Pasados</h2>
+        <p className="text-muted-foreground">
+          """---Explicación de estos dos carteles o eliminarlos.---""""
+        </p>
       </div>         
 
       <div className="grid md:grid-cols-1 gap-4">
