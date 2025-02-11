@@ -72,11 +72,11 @@ const ArtTherapy = () => {
             </p>
           </div>
           <div>
-            <img
-              src="/logoescuela.png"
-              alt="Sesión de arteterapia"
-              className="rounded-lg object-cover w-full h-[150px]"
-            />
+          <img
+            src="/logoescuela.png"
+            alt="Sesión de arteterapia"
+            className="rounded-lg object-cover w-full h-[150px] md:h-[200px] lg:h-[250px] max-w-full h-auto"
+          />
           </div>
           <div className="space-y-6">
             <h1 className="text-2xl font-semibold">Arteterapia humanista y terapia gestalt
