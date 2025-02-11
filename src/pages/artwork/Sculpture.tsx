@@ -16,7 +16,7 @@ const Sculpture = () => {
                 <img
                   src="/add.png"
                   alt="Naturaleza 1"
-                  className="w-full h-[300px] object-cover rounded-lg"
+                  className="w-[400px] h-full object-cover rounded-lg"
                 />
               </div>
               <h2 className="text-2xl font-semibold">A D DRESS</h2>
@@ -35,6 +35,9 @@ const Sculpture = () => {
               <p className="text-muted-foreground">
               En este juego, el buzón es una maqueta de la casa, su imagen exterior y quiere recibe y da información sobre nosotros y sobre lo que ocurre dentro de ella. El buzón, como la casa, es un territorio íntimo y personal, inviolable pero a la vez frágil y vulnerable.
               </p>
+
+              <br></br>
+
               <section className="relative w-full h-[60vh] overflow-hidden">
               <video
               autoPlay
@@ -64,7 +67,11 @@ const Sculpture = () => {
               Es un proyecto que nació del trabajo personal en torno a la familia. Las relaciones entre quienes la forman, el amor y el apoyo incondicionales, los roles, lo ancestral, las afinidades, los encuentros y desencuentros, las enseñanzas y aprendizajes, los secretos, los silencios, las traiciones, las fidelidades, los abandonos, las heridas, la envidia, la manipulación, la rabia, los reconocimientos, el agradecimiento, las cosas de la familia…
               </p>
               <p className="text-muted-foreground">
-              Un proyecto en colaboración con Carmen Minguillón, mi tía Cuca, mi madrina, cuando cumplía sus 100 años de vida, ya con pocas fuerzas. Tenía que ser bordado porque ella siempre creó con hilos y agujas, ganchillos y perlés…Yo nunca aprendí. En estas obras estamos las dos, sus últimas puntadas y las que hice yo por primera vez. Y nuestras miradas a la familia. Tardes de charla con hilos de colores que añoro cada día.              </p>
+              Un proyecto en colaboración con Carmen Minguillón, mi tía Cuca, mi madrina, cuando cumplía sus 100 años de vida, ya con pocas fuerzas. Tenía que ser bordado porque ella siempre creó con hilos y agujas, ganchillos y perlés…Yo nunca aprendí. En estas obras estamos las dos, sus últimas puntadas y las que hice yo por primera vez. Y nuestras miradas a la familia. Tardes de charla con hilos de colores que añoro cada día.
+              </p>
+
+              <br></br>
+
               <div className="grid md:grid-cols-3 gap-4">
                 <img
                   src="/volar.jpg"

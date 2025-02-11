@@ -13,21 +13,24 @@ const Mixed = () => {
           <Card>
             <CardContent className="p-6 space-y-4">
               <h2 className="text-2xl font-semibold">TIERRA</h2>
+
+              <br></br>
+
               <div className="grid md:grid-cols-3 gap-4">
                 <img
                   src="/tie04.jpg"
                   alt="Páginas 1"
-                  className="w-full h-[300px] object-cover rounded-lg"
+                  className="w-full h-full object-cover rounded-lg"
                 />
                 <img
                   src="/tie05.jpg"
                   alt="Páginas 2"
-                  className="w-full h-[300px] object-cover rounded-lg"
+                  className="w-full h-full object-cover rounded-lg"
                 />
                 <img
                   src="/tie03.jpg"
                   alt="Páginas 1"
-                  className="w-full h-[300px] object-cover rounded-lg"
+                  className="w-full h-full object-cover rounded-lg"
                 />
               </div>
               <section className="relative w-full h-[60vh] overflow-hidden">
@@ -50,6 +53,9 @@ const Mixed = () => {
           <Card>
             <CardContent className="p-6 space-y-4">
               <h2 className="text-2xl font-semibold">ENCUENTROS Y DESPEDIDAS</h2>
+
+              <br></br>
+
               <div className="grid md:grid-cols-3 gap-4">
                 <img
                   src="/des08.jpg"
@@ -90,7 +96,11 @@ const Mixed = () => {
             <CardContent className="p-6 space-y-4">
               <h2 className="text-2xl font-semibold">EL PODER DE LO INVISIBLE</h2>
               <p className="text-muted-foreground">
-              Serie realizada en acuarela sobre papel en el periodo de pandemia a partir de la vivencia del miedo provocado por la difusión de las noticias sobre el efecto de algo invisible y el poder que llegó a tener en nuestras vidas. influyendo en cómo nos comportamos, lo que sentimos, nuestras dependencias, relaciones. actitudes, decisiones...              </p>
+              Serie realizada en acuarela sobre papel en el periodo de pandemia a partir de la vivencia del miedo provocado por la difusión de las noticias sobre el efecto de algo invisible y el poder que llegó a tener en nuestras vidas. influyendo en cómo nos comportamos, lo que sentimos, nuestras dependencias, relaciones. actitudes, decisiones...
+              </p>
+
+              <br></br>
+
               <div className="grid md:grid-cols-3 gap-4">
                 <img
                   src="/inv01.jpg"

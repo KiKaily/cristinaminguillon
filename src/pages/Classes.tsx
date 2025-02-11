@@ -101,12 +101,15 @@ const Classes = () => {
                   <source src="/placeholder-video.mp4" type="video/mp4" />
                   Tu navegador no soporta el elemento de video.
                 </video>
-                <div className="prose max-w-none mb-6">
                 </div>
+
+                <br></br>
+
+                <div className="prose max-w-none mb-6">
                 <p className="text-muted-foreground">
                 Dentro de los cursos, están incluidos encuentros mensuales con artistas en sus estudios y exposiciones.
                 </p>
-
+                </div>
                 <div className="grid md:grid-cols-3 gap-4">
                 <img
                   src="/sal02.jpg"

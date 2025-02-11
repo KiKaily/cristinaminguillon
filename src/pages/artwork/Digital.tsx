@@ -15,6 +15,9 @@ const Digital = () => {
               <p className="text-muted-foreground">
               Desde 1990 ilustro libros para distintas editoriales y autoediciones, dirigidos a público infantil y adulto. Los libros de artista son pequeñas joyas, piezas únicas en las que todo está permitido y me permito todo. No hay formato, tamaño, material ni temática a los que deba ceñirme. Son la libertad.
               </p>
+
+              <br></br>
+
               <div className="grid md:grid-cols-3 gap-4">
                 <img
                   src="/lib01.jpg"
