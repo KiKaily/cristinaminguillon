@@ -57,6 +57,24 @@ const ArtTherapy = () => {
 
         {/* Información de los cursos */}
         <section className="grid md:grid-cols-2 gap-8">
+          
+        <div className="space-y-6">
+            <h1 className="text-2xl font-semibold">Arteterapia humanista y terapia gestalt
+            </h1>
+            <h3 className="text-2xl font-semibold">Madrid</h3>
+            <p className="text-lg text-muted-foreground">
+            Colaboro con la Escuela de Arteterapia y Terapia Gestalt, que dirige Raquel Muñoz Albacete, acompañando en distintos Módulos de sus Ciclos de Formación e imparto Talleres y Cursos intensivos de distintos aspectos del Arteterapia, enfocados a adquirir nuevas herramientas para la autoindagación y el crecimiento personal.
+            </p>
+          </div>
+          
+          <div>
+          <img
+            src="/logoescuela.png"
+            alt="Sesión de arteterapia"
+            className="rounded-lg object-cover w-full h-[150px] md:h-[200px] lg:h-[250px] max-w-full h-auto"
+          />
+          </div>
+          
           <div className="space-y-6">
             <h1 className="text-2xl font-semibold">Talleres de Arteterapia
             </h1>
@@ -71,21 +89,7 @@ const ArtTherapy = () => {
             Acompaño sesiones de arteterapia individual, on line y presencial. En Madrid y Denia.
             </p>
           </div>
-          <div>
-          <img
-            src="/logoescuela.png"
-            alt="Sesión de arteterapia"
-            className="rounded-lg object-cover w-full h-[150px] md:h-[200px] lg:h-[250px] max-w-full h-auto"
-          />
-          </div>
-          <div className="space-y-6">
-            <h1 className="text-2xl font-semibold">Arteterapia humanista y terapia gestalt
-            </h1>
-            <h3 className="text-2xl font-semibold">Madrid</h3>
-            <p className="text-lg text-muted-foreground">
-            Colaboro con la Escuela de Arteterapia y Terapia Gestalt, que dirige Raquel Muñoz Albacete, acompañando en distintos Módulos de sus Ciclos de Formación e imparto Talleres y Cursos intensivos de distintos aspectos del Arteterapia, enfocados a adquirir nuevas herramientas para la autoindagación y el crecimiento personal.
-            </p>
-          </div>
+
           <div>
             <img
               src="/art01.jpg"
