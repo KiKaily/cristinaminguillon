@@ -7,7 +7,7 @@ const Digital = () => {
     <>
       <Navbar />
       <main className="min-h-screen pt-[4%] md:pt-[8%] container mx-auto px-4">
-        <h1 className="text-4xl font-bold mb-8">Libros de Artista</h1>
+        <h1 className="text-4xl font-bold mb-8 mt-40 md:mt-0">Libros de Artista</h1>
         <div className="space-y-8">
           <Card>
             <CardContent className="px-[2%] py-[4%] space-y-4">

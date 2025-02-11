@@ -1,3 +1,4 @@
+
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -9,13 +10,13 @@ const Shop = () => {
     <>
       <Navbar />
       <main className="min-h-screen pt-[10%] md:pt-[8%] container mx-auto px-4">
-        <h1 className="text-4xl font-bold mb-8">Tienda</h1>
+        <h1 className="text-4xl font-bold mb-8 mt-40 md:mt-0">Tienda</h1>
         <Card className="mb-8">
           <CardHeader>
             <CardTitle>Bienvenido/a a mi tienda</CardTitle>
           </CardHeader>
-          <CardContent className="px-[2%] py-[4%]">
-            <p className="text-muted-foreground mb-6">
+          <CardContent className="px-[2%] py-[4%] space-y-2">
+            <p className="text-muted-foreground mb-2">
               Puedes encontrar mis obras disponibles para compra en mi tienda de Etsy. Allí encontrarás cerámicas, pinturas y más piezas únicas.
             </p>
             <Button className="hover-lift" onClick={() => window.open("https://www.etsy.com", "_blank")}>

@@ -19,13 +19,13 @@ const ArtTherapy = () => {
     <>
       <Navbar />
       <main className="min-h-screen pt-[10%] md:pt-[8%] container mx-auto px-4">
-        {/* Próximos cursos */}
+        <h1 className="text-4xl font-bold mb-8 mt-40 md:mt-0">Arteterapia</h1>
         <section className="mb-12">
           <Card className="bg-accent">
             <CardHeader>
               <CardTitle>Próximos Cursos de Arteterapia</CardTitle>
             </CardHeader>
-            <CardContent>
+            <CardContent className="px-[2%] py-[4%] space-y-2">
               <div className="space-y-4">
                 <div className="flex items-center gap-2">
                   <Badge>Nuevo Grupo</Badge>
@@ -40,14 +40,13 @@ const ArtTherapy = () => {
           </Card>
         </section>
 
-        {/* Testimonios */}
         <section className="mb-12">
           <h2 className="text-2xl font-semibold mb-6">Testimonios</h2>
           <div className="grid md:grid-cols-2 gap-6">
             {testimonials.map((testimonial, index) => (
               <Card key={index} className="hover-lift">
-                <CardContent className="pt-6">
-                  <p className="text-muted-foreground mb-4">{testimonial.text}</p>
+                <CardContent className="px-[2%] py-[4%] space-y-2">
+                  <p className="text-muted-foreground mb-2">{testimonial.text}</p>
                   <p className="font-semibold">{testimonial.name}</p>
                 </CardContent>
               </Card>
@@ -55,10 +54,8 @@ const ArtTherapy = () => {
           </div>
         </section>
 
-        {/* Información de los cursos */}
         <section className="grid md:grid-cols-2 gap-8">
-          
-        <div className="space-y-6">
+          <div className="space-y-6">
             <h1 className="text-2xl font-semibold">Arteterapia humanista y terapia gestalt
             </h1>
             <h3 className="text-xl text-muted-foreground">Madrid</h3>

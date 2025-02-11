@@ -25,13 +25,14 @@ const Classes = () => {
     <>
       <Navbar />
       <main className="min-h-screen pt-[10%] md:pt-[8%] container mx-auto px-4">
+        <h1 className="text-4xl font-bold mb-8 mt-40 md:mt-0">Cursos</h1>
         <section className="mb-12">
           <Card className="bg-accent">
             <CardHeader>
               <CardTitle>Próximas Clases y Ofertas</CardTitle>
             </CardHeader>
-            <CardContent className="px-[2%] py-[4%]">
-              <div className="space-y-4">
+            <CardContent className="px-[2%] py-[4%] space-y-2">
+              <div className="space-y-2">
                 <div className="flex items-center gap-2">
                   <Badge variant="secondary">Nuevo</Badge>
                   <span className="text-lg">Historia del Arte Moderno - Inicio 15 de Mayo</span>
@@ -58,8 +59,8 @@ const Classes = () => {
           <div className="grid md:grid-cols-3 gap-6">
             {testimonials.map((testimonial, index) => (
               <Card key={index} className="hover-lift">
-                <CardContent className="pt-6">
-                  <p className="text-muted-foreground mb-4">{testimonial.text}</p>
+                <CardContent className="px-[2%] py-[4%] space-y-2">
+                  <p className="text-muted-foreground mb-2">{testimonial.text}</p>
                   <p className="font-semibold">{testimonial.name}</p>
                 </CardContent>
               </Card>
@@ -69,7 +70,7 @@ const Classes = () => {
 
         <section className="mb-12">
           <Card>
-            <CardContent className="px-[2%] py-[4%]">
+            <CardContent className="px-[2%] py-[4%] space-y-2">
               <div className="prose max-w-none mb-6">
                 <h1 className="text-2xl font-semibold mb-4">Historia del arte contemporáneo</h1>
                 <h2 className="text-2xl font-semibold mb-4">Arte en cuerso</h2>
