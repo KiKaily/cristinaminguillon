@@ -1,4 +1,3 @@
-
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
@@ -11,7 +10,7 @@ const Mixed = () => {
         <h1 className="text-4xl font-bold mb-8">Papel</h1>
         <div className="space-y-8">
           <Card>
-            <CardContent className="p-6 space-y-4">
+            <CardContent className="px-[2%] py-[4%] space-y-4">
               <h2 className="text-2xl font-semibold">TIERRA</h2>
 
               <div className="my-4"></div>
@@ -51,7 +50,7 @@ const Mixed = () => {
           </Card>
 
           <Card>
-            <CardContent className="p-6 space-y-4">
+            <CardContent className="px-[2%] py-[4%] space-y-4">
               <h2 className="text-2xl font-semibold">ENCUENTROS Y DESPEDIDAS</h2>
 
               <div className="my-4"></div>
@@ -93,7 +92,7 @@ const Mixed = () => {
           </Card>
 
           <Card>
-            <CardContent className="p-6 space-y-4">
+            <CardContent className="px-[2%] py-[4%] space-y-4">
               <h2 className="text-2xl font-semibold">EL PODER DE LO INVISIBLE</h2>
               <p className="text-muted-foreground">
               Serie realizada en acuarela sobre papel en el periodo de pandemia a partir de la vivencia del miedo provocado por la difusión de las noticias sobre el efecto de algo invisible y el poder que llegó a tener en nuestras vidas. influyendo en cómo nos comportamos, lo que sentimos, nuestras dependencias, relaciones. actitudes, decisiones...
@@ -152,8 +151,6 @@ const Mixed = () => {
               </div>
             </CardContent>
           </Card>
-
-
         </div>
       </main>
       <Footer />

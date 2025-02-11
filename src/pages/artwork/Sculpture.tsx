@@ -1,4 +1,3 @@
-
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
@@ -11,8 +10,8 @@ const Sculpture = () => {
         <h1 className="text-4xl font-bold mb-8">Textil</h1>
         <div className="space-y-8">
           <Card>
-            <CardContent className="p-6 space-y-4">
-            <div className="grid md:grid-cols-1 gap-4">
+            <CardContent className="px-[2%] py-[4%] space-y-4">
+              <div className="grid md:grid-cols-1 gap-4">
                 <img
                   src="/add.png"
                   alt="Naturaleza 1"
@@ -58,7 +57,7 @@ const Sculpture = () => {
           </Card>
 
           <Card>
-            <CardContent className="p-6 space-y-4">
+            <CardContent className="px-[2%] py-[4%] space-y-4">
               <h2 className="text-2xl font-semibold">FAMILIANDO</h2>
               <p className="text-muted-foreground">
               Es un proyecto que nació del trabajo personal en torno a la familia. Las relaciones entre quienes la forman, el amor y el apoyo incondicionales, los roles, lo ancestral, las afinidades, los encuentros y desencuentros, las enseñanzas y aprendizajes, los secretos, los silencios, las traiciones, las fidelidades, los abandonos, las heridas, la envidia, la manipulación, la rabia, los reconocimientos, el agradecimiento, las cosas de la familia…

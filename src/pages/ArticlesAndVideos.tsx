@@ -1,4 +1,3 @@
-
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -39,7 +38,7 @@ const ArticlesAndVideos = () => {
           <div className="grid gap-6">
             {[1, 2, 3].map((index) => (
               <Card key={index}>
-                <CardContent className="p-6">
+                <CardContent className="px-[2%] py-[4%]">
                   <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">
                     <p className="text-muted-foreground">Video placeholder {index}</p>
                   </div>

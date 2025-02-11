@@ -1,4 +1,3 @@
-
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -15,7 +14,7 @@ const Shop = () => {
           <CardHeader>
             <CardTitle>Bienvenido/a a mi tienda</CardTitle>
           </CardHeader>
-          <CardContent>
+          <CardContent className="px-[2%] py-[4%]">
             <p className="text-muted-foreground mb-6">
               Puedes encontrar mis obras disponibles para compra en mi tienda de Etsy. Allí encontrarás cerámicas, pinturas y más piezas únicas.
             </p>
