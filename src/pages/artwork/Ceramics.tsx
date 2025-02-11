@@ -79,7 +79,7 @@ const Ceramics = () => {
               <p className="text-muted-foreground">
               Jana García González. Febrero, 2023              </p>
 
-              <div className="my-4"></div>
+              <div className="my-10"></div>
 
               <div className="grid md:grid-cols-2 gap-4">
                 <img
