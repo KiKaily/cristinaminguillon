@@ -79,7 +79,9 @@ const Ceramics = () => {
               <p className="text-muted-foreground">
               Jana García González. Febrero, 2023              </p>
 
-              <div className="my-10"></div>
+              <div className="my-10 bg-red-500"> {/* Añadido un fondo rojo para visualizar el div */}
+                                                 {/* Este div debería tener un margen vertical de 2.5rem (40px) */}
+              </div>
 
               <div className="grid md:grid-cols-2 gap-4">
                 <img
