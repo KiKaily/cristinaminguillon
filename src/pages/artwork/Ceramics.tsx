@@ -24,33 +24,33 @@ const Ceramics = () => {
                 <img
                   src="/kai02.jpg"
                   alt="Naturaleza 1"
-                  className="w-full h-[300px] object-cover rounded-lg"
+                  className="w-full h-full object-cover rounded-lg"
                 />
                 <img
                   src="/kai01.jpg"
                   alt="Naturaleza 2"
-                  className="w-full h-[300px] object-cover rounded-lg"
+                  className="w-full h-full object-cover rounded-lg"
                 />
                 <img
                   src="/kai03.jpg"
                   alt="Naturaleza 2"
-                  className="w-full h-[300px] object-cover rounded-lg"
+                  className="w-full h-full object-cover rounded-lg"
                 />
 
                 <img
                   src="/kai04.jpg"
                   alt="Naturaleza 1"
-                  className="w-full h-[300px] object-cover rounded-lg"
+                  className="w-full h-full object-cover rounded-lg"
                 />
                 <img
                   src="/kai05.jpg"
                   alt="Naturaleza 2"
-                  className="w-full h-[300px] object-cover rounded-lg"
+                  className="w-full h-full object-cover rounded-lg"
                 />
                 <img
                   src="/kai06.jpg"
                   alt="Naturaleza 2"
-                  className="w-full h-[300px] object-cover rounded-lg"
+                  className="w-full h-full object-cover rounded-lg"
                 />
               </div>
               <p className="text-muted-foreground">
@@ -85,12 +85,12 @@ const Ceramics = () => {
                 <img
                   src="/kai07.jpg"
                   alt="Naturaleza 1"
-                  className="w-full h-[300px] object-cover rounded-lg"
+                  className="w-full h-full object-cover rounded-lg"
                 />
                 <img
                   src="/kai09.jpg"
                   alt="Naturaleza 2"
-                  className="w-full h-[300px] object-cover rounded-lg"
+                  className="w-full h-full object-cover rounded-lg"
                 />
               </div>
               <section className="relative w-full h-[60vh] overflow-hidden">

@@ -22,17 +22,17 @@ const Digital = () => {
                 <img
                   src="/lib01.jpg"
                   alt="Páginas 1"
-                  className="w-full h-[300px] object-cover rounded-lg"
+                  className="w-full h-full object-cover rounded-lg"
                 />
                 <img
                   src="/lib02.jpg"
                   alt="Páginas 2"
-                  className="w-full h-[300px] object-cover rounded-lg"
+                  className="w-full h-full object-cover rounded-lg"
                 />
                 <img
                   src="/lib03.jpg"
                   alt="Páginas 1"
-                  className="w-full h-[300px] object-cover rounded-lg"
+                  className="w-full h-full object-cover rounded-lg"
                 />
               </div>
             </CardContent>

@@ -60,33 +60,33 @@ const Mixed = () => {
                 <img
                   src="/des08.jpg"
                   alt="Naturaleza 1"
-                  className="w-full h-[300px] object-cover rounded-lg"
+                  className="w-full h-full object-cover rounded-lg"
                 />
                 <img
                   src="/des01.jpg"
                   alt="Naturaleza 2"
-                  className="w-full h-[300px] object-cover rounded-lg"
+                  className="w-full h-full object-cover rounded-lg"
                 />
                 <img
                   src="/des02.jpg"
                   alt="Naturaleza 2"
-                  className="w-full h-[300px] object-cover rounded-lg"
+                  className="w-full h-full object-cover rounded-lg"
                 />
 
                 <img
                   src="/des03.jpg"
                   alt="Naturaleza 1"
-                  className="w-full h-[300px] object-cover rounded-lg"
+                  className="w-full h-full object-cover rounded-lg"
                 />
                 <img
                   src="/des05.jpg"
                   alt="Naturaleza 2"
-                  className="w-full h-[300px] object-cover rounded-lg"
+                  className="w-full h-full object-cover rounded-lg"
                 />
                 <img
                   src="/des06.jpg"
                   alt="Naturaleza 2"
-                  className="w-full h-[300px] object-cover rounded-lg"
+                  className="w-full h-full object-cover rounded-lg"
                 />
               </div>
             </CardContent>
@@ -105,49 +105,49 @@ const Mixed = () => {
                 <img
                   src="/inv01.jpg"
                   alt="Naturaleza 1"
-                  className="w-full h-[300px] object-cover rounded-lg"
+                  className="w-full h-full object-cover rounded-lg"
                 />
                 <img
                   src="/inv02.jpg"
                   alt="Naturaleza 2"
-                  className="w-full h-[300px] object-cover rounded-lg"
+                  className="w-full h-full object-cover rounded-lg"
                 />
                 <img
                   src="/inv03.jpg"
                   alt="Naturaleza 2"
-                  className="w-full h-[300px] object-cover rounded-lg"
+                  className="w-full h-full object-cover rounded-lg"
                 />
 
                 <img
                   src="/inv04.jpg"
                   alt="Naturaleza 1"
-                  className="w-full h-[300px] object-cover rounded-lg"
+                  className="w-full h-full object-cover rounded-lg"
                 />
                 <img
                   src="/inv05.jpg"
                   alt="Naturaleza 2"
-                  className="w-full h-[300px] object-cover rounded-lg"
+                  className="w-full h-full object-cover rounded-lg"
                 />
                 <img
                   src="/inv06.jpg"
                   alt="Naturaleza 2"
-                  className="w-full h-[300px] object-cover rounded-lg"
+                  className="w-full h-full object-cover rounded-lg"
                 />
 
                 <img
                   src="/inv07.jpg"
                   alt="Naturaleza 1"
-                  className="w-full h-[300px] object-cover rounded-lg"
+                  className="w-full h-full object-cover rounded-lg"
                 />
                 <img
                   src="/inv08.jpg"
                   alt="Naturaleza 2"
-                  className="w-full h-[300px] object-cover rounded-lg"
+                  className="w-full h-full object-cover rounded-lg"
                 />
                 <img
                   src="/inv09.jpg"
                   alt="Naturaleza 2"
-                  className="w-full h-[300px] object-cover rounded-lg"
+                  className="w-full h-full object-cover rounded-lg"
                 />
               </div>
             </CardContent>

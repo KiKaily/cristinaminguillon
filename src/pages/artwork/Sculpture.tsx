@@ -54,7 +54,7 @@ const Sculpture = () => {
               <img
                 src="/add01.jpg"
                 alt="Serie Texturas"
-                className="w-full h-[400px] object-cover rounded-lg"
+                className="w-full h-full object-cover rounded-lg"
               />
             </CardContent>
           </Card>
@@ -75,33 +75,33 @@ const Sculpture = () => {
                 <img
                   src="/volar.jpg"
                   alt="Naturaleza 1"
-                  className="w-full h-[300px] object-cover rounded-lg"
+                  className="w-full h-full object-cover rounded-lg"
                 />
                 <img
                   src="/ultimaspuntadas.jpg"
                   alt="Naturaleza 2"
-                  className="w-full h-[300px] object-cover rounded-lg"
+                  className="w-full h-full object-cover rounded-lg"
                 />
                 <img
                   src="/liodetallos.jpg"
                   alt="Naturaleza 2"
-                  className="w-full h-[300px] object-cover rounded-lg"
+                  className="w-full h-full object-cover rounded-lg"
                 />
 
                 <img
                   src="/ojos.jpg"
                   alt="Naturaleza 1"
-                  className="w-full h-[300px] object-cover rounded-lg"
+                  className="w-full h-full object-cover rounded-lg"
                 />
                 <img
                   src="/bullicio.jpg"
                   alt="Naturaleza 2"
-                  className="w-full h-[300px] object-cover rounded-lg"
+                  className="w-full h-full object-cover rounded-lg"
                 />
                 <img
                   src="/florecer.jpg"
                   alt="Naturaleza 2"
-                  className="w-full h-[300px] object-cover rounded-lg"
+                  className="w-full h-full object-cover rounded-lg"
                 />
               </div>
             </CardContent>

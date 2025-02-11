@@ -23,17 +23,17 @@ const Painting = () => {
                 <img
                   src="/ilu03.png"
                   alt="Trazos 1"
-                  className="w-full h-[300px] object-cover rounded-lg"
+                  className="w-full h-full object-cover rounded-lg"
                 />
                 <img
                   src="/ilu01.jpg"
                   alt="Trazos 2"
-                  className="w-full h-[300px] object-cover rounded-lg"
+                  className="w-full h-full object-cover rounded-lg"
                 />
                 <img
                   src="/ilu2.jpg"
                   alt="Trazos 2"
-                  className="w-full h-[300px] object-cover rounded-lg"
+                  className="w-full h-full object-cover rounded-lg"
                 />
               </div>
             </CardContent>
