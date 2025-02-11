@@ -12,7 +12,7 @@ const Painting = () => {
         <div className="space-y-8">
           <Card>
             <CardContent className="p-6 space-y-4">
-              <h2 className="text-2xl font-semibold">Desde 1990 ilustro libros para distintas editoriales y autoediciones, dirigidos a público infantil y adulto.</h2>
+              <h3 className="text-xl text-muted-foreground">Desde 1990 ilustro libros para distintas editoriales y autoediciones, dirigidos a público infantil y adulto.</h3>
               <p className="text-muted-foreground">
               <a href="http://www.ilustradores.com/component/content/article/13-cristina-minguillon/23-cristina-minguillon.html" target="_blank" rel="noopener noreferrer" className="hover:underline">Ver más en ilustradores.com</a>              
               </p>

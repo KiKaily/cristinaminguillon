@@ -61,7 +61,7 @@ const ArtTherapy = () => {
         <div className="space-y-6">
             <h1 className="text-2xl font-semibold">Arteterapia humanista y terapia gestalt
             </h1>
-            <h3 className="text-2xl font-semibold">Madrid</h3>
+            <h3 className="text-xl text-muted-foreground">Madrid</h3>
             <p className="text-lg text-muted-foreground">
             Colaboro con la Escuela de Arteterapia y Terapia Gestalt, que dirige Raquel Muñoz Albacete, acompañando en distintos Módulos de sus Ciclos de Formación e imparto Talleres y Cursos intensivos de distintos aspectos del Arteterapia, enfocados a adquirir nuevas herramientas para la autoindagación y el crecimiento personal.
             </p>
@@ -78,7 +78,7 @@ const ArtTherapy = () => {
           <div className="space-y-6">
             <h1 className="text-2xl font-semibold">Talleres de Arteterapia
             </h1>
-            <h3 className="text-2xl font-semibold">Arte como Camino</h3>
+            <h3 className="text-xl text-muted-foreground">Arte como Camino</h3>
             <p className="text-lg text-muted-foreground">
             Usamos el lenguaje artístico como herramienta de autoconocimiento y crecimiento personal. El arte nos ayuda a conectar con nuestra esencia, nos facilita expresar lo que sentimos y nos anima a seguir profundizando en nuestro interior. Podemos utilizar pintura, arcilla, objetos encontrados, collage, fotografía, video, telas, escritura, teatro… No importa la obra que resulte, es el proceso en el que nos volcamos y nos re-conocemos, lo que interesa.
             </p>
