@@ -16,8 +16,14 @@ export function EventHero() {
             "Exposición de Cerámicas"
           </h1>
           <p className="text-lg text-muted-foreground mb-8 text-balance">
-          Una nueva oportunidad para encontrarnos a la sombra de las piezas BABEL y otros trabajos, con nuevas piezas entre las que charlar, reír, contarnos, recordar, emocionarnos...
-          Será en Vallecas, en el Centro Cultural Paco Rabal. Un placer vernos por allí.
+          Un placer anunciaros la agenda de mis exposiciones para los próximos días:
+          </p>
+          <p className="text-lg text-muted-foreground mb-8 text-balance">
+          -Jueves 13: 18h
+          Inauguración de la expo de Cerámica con obras de 1985 a 2024, en la Sala Ángeles Santos del Centro Cultural Carmen Conde de Majadahonda, Madrid.
+                    </p>
+                    <p className="text-lg text-muted-foreground mb-8 text-balance">
+          Nos vemos. Gracias por estar ahí. Abrazos.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" variant="outline" className="hover-lift">
