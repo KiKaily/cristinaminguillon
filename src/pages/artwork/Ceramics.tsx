@@ -1,7 +1,7 @@
-
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 
 const Ceramics = () => {
   return (
@@ -11,7 +11,7 @@ const Ceramics = () => {
         <h1 className="text-4xl font-bold mb-8">Cerámica</h1>
         <div className="space-y-8">
           <Card>
-            <CardContent className="p-6 space-y-4">
+            <CardContent className="px-[4%] py-[8%] space-y-4">
               <h2 className="text-2xl font-semibold">BARRO Y SILENCIO</h2>
               <h3 className="text-xl text-muted-foreground">Obras realizadas entre 2013-2017.</h3>
               <p className="text-muted-foreground">
@@ -35,13 +35,11 @@ const Ceramics = () => {
                 />
               </div>
               <div className="my-4"></div>
-
-              
             </CardContent>
           </Card>
 
           <Card>
-            <CardContent className="p-6 space-y-4">
+            <CardContent className="px-[4%] py-[8%] space-y-4">
               <h2 className="text-2xl font-semibold">KAIRÓS</h2>
               <h3 className="text-xl text-muted-foreground">Exposición en Jávea de febrero a marzo de 2023</h3>
               <p className="text-muted-foreground">
