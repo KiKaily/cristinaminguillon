@@ -71,7 +71,7 @@ const ArtTherapy = () => {
           <img
             src="/logoescuela.png"
             alt="Sesión de arteterapia"
-            className="rounded-lg object-cover w-full h-[150px] md:h-[200px] lg:h-[250px] max-w-full h-auto"
+            className="rounded-lg w-full h-auto"
           />
           </div>
           
