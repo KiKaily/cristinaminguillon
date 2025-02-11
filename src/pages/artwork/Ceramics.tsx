@@ -24,7 +24,7 @@ const Ceramics = () => {
                   className="w-full h-full object-cover rounded-lg"
                 />
                 <img
-                  src="/kai08.jpg"
+                  src="/kai08.png"
                   alt="Naturaleza 2"
                   className="w-full h-full object-cover rounded-lg"
                 />
