@@ -7,7 +7,7 @@ const AboutMe = () => {
     <>
       <Navbar />
       <main className="min-h-screen pt-[10%] md:pt-[8%] container mx-auto px-4">
-      <h1 className="text-4xl font-bold mb-8 mt-40 md:mt-0">Arteterapia</h1>
+      <h1 className="text-4xl font-bold mb-8 mt-40 md:mt-0">Sobre mi</h1>
         <div className="grid md:grid-cols-2 gap-8">
           <div className="space-y-6">
             <h1 className="text-4xl font-bold">Cristina Minguillón</h1>
