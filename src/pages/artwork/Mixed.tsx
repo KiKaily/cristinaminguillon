@@ -32,21 +32,19 @@ const Mixed = () => {
                   className="w-full h-full object-cover rounded-lg"
                 />
               </div>
-              <section className="relative w-full h-[60vh] overflow-hidden">
-              <video
-              autoPlay
-              muted
-              loop
-              playsInline
-              className="w-full h-full object-cover"
-              poster="/placeholder.svg"
-              >
-              <source src="https://youtu.be/DlcYXZSWxJg" type="video/mp4" />
-              Tu navegador no soporta el elemento de video.
-              </video>
-              <div className="absolute inset-0 bg-background/20 backdrop-blur-sm" />
-              </section>
-            </CardContent>
+              <div className="mt-12">
+                <section className="relative w-full h-0 pb-[56.25%] overflow-hidden">
+                  <iframe
+                    className="absolute top-0 left-0 w-full h-full"
+                    src="https://www.youtube.com/embed/DlcYXZSWxJg?si=ZgQb8kPnlgoZms9S"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </section>
+              </div>            </CardContent>
           </Card>
 
           <Card>
