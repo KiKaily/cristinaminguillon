@@ -10,7 +10,7 @@ const Shop = () => {
     <>
       <Navbar />
       <main className="min-h-screen pt-[10%] md:pt-[8%] container mx-auto px-4">
-        <h1 className="text-4xl font-bold mb-8 mt-40 md:mt-0">Tienda</h1>
+        <h1 className="text-4xl font-bold mb-8 mt-20 md:mt-0">Tienda</h1>
         <Card className="mb-8">
           <CardHeader>
             <CardTitle>Bienvenido/a a mi tienda</CardTitle>
@@ -25,7 +25,7 @@ const Shop = () => {
             </Button>
           </CardContent>
         </Card>
-        <section className="relative w-full h-[60vh] overflow-hidden">
+        <section className="relative w-full h-auto object-contain mb-12">
           <video
             autoPlay
             muted
@@ -37,7 +37,6 @@ const Shop = () => {
             <source src="/placeholder-video.mp4" type="video/mp4" />
             Tu navegador no soporta el elemento de video.
           </video>
-          <div className="absolute inset-0 bg-background/20 backdrop-blur-sm" />
         </section>
       </main>
       <Footer />

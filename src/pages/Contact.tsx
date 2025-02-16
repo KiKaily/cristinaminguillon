@@ -19,6 +19,7 @@ const Contact = () => {
             <p className="text-lg text-muted-foreground">
             Si quieres ponerte en contacto conmigo hazlo en <a href="mailto:cminguillon1@gmail.com">cminguillon1@gmail.com</a>
             </p>
+            
           </CardContent>
         </Card>
       </main>

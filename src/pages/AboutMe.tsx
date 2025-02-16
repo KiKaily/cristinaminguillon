@@ -7,11 +7,11 @@ const AboutMe = () => {
     <>
       <Navbar />
       <main className="min-h-screen pt-[10%] md:pt-[8%] container mx-auto px-4">
-      <h1 className="text-4xl font-bold mb-8 mt-40 md:mt-0">Sobre mi</h1>
+      <h1 className="text-4xl font-bold mb-8 mt-20 md:mt-0">Sobre mi</h1>
         <div className="grid md:grid-cols-2 gap-8">
           <div className="space-y-6">
-            <h1 className="text-4xl font-bold">Cristina Minguillón</h1>
-            <h3 className="text-xl text-muted-foreground">MADRID, 1959</h3>
+            <h1 className="text-4xl text-bolf-muted-foreground">Cristina Minguillón</h1>
+            <h3 className="text-xl text-muted-foreground">Madrid, 1959</h3>
             <p className="text-lg text-muted-foreground">
             Licenciada en Historia del Arte (UAM, 1996) / Grado en Educación con Mención en inglés (CJC, 2013) (Adaptación del título de 1984) / Arteterapeuta Gestalt (Escuela de Arteterapia Humanista. Madrid. 2015-2019) / Curso de Teatro Terapéutico Gestalt con Claudia Fres (2019) / Curso de pintura de técnicas contemporáneas de Neus Frigola (Escuela de Cerámica de La Bisbal, 2019) / Curso de Iniciación al SAT de Claudio Naranjo (2017) / Taller de Pintura Creativa con Katharina Widmer (2017) / Curso de Iniciación a la Comunicación No Violenta (2017) / Experto en Enseñanzas Artísticas (UCM, 1997) / Experto en desarrollo de Proyectos Editoriales (UCM, 2003) / Estudios en la Escuela de Cerámica de Madrid (1980-1983) / Curso de Ayudante de Documentación de la Biblioteca Nacional (1978).
             </p>

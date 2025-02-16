@@ -7,10 +7,10 @@ const Sculpture = () => {
     <>
       <Navbar />
       <main className="min-h-screen pt-[4%] md:pt-[8%] container mx-auto px-4">
-        <h1 className="text-4xl font-bold mb-8 mt-40 md:mt-0">Textil</h1>
+        <h1 className="text-4xl font-bold mb-8 mt-20 md:mt-0">Textil</h1>
         <div className="space-y-8">
           <Card>
-            <CardContent className="px-[2%] py-[4%] space-y-4">
+            <CardContent className="px-[6%] py-[6%] space-y-4">
               <div className="grid md:grid-cols-1 gap-4">
                 <img
                   src="/add.png"
@@ -38,14 +38,13 @@ const Sculpture = () => {
 
               <section className="relative w-full h-[60vh] overflow-hidden">
               <iframe
-              className="w-full h-full"
+              className="w-full h-auto object-cover"
               src="https://www.youtube.com/embed/svIT5eXHKBY"
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
               ></iframe>
-              <div className="absolute inset-0 bg-background/20 backdrop-blur-sm" />
               </section>
               <div className="grid md:grid-cols-1 gap-4"></div>
               <img
@@ -57,7 +56,7 @@ const Sculpture = () => {
           </Card>
 
           <Card>
-            <CardContent className="px-[2%] py-[4%] space-y-4">
+            <CardContent className="px-[6%] py-[6%] space-y-4">
               <h2 className="text-2xl font-semibold">FAMILIANDO</h2>
               <p className="text-muted-foreground">
               Es un proyecto que nació del trabajo personal en torno a la familia. Las relaciones entre quienes la forman, el amor y el apoyo incondicionales, los roles, lo ancestral, las afinidades, los encuentros y desencuentros, las enseñanzas y aprendizajes, los secretos, los silencios, las traiciones, las fidelidades, los abandonos, las heridas, la envidia, la manipulación, la rabia, los reconocimientos, el agradecimiento, las cosas de la familia…

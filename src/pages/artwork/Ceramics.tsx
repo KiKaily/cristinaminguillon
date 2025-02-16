@@ -7,10 +7,10 @@ const Ceramics = () => {
     <>
       <Navbar />
       <main className="min-h-screen pt-[8%] md:pt-[8%] container mx-auto px-4">
-        <h1 className="text-4xl font-bold mb-8 mt-40 md:mt-0">Cerámica</h1>
+        <h1 className="text-4xl font-bold mb-8 mt-20 md:mt-0">Cerámica</h1>
         <div className="space-y-8">
           <Card>
-            <CardContent className="px-[2%] py-[4%] space-y-4">
+            <CardContent className="px-[6%] py-[6%] space-y-4">
               <h2 className="text-2xl font-semibold">BARRO Y SILENCIO</h2>
               <h3 className="text-xl text-muted-foreground">Obras realizadas entre 2013-2017.</h3>
               <p className="text-muted-foreground">
@@ -38,7 +38,7 @@ const Ceramics = () => {
           </Card>
 
           <Card>
-            <CardContent className="px-[2%] py-[4%] space-y-4">
+            <CardContent className="px-[6%] py-[6%] space-y-4">
               <h2 className="text-2xl font-semibold">KAIRÓS</h2>
               <h3 className="text-xl text-muted-foreground">Exposición en Jávea de febrero a marzo de 2023</h3>
               <p className="text-muted-foreground">

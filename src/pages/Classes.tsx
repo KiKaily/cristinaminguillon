@@ -25,7 +25,7 @@ const Classes = () => {
     <>
       <Navbar />
       <main className="min-h-screen pt-[10%] md:pt-[8%] container mx-auto px-4">
-        <h1 className="text-4xl font-bold mb-8 mt-40 md:mt-0">Cursos</h1>
+        <h1 className="text-4xl font-bold mb-8 mt-20 md:mt-0">Cursos</h1>
         <section className="mb-12">
           <Card className="bg-accent">
             <CardHeader>
@@ -70,7 +70,7 @@ const Classes = () => {
 
         <section className="mb-12">
           <Card>
-            <CardContent className="px-[2%] py-[4%] space-y-2">
+            <CardContent className="px-[6%] py-[6%] space-y-2">
               <div className="prose max-w-none mb-6">
                 <h1 className="text-2xl font-semibold mb-4">Historia del arte contemporáneo</h1>
                 <h2 className="text-2xl font-semibold mb-4">Arte en cuerso</h2>
@@ -96,11 +96,11 @@ const Classes = () => {
                 </video>
               </div>
 
-              <div className="my-10"></div>
+              <div className="mt-10">
 
-              <div className="prose max-w-none mb-6">
+              <div className="prose max-w-none mb-6 mt-10">
               <h2 className="text-2xl font-semibold mb-4">Salidas</h2>
-                <p className="text-muted-foreground">
+                <p className="text-muted-foreground mb-8">
                   Dentro de los cursos, están incluidos encuentros mensuales con artistas en sus estudios y exposiciones.
                 </p>
               </div>
@@ -135,13 +135,14 @@ const Classes = () => {
                   alt="Naturaleza 2"
                   className="w-full h-[300px] object-cover rounded-lg"
                 />
+                </div>
               </div>
 
               <div className="my-10"></div>
 
-              <div className="prose max-w-none mb-6">
-              <h2 className="text-2xl font-semibold mb-4">Cursos Pasados</h2>
-                <p className="text-muted-foreground">
+              <div className="prose max-w-none mb-6 mt-10">
+              <h2 className="text-2xl font-semibold mb-4 mt-10">Cursos Pasados</h2>
+                <p className="text-muted-foreground mb-8">
                   """---Explicación de estos dos carteles o eliminarlos.---"""
                 </p>
               </div>        
@@ -156,9 +157,9 @@ const Classes = () => {
 
               <div className="my-10"></div>
               
-              <div className="prose max-w-none mb-6">
-              <h2 className="text-2xl font-semibold mb-4">Cursos Pasados</h2>
-                <p className="text-muted-foreground">
+              <div className="prose max-w-none mb-6 mt-10">
+              <h2 className="text-2xl font-semibold mb-4 mt-10">Cursos Pasados</h2>
+                <p className="text-muted-foreground mb-8">
                   """---Explicación de estos dos carteles o eliminarlos.---"""
                 </p>
               </div>         

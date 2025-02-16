@@ -9,7 +9,7 @@ const Exhibitions = () => {
     <>
       <Navbar />
       <main className="min-h-screen pt-[10%] md:pt-[8%] container mx-auto px-4">
-      <h1 className="text-4xl font-bold mb-8 mt-40 md:mt-0">Exposiciones</h1>
+      <h1 className="text-4xl font-bold mb-8 mt-20 md:mt-0">Exposiciones</h1>
         {/* Current Exhibition */}
         <section className="mb-12">
           <Card className="bg-accent">
