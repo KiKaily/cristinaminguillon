@@ -1,4 +1,3 @@
-
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -13,11 +12,14 @@ const Shop = () => {
         <h1 className="text-4xl font-bold mb-8 mt-20 md:mt-0">Tienda</h1>
         <Card className="mb-8">
           <CardHeader>
-            <CardTitle>Bienvenido/a a mi tienda</CardTitle>
+            <CardTitle>Bienvenido/a a mi tienda de arte</CardTitle>
           </CardHeader>
-          <CardContent className="px-[2%] py-[4%] space-y-2">
-            <p className="text-muted-foreground mb-2">
+          <CardContent className="px-[2%] py-[2%] space-y-2">
+            <p className="text-muted-foreground mb-6">
               Puedes encontrar mis obras disponibles para compra en mi tienda de Etsy. Allí encontrarás cerámicas, pinturas y más piezas únicas.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Etsy en un comercio virtual enfocado en artistas y artesanos de todo el mundo. Es una plataforma segura y confiable para comprar arte y productos hechos a mano o pequeñas producciones.
             </p>
             <Button className="hover-lift" onClick={() => window.open("https://www.etsy.com", "_blank")}>
               Visitar mi tienda en Etsy
@@ -25,19 +27,19 @@ const Shop = () => {
             </Button>
           </CardContent>
         </Card>
-        <section className="relative w-full h-auto object-contain mb-12">
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            className="w-full h-full object-cover"
-            poster="/placeholder.svg"
-          >
-            <source src="/placeholder-video.mp4" type="video/mp4" />
-            Tu navegador no soporta el elemento de video.
-          </video>
-        </section>
+        <div className="mt-12">
+          <section className="relative w-full h-0 pb-[56.25%] overflow-hidden">
+            <iframe
+              className="absolute top-0 left-0 w-full h-full"
+              src="https://www.youtube.com/embed/DlcYXZSWxJg?si=ZgQb8kPnlgoZms9S"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </section>
+        </div>
       </main>
       <Footer />
     </>
