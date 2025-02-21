@@ -14,13 +14,15 @@ const Shop = () => {
           <CardHeader>
             <CardTitle>Bienvenido/a a mi tienda de arte</CardTitle>
           </CardHeader>
-          <CardContent className="px-[2%] py-[2%] space-y-2">
+          <CardContent className="px-[2%] py-[2%] space-y-6">
             <p className="text-muted-foreground mb-6">
               Puedes encontrar mis obras disponibles para compra en mi tienda de Etsy. Allí encontrarás cerámicas, pinturas y más piezas únicas.
             </p>
             <p className="text-muted-foreground mb-6">
               Etsy en un comercio virtual enfocado en artistas y artesanos de todo el mundo. Es una plataforma segura y confiable para comprar arte y productos hechos a mano o pequeñas producciones.
             </p>
+            <p className="text-muted-foreground mb-6">
+             </p>
             <Button className="hover-lift" onClick={() => window.open("https://www.etsy.com", "_blank")}>
               Visitar mi tienda en Etsy
               <ExternalLink className="ml-2 h-4 w-4" />

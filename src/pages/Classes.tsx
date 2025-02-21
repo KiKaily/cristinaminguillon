@@ -31,7 +31,7 @@ const Classes = () => {
             <CardHeader>
               <CardTitle>Próximas Clases y Ofertas</CardTitle>
             </CardHeader>
-            <CardContent className="px-[2%] py-[4%] space-y-2">
+            <CardContent className="px-6 py-6 space-y-2 space-y-2">
               <div className="space-y-2">
                 <div className="flex items-center gap-2">
                   <Badge variant="secondary">Nuevo</Badge>
@@ -59,7 +59,7 @@ const Classes = () => {
           <div className="grid md:grid-cols-3 gap-6">
             {testimonials.map((testimonial, index) => (
               <Card key={index} className="hover-lift">
-                <CardContent className="px-[2%] py-[4%] space-y-2">
+                <CardContent className="px-6 py-4 space-y-2 space-y-2">
                   <p className="text-muted-foreground mb-2">{testimonial.text}</p>
                   <p className="font-semibold">{testimonial.name}</p>
                 </CardContent>
@@ -70,7 +70,7 @@ const Classes = () => {
 
         <section className="mb-12">
           <Card>
-            <CardContent className="px-[6%] py-[6%] space-y-2">
+            <CardContent className="px-[4%] py-[4%] space-y-2">
               <div className="prose max-w-none mb-6">
                 <h1 className="text-2xl font-semibold mb-4">Historia del arte contemporáneo</h1>
                 <h2 className="text-2xl font-semibold mb-4">Arte en cuerso</h2>
@@ -89,11 +89,18 @@ const Classes = () => {
                 <div className="my-4"></div>
                 <h2 className="text-2xl font-semibold mb-4">Clase gratuita de muestra</h2>
               </div>
-              <div className="relative w-full aspect-video rounded-lg overflow-hidden">
-                <video className="w-full h-full object-cover" controls>
-                  <source src="/placeholder-video.mp4" type="video/mp4" />
-                  Tu navegador no soporta el elemento de video.
-                </video>
+              <div className="mt-12">
+                <section className="relative w-full h-0 pb-[56.25%] overflow-hidden">
+                  <iframe
+                    className="absolute top-0 left-0 w-full h-full"
+                    src="https://www.youtube.com/embed/DdCqYT6gCq8?si=FOGgewGljCJQlV96"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </section>
               </div>
 
               <div className="mt-10">

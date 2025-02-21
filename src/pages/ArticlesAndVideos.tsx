@@ -1,4 +1,3 @@
-
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -8,6 +7,12 @@ const ArticlesAndVideos = () => {
     { title: "Artículo sobre arte contemporáneo", url: "https://example.com/1" },
     { title: "Entrevista sobre arteterapia", url: "https://example.com/2" },
     { title: "Reseña de exposición", url: "https://example.com/3" },
+  ];
+
+  const videos = [
+    "https://www.youtube.com/embed/DdCqYT6gCq8?si=FOGgewGljCJQlV96",
+    "https://www.youtube.com/embed/DlcYXZSWxJg?si=ZgQb8kPnlgoZms9S",
+    "https://www.youtube.com/embed/svIT5eXHKBY?si=t-i435plSCQxdXyI",
   ];
 
   return (
@@ -40,17 +45,23 @@ const ArticlesAndVideos = () => {
 
         <section className="mb-12">
           <h2 className="text-2xl font-semibold mb-6">Videos</h2>
-          <div className="grid gap-6">
-            {[1, 2, 3].map((index) => (
-              <Card key={index}>
-                <CardContent className="px-[2%] py-[4%] space-y-2">
-                  <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">
-                    <p className="text-muted-foreground">Video placeholder {index}</p>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+          <Card>
+            <CardContent className="px-[2%] py-[4%] space-y-12">
+              {videos.map((videoUrl, index) => (
+                <section key={index} className="relative w-full h-0 pb-[56.25%] overflow-hidden">
+                  <iframe
+                    className="absolute top-0 left-0 w-full h-full"
+                    src={videoUrl}
+                    title={`YouTube video player ${index + 1}`}
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </section>
+              ))}
+            </CardContent>
+          </Card>
         </section>
       </main>
       <Footer />
