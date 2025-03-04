@@ -21,7 +21,6 @@ export default {
 		extend: {
 			fontFamily: {
 				'homemade': ['"Homemade Apple"', 'cursive'],
-				'handwritten': ['"Architects Daughter"', 'cursive'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
