@@ -1,3 +1,4 @@
+
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -19,10 +20,10 @@ const ArticlesAndVideos = () => {
     <>
       <Navbar />
       <main className="min-h-screen pt-[10%] md:pt-[8%] container mx-auto px-4">
-        <h1 className="text-4xl font-bold mb-8 mt-20 md:mt-0">Videos y Artículos</h1>
+        <h1 className="text-4xl font-bold mb-8 mt-40 md:mt-0 handwriting-title">Videos y Artículos</h1>
         
         <section className="mb-12">
-          <h2 className="text-2xl font-semibold mb-6">Artículos</h2>
+          <h2 className="text-2xl font-semibold mb-6 handwriting-title">Artículos</h2>
           <Card>
             <CardContent className="px-[2%] py-[4%] space-y-2">
               <ul className="list-disc list-inside space-y-2">
@@ -44,7 +45,7 @@ const ArticlesAndVideos = () => {
         </section>
 
         <section className="mb-12">
-          <h2 className="text-2xl font-semibold mb-6">Videos</h2>
+          <h2 className="text-2xl font-semibold mb-6 handwriting-title">Videos</h2>
           <Card>
             <CardContent className="px-[2%] py-[4%] space-y-12">
               {videos.map((videoUrl, index) => (
