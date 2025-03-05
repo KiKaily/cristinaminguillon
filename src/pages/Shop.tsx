@@ -1,3 +1,4 @@
+
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -14,7 +15,7 @@ const Shop = () => {
           <CardHeader>
             <CardTitle>Bienvenido/a a mi tienda de arte</CardTitle>
           </CardHeader>
-          <CardContent className="px-[2%] py-[2%] space-y-6">
+          <CardContent className="px-[2%] py-[4%] space-y-6">
             <p className="text-muted-foreground mb-6">
               Puedes encontrar mis obras disponibles para compra en mi tienda de Etsy. Allí encontrarás cerámicas, pinturas y más piezas únicas.
             </p>
@@ -35,10 +36,10 @@ const Shop = () => {
               className="absolute top-0 left-0 w-full h-full"
               src="https://www.youtube.com/embed/DlcYXZSWxJg?si=ZgQb8kPnlgoZms9S"
               title="YouTube video player"
-              frameborder="0"
+              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
             ></iframe>
           </section>
         </div>
