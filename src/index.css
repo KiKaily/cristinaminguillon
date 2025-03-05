@@ -56,14 +56,16 @@
   }
 }
 
-/* Card styling with handmade paper texture */
+/* Card styling with handmade paper texture - enhanced version */
 .card, .Card {
   position: relative;
   background-color: #f8f4ea !important;
-  background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.05'/%3E%3C/svg%3E"),
-    linear-gradient(to right, rgba(248, 244, 234, 0.3), rgba(246, 240, 227, 0.4));
-  border: 1px solid rgba(200, 187, 166, 0.2) !important;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05) !important;
+  background-image: 
+    url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.05'/%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg width='150' height='150' viewBox='0 0 150 150' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='grain'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.55' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23grain)' opacity='0.035'/%3E%3C/svg%3E"),
+    linear-gradient(to right, rgba(248, 244, 234, 0.7), rgba(246, 240, 227, 0.8));
+  border: 1px solid rgba(200, 187, 166, 0.3) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03) !important;
   overflow: hidden;
 }
 
@@ -74,9 +76,23 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='roughpaper'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.15' numOctaves='5' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23roughpaper)' opacity='0.1'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='roughpaper'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.15' numOctaves='5' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23roughpaper)' opacity='0.13'/%3E%3C/svg%3E");
   pointer-events: none;
   z-index: 1;
+}
+
+.card::after, .Card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    repeating-linear-gradient(45deg, rgba(180, 170, 150, 0.02) 0px, transparent 2px, transparent 5px),
+    repeating-linear-gradient(-45deg, rgba(180, 170, 150, 0.02) 0px, transparent 2px, transparent 5px);
+  pointer-events: none;
+  z-index: 2;
 }
 
 .fade-in {
