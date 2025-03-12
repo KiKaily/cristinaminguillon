@@ -74,7 +74,7 @@ export function Navbar() {
   };
 
   return (
-    <header className={`fixed top-0 w-full z-50 border-b ${isScrolled ? 'bg-background shadow-md' : 'bg-background'}`}>
+    <header className={`fixed top-0 w-full z-50 border-b ${isScrolled ? 'bg-[#BBA791] shadow-md' : 'bg-[#BBA791]'}`}>
       <nav className="container mx-auto px-4 h-16 flex items-center justify-between">
         <button onClick={() => handleNavigation("/")} className="font-homemade text-xl">
           Cristina Minguillón
@@ -95,7 +95,7 @@ export function Navbar() {
                     {route.name[language]}
                   </span>
                   <div
-                    className={`absolute top-full left-0 bg-background border rounded-lg shadow-lg py-2 mt-2 min-w-[200px] ${
+                    className={`absolute top-full left-0 bg-[#BBA791] border rounded-lg shadow-lg py-2 mt-2 min-w-[200px] ${
                       showSubmenu ? "block" : "hidden"
                     }`}
                   >
@@ -138,7 +138,7 @@ export function Navbar() {
               <Menu className="h-5 w-5" />
             </Button>
           </SheetTrigger>
-          <SheetContent>
+          <SheetContent style={{ backgroundColor: "#BBA791" }}>
             <div className="flex flex-col gap-4 mt-8">
               {routes.map((route) =>
                 route.submenu ? (
@@ -183,4 +183,3 @@ export function Navbar() {
     </header>
   );
 }
-
