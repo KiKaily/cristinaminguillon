@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -35,13 +36,13 @@
   }
 
   body {
-    @apply bg-background text-foreground font-manuscript;
+    @apply bg-background text-foreground font-handwritten;
     font-feature-settings: "rlig" 1, "calt" 1;
     background-color: #f0ece5;
     position: relative;
   }
 
-  /* Custom background with alternating images */
+  /* Custom background with single stretched image */
   body::before {
     content: '';
     position: absolute;
@@ -49,22 +50,11 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: 
-      url("/lovable-uploads/b504cc81-1a2d-49b7-bf5c-c4e5c0ba2d58.png"),
-      url("/lovable-uploads/11a91088-5bc7-4fe1-b8cb-31e9e854f008.png"),
-      url("/lovable-uploads/b504cc81-1a2d-49b7-bf5c-c4e5c0ba2d58.png"),
-      url("/lovable-uploads/11a91088-5bc7-4fe1-b8cb-31e9e854f008.png");
-    background-position: 
-      left top,
-      left 100%,
-      left 200%,
-      left 300%;
-    background-size: 
-      100% 50vh,
-      100% 50vh,
-      100% 50vh,
-      100% 50vh;
+    background-image: url("/lovable-uploads/a02fe84c-c6b0-4d32-8f2f-2c2d63253aab.png");
+    background-position: center;
+    background-size: 100% auto;
     background-repeat: repeat-y;
+    background-attachment: scroll;
     pointer-events: none;
     z-index: -1;
   }
@@ -120,9 +110,9 @@
   z-index: 2;
 }
 
-/* Text not in cards should use manuscript font */
+/* Text not in cards should use handwritten font */
 h1, h2, h3, h4, h5, h6, p, span, a, button, li {
-  @apply font-manuscript;
+  @apply font-handwritten;
 }
 
 /* Preserve the homemade font for the logo in navbar */

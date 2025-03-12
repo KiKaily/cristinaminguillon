@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -21,6 +22,7 @@ export default {
 			fontFamily: {
 				'homemade': ['"Homemade Apple"', 'cursive'],
 				'manuscript': ['"Cormorant Garamond"', 'serif'],
+				'handwritten': ['Quicksand', 'sans-serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
