@@ -1,4 +1,6 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -33,26 +35,42 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-manuscript;
     font-feature-settings: "rlig" 1, "calt" 1;
-    
-    /* Changing the background to stretch horizontally and repeat vertically */
     background-color: #f0ece5;
-    background-image: url("/lovable-uploads/b504cc81-1a2d-49b7-bf5c-c4e5c0ba2d58.png");
-    background-attachment: scroll; /* Keep scrolling with content */
-    background-size: 100% auto; /* Stretch to full width, auto height */
-    background-repeat: repeat-y; /* Only repeat vertically */
-    background-position: center top;
     position: relative;
   }
 
-  /* Remove the previous ceramic effect overlays */
-  body::before, body::after {
-    content: none;
+  /* Custom background with alternating images */
+  body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+      url("/lovable-uploads/b504cc81-1a2d-49b7-bf5c-c4e5c0ba2d58.png"),
+      url("/lovable-uploads/11a91088-5bc7-4fe1-b8cb-31e9e854f008.png"),
+      url("/lovable-uploads/b504cc81-1a2d-49b7-bf5c-c4e5c0ba2d58.png"),
+      url("/lovable-uploads/11a91088-5bc7-4fe1-b8cb-31e9e854f008.png");
+    background-position: 
+      left top,
+      left 100%,
+      left 200%,
+      left 300%;
+    background-size: 
+      100% 50vh,
+      100% 50vh,
+      100% 50vh,
+      100% 50vh;
+    background-repeat: repeat-y;
+    pointer-events: none;
+    z-index: -1;
   }
 
   /* Apply a subtle overlay to enhance text readability if needed */
-  body::before {
+  body::after {
     content: '';
     position: fixed;
     top: 0;
@@ -100,6 +118,21 @@
     linear-gradient(-45deg, rgba(180, 170, 150, 0.01) 0px, transparent 2px);
   pointer-events: none;
   z-index: 2;
+}
+
+/* Text not in cards should use manuscript font */
+h1, h2, h3, h4, h5, h6, p, span, a, button, li {
+  @apply font-manuscript;
+}
+
+/* Preserve the homemade font for the logo in navbar */
+.font-homemade {
+  font-family: "Homemade Apple", cursive !important;
+}
+
+/* Make card content use the default font */
+.card *, .Card * {
+  @apply font-sans;
 }
 
 .fade-in {

@@ -1,3 +1,4 @@
+
 import { Menu, Globe } from "lucide-react";
 import { Button } from "./ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
@@ -90,7 +91,7 @@ export function Navbar() {
             >
               {route.submenu ? (
                 <>
-                  <span className="text-sm font-medium hover:text-primary transition-colors cursor-pointer">
+                  <span className="text-sm font-medium font-manuscript hover:text-primary transition-colors cursor-pointer">
                     {route.name[language]}
                   </span>
                   <div
@@ -102,7 +103,7 @@ export function Navbar() {
                       <button
                         key={subItem.path}
                         onClick={() => handleNavigation(subItem.path)}
-                        className="block w-full text-left px-4 py-2 text-sm hover:bg-accent transition-colors"
+                        className="block w-full text-left px-4 py-2 text-sm font-manuscript hover:bg-accent transition-colors"
                       >
                         {subItem.name[language]}
                       </button>
@@ -112,7 +113,7 @@ export function Navbar() {
               ) : (
                 <button
                   onClick={() => handleNavigation(route.path)}
-                  className="text-sm font-medium hover:text-primary transition-colors"
+                  className="text-sm font-medium font-manuscript hover:text-primary transition-colors"
                 >
                   {route.name[language]}
                 </button>
@@ -142,7 +143,7 @@ export function Navbar() {
               {routes.map((route) =>
                 route.submenu ? (
                   <div key={route.path} className="space-y-2">
-                    <span className="text-lg font-medium text-muted-foreground">
+                    <span className="text-lg font-medium font-manuscript text-muted-foreground">
                       {route.name[language]}
                     </span>
                     <div className="pl-4 space-y-2">
@@ -150,7 +151,7 @@ export function Navbar() {
                         <button
                           key={subItem.path}
                           onClick={() => handleNavigation(subItem.path)}
-                          className="block text-sm hover:text-primary transition-colors"
+                          className="block text-sm font-manuscript hover:text-primary transition-colors"
                         >
                           {subItem.name[language]}
                         </button>
@@ -161,7 +162,7 @@ export function Navbar() {
                   <button
                     key={route.path}
                     onClick={() => handleNavigation(route.path)}
-                    className="text-lg font-medium hover:text-primary transition-colors text-left"
+                    className="text-lg font-medium font-manuscript hover:text-primary transition-colors text-left"
                   >
                     {route.name[language]}
                   </button>
@@ -170,7 +171,7 @@ export function Navbar() {
               <Button
                 variant="ghost"
                 onClick={toggleLanguage}
-                className="justify-start"
+                className="justify-start font-manuscript"
               >
                 <Globe className="h-5 w-5 mr-2" />
                 {language === "es" ? "Switch to English" : "Cambiar a Español"}
