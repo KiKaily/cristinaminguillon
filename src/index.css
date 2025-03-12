@@ -25,7 +25,7 @@
     --input: 20 10% 85%;
     --ring: 23 67% 65%;
     --radius: 1rem;
-    --navbar-bg: #BBA791;
+    --navbar-bg: #E8D8C9;
   }
 
   * {
@@ -36,13 +36,13 @@
     @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
     
-    /* Changing the background to scroll with content */
+    /* Changing the background to stretch horizontally and repeat vertically */
     background-color: #f0ece5;
     background-image: url("/lovable-uploads/b504cc81-1a2d-49b7-bf5c-c4e5c0ba2d58.png");
-    background-attachment: scroll; /* Changed from fixed to scroll */
-    background-size: cover; /* Ensures the image covers the entire viewport */
-    background-repeat: no-repeat; /* Prevents repetition/tiling */
-    background-position: center center;
+    background-attachment: scroll; /* Keep scrolling with content */
+    background-size: 100% auto; /* Stretch to full width, auto height */
+    background-repeat: repeat-y; /* Only repeat vertically */
+    background-position: center top;
     position: relative;
   }
 
