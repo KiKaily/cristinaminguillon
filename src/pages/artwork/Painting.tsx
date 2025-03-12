@@ -7,7 +7,7 @@ const Painting = () => {
   return (
     <>
       <Navbar />
-      <main className="min-h-screen pt-[4%] md:pt-[6%] container mx-auto px-4">
+      <main className="min-h-screen pt-[4%] md:pt-[6%] container mx-auto px-4 relative z-10">
         <h1 className="text-4xl font-bold mb-8 mt-20 md:mt-0">Ilustración</h1>
         <div className="space-y-8">
           <Card>

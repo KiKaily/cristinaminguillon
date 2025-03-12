@@ -7,9 +7,10 @@ const Index = () => {
   return (
     <>
       <Navbar />
-      <main className="min-h-screen">
+      <main className="min-h-screen relative z-10">
         <EventHero />
         <section className="relative w-full h-[60vh] overflow-hidden">
+          <div className="absolute inset-0 bg-background/10 backdrop-blur-[1px]" />
           <video
             controls
             playsInline
@@ -21,7 +22,6 @@ const Index = () => {
             <source src="/index-video.mp4" type="video/mp4" />
             Tu navegador no soporta el elemento de video.
           </video>
-          <div className="absolute inset-0 bg-background/20 backdrop-blur-sm" />
         </section>
       </main>
       <Footer />
