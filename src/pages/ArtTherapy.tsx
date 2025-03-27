@@ -1,3 +1,4 @@
+
 import { Navbar } from "@/components/Navbar";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Footer } from "@/components/Footer";
@@ -6,14 +7,13 @@ const ArtTherapy = () => {
   return (
     <>
       <Navbar />
-      <main className="min-h-screen pt-[10%] md:pt-[8%] container mx-auto px-4">
-        <h1 className="text-4xl font-bold mb-8 mt-20 md:mt-0">Arteterapia</h1>
-        
+      <main className="min-h-screen pt-[10%] md:pt-[6%] pb-8 container mx-auto px-4">
         <Card className="mb-8">
           <CardHeader>
-            <CardTitle>Arteterapia humanista y terapia gestalt</CardTitle>
+            <CardTitle className="text-4xl">Arteterapia</CardTitle>
           </CardHeader>
           <CardContent className="px-6 py-4 space-y-10">
+            <h3 className="text-2xl">Arteterapia humanista y terapia gestalt</h3>
             <h3 className="text-xl text-muted-foreground">Madrid</h3>
             <p className="text-lg text-muted-foreground">
               Colaboro con la Escuela de Arteterapia y Terapia Gestalt, que dirige Raquel Muñoz Albacete, acompañando en distintos Módulos de sus Ciclos de Formación e imparto Talleres y Cursos intensivos de distintos aspectos del Arteterapia, enfocados a adquirir nuevas herramientas para la autoindagación y el crecimiento personal.

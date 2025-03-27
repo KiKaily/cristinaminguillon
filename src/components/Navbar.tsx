@@ -76,7 +76,7 @@ export function Navbar() {
   return (
     <header className={`fixed top-0 w-full z-50 border-b ${isScrolled ? 'bg-[#E8D8C9] shadow-md' : 'bg-[#E8D8C9]'}`}>
       <nav className="container mx-auto px-4 h-16 flex items-center justify-between">
-        <button onClick={() => handleNavigation("/")} className="font-homemade text-xl">
+        <button onClick={() => handleNavigation("/")} className="font-homemade text-3xl">
           Cristina Minguillón
         </button>
 
@@ -91,7 +91,7 @@ export function Navbar() {
             >
               {route.submenu ? (
                 <>
-                  <span className="text-sm font-medium font-manuscript hover:text-primary transition-colors cursor-pointer">
+                  <span className="text-lg font-medium font-manuscript hover:text-primary transition-colors cursor-pointer">
                     {route.name[language]}
                   </span>
                   <div
@@ -103,7 +103,7 @@ export function Navbar() {
                       <button
                         key={subItem.path}
                         onClick={() => handleNavigation(subItem.path)}
-                        className="block w-full text-left px-4 py-2 text-sm font-manuscript hover:bg-accent transition-colors"
+                        className="block w-full text-left px-4 py-2 text-lg font-manuscript hover:bg-accent transition-colors"
                       >
                         {subItem.name[language]}
                       </button>
@@ -113,7 +113,7 @@ export function Navbar() {
               ) : (
                 <button
                   onClick={() => handleNavigation(route.path)}
-                  className="text-sm font-medium font-manuscript hover:text-primary transition-colors"
+                  className="text-lg font-medium font-manuscript hover:text-primary transition-colors"
                 >
                   {route.name[language]}
                 </button>
@@ -143,7 +143,7 @@ export function Navbar() {
               {routes.map((route) =>
                 route.submenu ? (
                   <div key={route.path} className="space-y-2">
-                    <span className="text-lg font-medium font-manuscript text-muted-foreground">
+                    <span className="text-xl font-medium font-manuscript text-muted-foreground">
                       {route.name[language]}
                     </span>
                     <div className="pl-4 space-y-2">
@@ -151,7 +151,7 @@ export function Navbar() {
                         <button
                           key={subItem.path}
                           onClick={() => handleNavigation(subItem.path)}
-                          className="block text-sm font-manuscript hover:text-primary transition-colors"
+                          className="block text-xl font-manuscript hover:text-primary transition-colors"
                         >
                           {subItem.name[language]}
                         </button>
@@ -162,7 +162,7 @@ export function Navbar() {
                   <button
                     key={route.path}
                     onClick={() => handleNavigation(route.path)}
-                    className="text-lg font-medium font-manuscript hover:text-primary transition-colors text-left"
+                    className="text-xl font-medium font-manuscript hover:text-primary transition-colors text-left"
                   >
                     {route.name[language]}
                   </button>
@@ -171,7 +171,7 @@ export function Navbar() {
               <Button
                 variant="ghost"
                 onClick={toggleLanguage}
-                className="justify-start font-manuscript"
+                className="justify-start font-manuscript text-xl"
               >
                 <Globe className="h-5 w-5 mr-2" />
                 {language === "es" ? "Switch to English" : "Cambiar a Español"}

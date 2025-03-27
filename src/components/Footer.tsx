@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import { Facebook, Instagram } from "lucide-react";
 
@@ -29,37 +30,37 @@ export function Footer() {
   };
 
   return (
-    <footer className="bg-accent/50 mt-20">
+    <footer className="bg-accent mt-8" style={{ opacity: 1 }}>
       <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-4 gap-8">
           <div className="border-r border-brown-700 pr-4">
-            <h3 className="font-semibold text-lg mb-4">Contacto</h3>
+            <h3 className="font-semibold text-2xl mb-4">Contacto</h3>
             <div className="space-y-2 text-muted-foreground">
-              <p>Email: <a href="mailto:cminguillon1@gmail.com">cminguillon@gmail.com</a></p>
-              <p>Tel: +34 600 000 000</p>
-              <p>Orba, Alicante</p>
-              <p>web creada por <a href="https://rcrear.com" target="_blank" rel="noopener noreferrer" className="hover:underline">rcrear.com</a></p>
+              <p className="text-xl">Email: <a href="mailto:cminguillon1@gmail.com" className="text-xl">cminguillon@gmail.com</a></p>
+              <p className="text-xl">Tel: +34 600 000 000</p>
+              <p className="text-xl">Orba, Alicante</p>
+              <p className="text-xl">web creada por <a href="https://rcrear.com" target="_blank" rel="noopener noreferrer" className="hover:underline text-xl">rcrear.com</a></p>
             </div>
           </div>
 
           <div className="pr-4">
-            <h3 className="font-semibold text-lg mb-4">Navegación</h3>
+            <h3 className="font-semibold text-2xl mb-4">Navegación</h3>
             <div className="space-y-2">
               <Link
                 to="/"
                 onClick={() => handleNavigation("/")}
-                className="block text-muted-foreground hover:text-primary transition-colors"
+                className="block text-xl text-muted-foreground hover:text-primary transition-colors"
               >
                 Inicio
               </Link>
-              <span className="block text-muted-foreground">Arte</span>
+              <span className="block text-xl text-muted-foreground">Arte</span>
               <div className="pl-4 space-y-1 mt-1">
                 {routes.find(r => r.name.es === "Arte")?.submenu?.map((subItem) => (
                   <Link
                     key={subItem.path}
                     to={subItem.path}
                     onClick={() => handleNavigation(subItem.path)}
-                    className="block text-sm text-muted-foreground hover:text-primary transition-colors"
+                    className="block text-xl text-muted-foreground hover:text-primary transition-colors"
                   >
                     {subItem.name.es}
                   </Link>
@@ -74,7 +75,7 @@ export function Footer() {
                 key={route.path}
                 to={route.path}
                 onClick={() => handleNavigation(route.path)}
-                className="block text-muted-foreground hover:text-primary transition-colors"
+                className="block text-xl text-muted-foreground hover:text-primary transition-colors"
               >
                 {route.name.es}
               </Link>
@@ -82,20 +83,20 @@ export function Footer() {
           </div>
 
           <div className="pr-4">
-            <h3 className="font-semibold text-lg mb-4">¿Conectamos?</h3>
+            <h3 className="font-semibold text-2xl mb-4">¿Conectamos?</h3>
             <div className="flex gap-4 mb-6">
               <a href="https://www.facebook.com/cristina.minguillon.3" className="text-muted-foreground hover:text-primary transition-colors">
-                <Facebook className="h-5 w-5" />
+                <Facebook className="h-8 w-8" />
               </a>
               <a href="https://www.instagram.com/crisminguillon/" className="text-muted-foreground hover:text-primary transition-colors">
-                <Instagram className="h-5 w-5" />
+                <Instagram className="h-8 w-8" />
               </a>
             </div>
             <div className="space-y-2">
-              <Link to="/privacidad" className="block text-sm text-muted-foreground hover:text-primary transition-colors">
+              <Link to="/privacidad" className="block text-xl text-muted-foreground hover:text-primary transition-colors">
                 Política de Privacidad
               </Link>
-              <Link to="/legal" className="block text-sm text-muted-foreground hover:text-primary transition-colors">
+              <Link to="/legal" className="block text-xl text-muted-foreground hover:text-primary transition-colors">
                 Aviso Legal
               </Link>
             </div>
