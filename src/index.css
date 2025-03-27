@@ -39,11 +39,11 @@
   body {
     @apply bg-background text-foreground font-handwritten;
     font-feature-settings: "rlig" 1, "calt" 1;
-    background-color: #f0ece5;
+    background-color: #ffffff;
     position: relative;
   }
 
-  /* Updated background with fixed, cover positioning */
+  /* Updated background with fixed, cover positioning and correct opacity */
   body::before {
     content: '';
     position: fixed;
@@ -51,16 +51,17 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("/lovable-uploads/429b209e-a612-480e-8dd5-3cd45c7c9b7d.png");
+    background-image: url("/lovable-uploads/703a888b-8193-4afa-a5d5-92b2026de0f8.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     pointer-events: none;
     z-index: -1;
+    opacity: 0.8;
   }
 
-  /* Apply a subtle overlay to enhance text readability if needed */
+  /* Apply an overlay to maintain readability */
   body::after {
     content: '';
     position: fixed;
@@ -68,18 +69,16 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to right, rgba(240, 236, 230, 0.15), rgba(240, 236, 230, 0.05), rgba(240, 236, 230, 0.15));
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
     pointer-events: none;
     z-index: -1;
   }
 }
 
-/* Card styling with subtle texture to complement the background */
+/* Card styling with enhanced text sizes and paper effect */
 .card, .Card {
   position: relative;
-  background-color: rgba(252, 250, 245, 0.9) !important;
-  backdrop-filter: blur(8px);
-  background-image: linear-gradient(to right, rgba(255, 252, 248, 0.95), rgba(250, 245, 235, 0.9));
+  background-color: rgba(252, 250, 245, 1) !important;
   border: 1px solid rgba(200, 187, 166, 0.3) !important;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.07), 
               0 4px 8px rgba(0, 0, 0, 0.05), 
@@ -136,9 +135,27 @@ h1, h2, h3, h4, h5, h6, p, span, a, button, li {
   font-family: "Homemade Apple", cursive !important;
 }
 
-/* Make card content use the default font */
+/* Make card content use larger text size */
 .card *, .Card * {
-  @apply font-sans;
+  @apply font-sans text-lg;
+}
+
+.card h1, .Card h1 {
+  @apply text-3xl;
+}
+
+.card h2, .Card h2 {
+  @apply text-2xl;
+}
+
+.card h3, .Card h3 {
+  @apply text-xl;
+}
+
+.card p, .Card p, 
+.card span, .Card span,
+.card li, .Card li {
+  @apply text-lg;
 }
 
 .fade-in {
