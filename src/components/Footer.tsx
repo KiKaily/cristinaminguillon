@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import { Facebook, Instagram } from "lucide-react";
 
@@ -29,7 +30,7 @@ export function Footer() {
   };
 
   return (
-    <footer className="bg-accent/50 mt-20">
+    <footer className="bg-accent mt-20">
       <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-4 gap-8">
           <div className="border-r border-brown-700 pr-4">

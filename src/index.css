@@ -43,19 +43,19 @@
     position: relative;
   }
 
-  /* Custom background with single stretched image */
+  /* Updated background with fixed, cover positioning */
   body::before {
     content: '';
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("/lovable-uploads/a02fe84c-c6b0-4d32-8f2f-2c2d63253aab.png");
+    background-image: url("/lovable-uploads/429b209e-a612-480e-8dd5-3cd45c7c9b7d.png");
     background-position: center;
-    background-size: contain;
-    background-repeat: repeat-y;
-    background-attachment: scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     pointer-events: none;
     z-index: -1;
   }
