@@ -22,7 +22,7 @@ export default {
 			fontFamily: {
 				'homemade': ['"Homemade Apple"', 'cursive'],
 				'manuscript': ['"Cormorant Garamond"', 'serif'],
-				'handwritten': ['Quicksand', 'sans-serif'],
+				'handwritten': ['Caveat', 'cursive'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',

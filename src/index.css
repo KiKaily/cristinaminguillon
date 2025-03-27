@@ -1,4 +1,5 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
 
@@ -52,7 +53,7 @@
     height: 100%;
     background-image: url("/lovable-uploads/a02fe84c-c6b0-4d32-8f2f-2c2d63253aab.png");
     background-position: center;
-    background-size: 100% auto;
+    background-size: contain;
     background-repeat: repeat-y;
     background-attachment: scroll;
     pointer-events: none;
@@ -76,12 +77,26 @@
 /* Card styling with subtle texture to complement the background */
 .card, .Card {
   position: relative;
-  background-color: rgba(248, 244, 234, 0.8) !important;
+  background-color: rgba(252, 250, 245, 0.9) !important;
   backdrop-filter: blur(8px);
-  background-image: linear-gradient(to right, rgba(248, 244, 234, 0.9), rgba(246, 240, 227, 0.85));
+  background-image: linear-gradient(to right, rgba(255, 252, 248, 0.95), rgba(250, 245, 235, 0.9));
   border: 1px solid rgba(200, 187, 166, 0.3) !important;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03) !important;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.07), 
+              0 4px 8px rgba(0, 0, 0, 0.05), 
+              0 2px 4px rgba(0, 0, 0, 0.03), 
+              0 0 1px rgba(0, 0, 0, 0.1) !important;
   overflow: hidden;
+  transform-style: preserve-3d;
+  transform: perspective(1000px) translateZ(0);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover, .Card:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.09),
+              0 6px 12px rgba(0, 0, 0, 0.07),
+              0 4px 8px rgba(0, 0, 0, 0.05), 
+              0 0 1px rgba(0, 0, 0, 0.1) !important;
+  transform: perspective(1000px) translateZ(5px);
 }
 
 .card::before, .Card::before {
@@ -91,8 +106,9 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 600 600' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='ceramicGrain'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.08' numOctaves='5' seed='5'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23ceramicGrain)'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 600 600' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='paperTexture'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='3' seed='5'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.07 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23paperTexture)'/%3E%3C/svg%3E");
   pointer-events: none;
+  opacity: 0.5;
   z-index: 1;
 }
 
@@ -104,8 +120,8 @@
   right: 0;
   bottom: 0;
   background-image: 
-    linear-gradient(45deg, rgba(180, 170, 150, 0.01) 0px, transparent 2px),
-    linear-gradient(-45deg, rgba(180, 170, 150, 0.01) 0px, transparent 2px);
+    linear-gradient(45deg, rgba(180, 170, 150, 0.02) 0px, transparent 2px),
+    linear-gradient(-45deg, rgba(180, 170, 150, 0.02) 0px, transparent 2px);
   pointer-events: none;
   z-index: 2;
 }
