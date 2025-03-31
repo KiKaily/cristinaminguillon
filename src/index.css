@@ -39,10 +39,11 @@
   body {
     @apply bg-background text-foreground font-handwritten;
     font-feature-settings: "rlig" 1, "calt" 1;
-    background-color: #ffffff;
+    background-color: #f0ece5;
     position: relative;
   }
 
+  /* Updated background with fixed, cover positioning */
   body::before {
     content: '';
     position: fixed;
@@ -50,16 +51,16 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("/lovable-uploads/703a888b-8193-4afa-a5d5-92b2026de0f8.png");
+    background-image: url("/lovable-uploads/429b209e-a612-480e-8dd5-3cd45c7c9b7d.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     pointer-events: none;
     z-index: -1;
-    opacity: 0.8;
   }
 
+  /* Apply a subtle overlay to enhance text readability if needed */
   body::after {
     content: '';
     position: fixed;
@@ -67,49 +68,18 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    background: linear-gradient(to right, rgba(240, 236, 230, 0.15), rgba(240, 236, 230, 0.05), rgba(240, 236, 230, 0.15));
     pointer-events: none;
     z-index: -1;
   }
 }
 
-/* Brush texture for page titles */
-.page-title {
-  position: relative;
-  display: inline-block;
-  padding: 0.5rem 2.5rem;
-  margin-bottom: 2rem;
-}
-
-.page-title::before {
-  content: '';
-  position: absolute;
-  top: -10%;
-  left: -5%;
-  width: 110%;
-  height: 120%;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 300' preserveAspectRatio='none'%3E%3Cpath fill='%23E8D8C9' d='M13.2,126.4c27.7-18.8,49.4-19.3,70.7-18.5c42.8,1.5,74.9,24.7,74.9,24.7s35.2,24.6,68.4,29.4c26.2,3.8,49.2-7,80.7-22.4c24.2-11.9,88.2-47.6,170.3-36.1c66.7,9.3,120.4,43.6,220.6,4.4c36-14,95-33.9,200.3-48.2c42.7-5.8,87.7-6.3,123.4,6.4c53,18.9,67.6,49.4,71.9,66.3c10.9,42.5-26.5,74.2-26.5,74.2s-53.5,35.3-86.3,38.1c-47.7,4-76.3-21.1-76.3-21.1s-35.5-31-81.1-31.6c-48.1-0.7-97.3,35.9-97.3,35.9s-11.3,9.7-29.3,25c-31.6,26.9-66.9,42.7-108.5,34c-43.8-9.2-73-48.2-73-48.2s-42.9-53.9-83.8-48.2c-34.2,4.8-53.2,36-54.6,46.3c-3.3,25,7.8,46.5,7.8,46.5s6.2,13.5-3.6,28.7c-10.4,16-42.9,12.8-42.9,12.8h-52.1c0,0-45.3-0.2-79-47.1c-21.1-29.4-18.6-62.8-18.6-62.8s-0.5-26,11.1-39.2c4.5-5.2,10.3-8,17.2-10C13.2,126.4,13.2,126.4,13.2,126.4z'/%3E%3C/svg%3E");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  z-index: -1;
-  opacity: 0.85;
-}
-
-.page-title h1, 
-.page-title h2,
-.page-title h3,
-.page-title h4,
-.page-title .page-title-text {
-  @apply text-4xl font-handwritten;
-  line-height: 1.2;
-  color: #333;
-  text-align: center;
-}
-
-/* Card styling with enhanced text sizes and paper effect */
+/* Card styling with subtle texture to complement the background */
 .card, .Card {
   position: relative;
-  background-color: rgba(252, 250, 245, 1) !important;
+  background-color: rgba(252, 250, 245, 0.9) !important;
+  backdrop-filter: blur(8px);
+  background-image: linear-gradient(to right, rgba(255, 252, 248, 0.95), rgba(250, 245, 235, 0.9));
   border: 1px solid rgba(200, 187, 166, 0.3) !important;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.07), 
               0 4px 8px rgba(0, 0, 0, 0.05), 
@@ -166,39 +136,9 @@ h1, h2, h3, h4, h5, h6, p, span, a, button, li {
   font-family: "Homemade Apple", cursive !important;
 }
 
-/* Make card content use larger text size */
+/* Make card content use the default font */
 .card *, .Card * {
-  @apply font-sans text-xl;
-}
-
-.card h1, .Card h1 {
-  @apply text-4xl;
-}
-
-.card h2, .Card h2 {
-  @apply text-3xl;
-}
-
-.card h3, .Card h3 {
-  @apply text-2xl;
-}
-
-.card p, .Card p, 
-.card span, .Card span,
-.card li, .Card li {
-  @apply text-xl;
-}
-
-/* Footer text size increase */
-footer h3 {
-  @apply text-2xl;
-}
-
-footer p, 
-footer a, 
-footer span,
-footer div {
-  @apply text-xl;
+  @apply font-sans;
 }
 
 .fade-in {

@@ -53,28 +53,22 @@ const PasswordProtectedContent = () => {
     return (
       <>
         <Navbar />
-        <main className="min-h-screen pt-[10%] md:pt-[6%] pb-8 container mx-auto px-4">
-          <Card className="mb-8">
-            <CardHeader>
-              <CardTitle className="text-4xl">{contentTitles[contentId]}</CardTitle>
-            </CardHeader>
-            <CardContent className="px-6 py-4 space-y-6">
-              <div className="grid gap-6">
-                {[1, 2, 3].map((videoNumber) => (
-                  <Card key={videoNumber}>
-                    <CardHeader>
-                      <CardTitle className="text-2xl">Video {videoNumber}</CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">
-                        <p className="text-xl text-muted-foreground">Video contenido {videoNumber}</p>
-                      </div>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
-            </CardContent>
-          </Card>
+        <main className="min-h-screen pt-20 container mx-auto px-4">
+          <h1 className="text-4xl font-bold mb-8">{contentTitles[contentId]}</h1>
+          <div className="grid gap-6">
+            {[1, 2, 3].map((videoNumber) => (
+              <Card key={videoNumber}>
+                <CardHeader>
+                  <CardTitle>Video {videoNumber}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">
+                    <p className="text-muted-foreground">Video contenido {videoNumber}</p>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </main>
         <Footer />
       </>
@@ -84,10 +78,10 @@ const PasswordProtectedContent = () => {
   return (
     <>
       <Navbar />
-      <main className="min-h-screen pt-[10%] md:pt-[6%] pb-8 container mx-auto px-4">
-        <Card className="max-w-md mx-auto">
+      <main className="min-h-screen pt-[10%] md:pt-[8%] container mx-auto px-4">
+        <Card>
           <CardHeader>
-            <CardTitle className="text-2xl">Acceso Protegido</CardTitle>
+            <CardTitle>Acceso Protegido</CardTitle>
           </CardHeader>
           <CardContent>
             <form onSubmit={handleSubmit} className="space-y-4">
@@ -97,10 +91,9 @@ const PasswordProtectedContent = () => {
                   placeholder="Introduce la contraseña"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  className="text-xl"
                 />
               </div>
-              <Button type="submit" className="w-full text-xl">
+              <Button type="submit" className="w-full">
                 Acceder
               </Button>
             </form>

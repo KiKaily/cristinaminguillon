@@ -57,43 +57,37 @@ const PaidContent = () => {
   return (
     <>
       <Navbar />
-      <main className="min-h-screen pt-[10%] md:pt-[6%] pb-8 container mx-auto px-4">
-        <Card className="mb-8">
-          <CardHeader>
-            <CardTitle className="text-4xl">Contenido de Pago</CardTitle>
-          </CardHeader>
-          <CardContent className="px-6 py-4">
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {paidContent.map((content) => (
-                <Card key={content.id} className="hover-lift">
-                  <CardHeader>
-                    <div className="flex gap-2 flex-wrap">
-                      <Badge className={content.isPaid ? "" : "bg-[#9b87f5]"}>
-                        {content.isPaid ? "contenido de pago" : "gratis"}
-                      </Badge>
-                      <Badge className="bg-[#F2FCE2] hover:bg-[#E2ECD2] text-black">
-                        {content.type}
-                      </Badge>
-                    </div>
-                    <CardTitle className="text-xl">{content.title}</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-xl text-muted-foreground mb-4">
-                      {content.description}
-                    </p>
-                    <Button 
-                      onClick={() => navigate(`/contenido/${content.id}`)}
-                      variant="outline"
-                      className="w-full text-xl"
-                    >
-                      Acceder al contenido
-                    </Button>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </CardContent>
-        </Card>
+      <main className="min-h-screen pt-[10%] md:pt-[8%] container mx-auto px-4">
+        <h1 className="text-4xl font-bold mb-8 mt-20">Contenido de Pago</h1>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {paidContent.map((content) => (
+            <Card key={content.id} className="hover-lift">
+              <CardHeader>
+                <div className="flex gap-2 flex-wrap">
+                  <Badge className={content.isPaid ? "" : "bg-[#9b87f5]"}>
+                    {content.isPaid ? "contenido de pago" : "gratis"}
+                  </Badge>
+                  <Badge className="bg-[#F2FCE2] hover:bg-[#E2ECD2] text-black">
+                    {content.type}
+                  </Badge>
+                </div>
+                <CardTitle>{content.title}</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground mb-4">
+                  {content.description}
+                </p>
+                <Button 
+                  onClick={() => navigate(`/contenido/${content.id}`)}
+                  variant="outline"
+                  className="w-full"
+                >
+                  Acceder al contenido
+                </Button>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
       </main>
       <Footer />
     </>
