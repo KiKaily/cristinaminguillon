@@ -1,4 +1,5 @@
 
+
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { EventHero } from "@/components/EventHero";
@@ -7,9 +8,9 @@ const Index = () => {
   return (
     <>
       <Navbar />
-      <main className="min-h-screen relative z-10">
+      <main className="min-h-[70vh] relative z-10">
         <EventHero />
-        <section className="relative w-full h-[60vh] overflow-hidden">
+        <section className="relative w-full h-[60vh] overflow-hidden mb-8">
           <div className="absolute inset-0 bg-background/10 backdrop-blur-[1px]" />
           <video
             controls

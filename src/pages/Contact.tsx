@@ -1,3 +1,4 @@
+
 import { Navbar } from "@/components/Navbar";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Mail } from "lucide-react";
@@ -7,8 +8,8 @@ const Contact = () => {
   return (
     <>
       <Navbar />
-      <main className="min-h-screen pt-[10%] md:pt-[8%] container mx-auto px-4">
-        <Card className="max-w-2xl mx-auto">
+      <main className="min-h-[70vh] pt-[8%] md:pt-[5%] container mx-auto px-4">
+        <Card className="max-w-2xl mx-auto mb-8">
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
               <Mail className="h-6 w-6" />

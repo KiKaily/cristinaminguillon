@@ -1,5 +1,9 @@
+
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const NotFound = () => {
   const location = useLocation();
@@ -12,15 +16,23 @@ const NotFound = () => {
   }, [location.pathname]);
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">404</h1>
-        <p className="text-xl text-gray-600 mb-4">Oops! Page not found</p>
-        <a href="/" className="text-blue-500 hover:text-blue-700 underline">
-          Return to Home
-        </a>
-      </div>
-    </div>
+    <>
+      <Navbar />
+      <main className="min-h-[70vh] pt-[8%] md:pt-[5%] container mx-auto px-4">
+        <Card className="max-w-2xl mx-auto mb-8 text-center">
+          <CardHeader>
+            <CardTitle>404</CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-4">
+            <p className="text-xl text-muted-foreground mb-4">Oops! Página no encontrada</p>
+            <a href="/" className="text-blue-700 hover:text-blue-900 underline">
+              Volver al inicio
+            </a>
+          </CardContent>
+        </Card>
+      </main>
+      <Footer />
+    </>
   );
 };
 

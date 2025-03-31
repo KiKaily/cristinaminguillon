@@ -11,7 +11,7 @@
   :root {
     --background: 40 30% 98%;
     --foreground: 20 10% 3.9%;
-    --card: 0 0% 100%;
+    --card: 34 33% 85%;
     --card-foreground: 20 10% 3.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 20 10% 3.9%;
@@ -39,11 +39,11 @@
   body {
     @apply bg-background text-foreground font-handwritten;
     font-feature-settings: "rlig" 1, "calt" 1;
-    background-color: #f0ece5;
+    background-color: #ffffff;
     position: relative;
   }
 
-  /* Updated background with fixed, cover positioning */
+  /* Actualizado el fondo con la nueva imagen y opacidad 80% */
   body::before {
     content: '';
     position: fixed;
@@ -51,13 +51,14 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("/lovable-uploads/429b209e-a612-480e-8dd5-3cd45c7c9b7d.png");
+    background-image: url("/lovable-uploads/3ac3c780-3094-463a-bba5-47f41414c75d.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     pointer-events: none;
     z-index: -1;
+    opacity: 0.8;
   }
 
   /* Apply a subtle overlay to enhance text readability if needed */
@@ -68,18 +69,18 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to right, rgba(240, 236, 230, 0.15), rgba(240, 236, 230, 0.05), rgba(240, 236, 230, 0.15));
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.15));
     pointer-events: none;
     z-index: -1;
   }
 }
 
-/* Card styling with subtle texture to complement the background */
+/* Card styling with subtle texture to complement the background - updated to match new color */
 .card, .Card {
   position: relative;
-  background-color: rgba(252, 250, 245, 0.9) !important;
+  background-color: rgba(220, 208, 186, 0.95) !important;
   backdrop-filter: blur(8px);
-  background-image: linear-gradient(to right, rgba(255, 252, 248, 0.95), rgba(250, 245, 235, 0.9));
+  background-image: linear-gradient(to right, rgba(225, 212, 190, 0.95), rgba(212, 199, 175, 0.9));
   border: 1px solid rgba(200, 187, 166, 0.3) !important;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.07), 
               0 4px 8px rgba(0, 0, 0, 0.05), 
