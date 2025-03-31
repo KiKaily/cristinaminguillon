@@ -21,7 +21,7 @@ const Shop = () => {
             <p className="text-lg text-muted-foreground mb-6">
               Etsy en un comercio virtual enfocado en artistas y artesanos de todo el mundo. Es una plataforma segura y confiable para comprar arte y productos hechos a mano o pequeñas producciones.
             </p>
-            <Button className="hover-lift" onClick={() => window.open("https://www.etsy.com", "_blank")}>
+            <Button className="hover-lift bg-card hover:bg-card/90 border-card/20" onClick={() => window.open("https://www.etsy.com", "_blank")}>
               Visitar mi tienda en Etsy
               <ExternalLink className="ml-2 h-4 w-4" />
             </Button>

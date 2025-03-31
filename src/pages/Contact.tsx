@@ -8,8 +8,8 @@ const Contact = () => {
   return (
     <>
       <Navbar />
-      <main className="min-h-[70vh] pt-[8%] md:pt-[5%] container mx-auto px-4">
-        <Card className="max-w-2xl mx-auto mb-8">
+      <main className="min-h-[70vh] pt-[8%] md:pt-[5%] container mx-auto px-4 flex flex-col items-center justify-center">
+        <Card className="max-w-2xl w-full mb-8">
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
               <Mail className="h-6 w-6" />

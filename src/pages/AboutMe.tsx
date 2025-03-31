@@ -1,3 +1,4 @@
+
 import { Navbar } from "@/components/Navbar";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Footer } from "@/components/Footer";
@@ -9,9 +10,8 @@ const AboutMe = () => {
       <main className="min-h-screen pt-[10%] md:pt-[8%] container mx-auto px-4">
         <h1 className="text-4xl font-bold mb-8 mt-20 md:mt-0">Sobre mí</h1>
         <Card>
-          
-          <CardContent className="px-6 py-8 space-y-10">
-          <CardTitle>Cristina Minguillón</CardTitle>
+          <CardContent className="px-[2%] py-[4%] space-y-10">
+            <CardTitle>Cristina Minguillón</CardTitle>
             <h3 className="text-xl text-muted-foreground">Madrid, 1959</h3>
             <p className="text-lg text-muted-foreground">
 

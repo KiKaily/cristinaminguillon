@@ -1,4 +1,3 @@
-
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -16,7 +15,7 @@ const Exhibitions = () => {
             <CardHeader>
               <CardTitle>Exposición Actual</CardTitle>
             </CardHeader>
-            <CardContent>
+            <CardContent className="px-[2%] py-[4%]">
               <div className="space-y-4">
                 <div className="flex items-center gap-2">
                   <Badge variant="secondary">Actual</Badge>
@@ -32,7 +31,7 @@ const Exhibitions = () => {
           <h2 className="text-2xl font-semibold mb-6">Próximas Exposiciones</h2>
           <div className="grid gap-6">
             <Card>
-              <CardContent className="pt-6">
+              <CardContent className="px-[2%] py-[4%]">
                 <li>Próximamente...</li>
               </CardContent>
             </Card>
@@ -46,7 +45,7 @@ const Exhibitions = () => {
             <h2 className="text-2xl font-semibold mb-6">Exposiciones Individuales</h2>
             <div className="space-y-4">
               <Card>
-                <CardContent className="pt-6">
+                <CardContent className="px-[2%] py-[4%]">
                   <ul className="list-disc pl-5 space-y-2">
                   <li>Cerámicas. (Febrero-Marzo 2025). Centro Cultural Carmen Conde. Majadahonda. Madrid.</li>
 		<li>Babel. Cerámicas. (Enero-Febrero 2025). Centro Cultural Paco Rabal. Puente de Vallecas. Madrid.</li>
@@ -81,7 +80,7 @@ const Exhibitions = () => {
             <h2 className="text-2xl font-semibold mb-6">Exposiciones Colectivas</h2>
             <div className="space-y-4">
               <Card>
-                <CardContent className="pt-6">
+                <CardContent className="px-[2%] py-[4%]">
                   <ul className="list-disc pl-5 space-y-2">
                   <li>Esculturas frente al mar. (Julio-octubre 2022). Paseo Marina de Denia, 
 			Alicante.</li>

@@ -18,12 +18,12 @@ const NotFound = () => {
   return (
     <>
       <Navbar />
-      <main className="min-h-[70vh] pt-[8%] md:pt-[5%] container mx-auto px-4">
-        <Card className="max-w-2xl mx-auto mb-8 text-center">
+      <main className="min-h-[70vh] pt-[8%] md:pt-[5%] container mx-auto px-4 flex flex-col items-center justify-center">
+        <Card className="max-w-2xl w-full mb-8 text-center">
           <CardHeader>
             <CardTitle>404</CardTitle>
           </CardHeader>
-          <CardContent className="space-y-4">
+          <CardContent className="px-[2%] py-[4%] space-y-4">
             <p className="text-xl text-muted-foreground mb-4">Oops! Página no encontrada</p>
             <a href="/" className="text-blue-700 hover:text-blue-900 underline">
               Volver al inicio

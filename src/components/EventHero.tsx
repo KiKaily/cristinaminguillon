@@ -10,7 +10,7 @@ export function EventHero() {
         <div className="max-w-3xl mx-auto text-center fade-in">
           <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full mb-6">
             <Calendar className="w-4 h-4" />
-            <span className="text-sm font-medium">Exposición Actual</span>
+            <span className="text-sm font-medium opacity-70">Exposición Actual</span>
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 text-balance">
             "Exposición de Cerámicas"
@@ -22,7 +22,7 @@ export function EventHero() {
           Un placer vernos por allí.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" variant="outline" className="hover-lift">
+            <Button size="lg" variant="outline" className="hover-lift bg-card hover:bg-card/90 border-card/20">
               Reservar Visita Guiada
             </Button>
           </div>
