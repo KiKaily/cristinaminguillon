@@ -10,10 +10,11 @@ const Shop = () => {
     <>
       <Navbar />
       <main className="min-h-screen pt-[10%] md:pt-[6%] pb-8 container mx-auto px-4">
+        <div className="page-title mx-auto text-center">
+          <h1>Tienda</h1>
+        </div>
+        
         <Card className="mb-8">
-          <CardHeader>
-            <CardTitle className="text-4xl">Tienda</CardTitle>
-          </CardHeader>
           <CardContent className="px-[2%] py-[4%] space-y-6">
             <p className="text-xl text-muted-foreground mb-6">
               Puedes encontrar mis obras disponibles para compra en mi tienda de Etsy. Allí encontrarás cerámicas, pinturas y más piezas únicas.

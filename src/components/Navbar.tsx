@@ -76,7 +76,7 @@ export function Navbar() {
   return (
     <header className={`fixed top-0 w-full z-50 border-b ${isScrolled ? 'bg-[#E8D8C9] shadow-md' : 'bg-[#E8D8C9]'}`}>
       <nav className="container mx-auto px-4 h-16 flex items-center justify-between">
-        <button onClick={() => handleNavigation("/")} className="font-homemade text-3xl">
+        <button onClick={() => handleNavigation("/")} className="font-homemade text-[2.55rem]">
           Cristina Minguillón
         </button>
 

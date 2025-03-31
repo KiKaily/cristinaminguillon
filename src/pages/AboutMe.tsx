@@ -8,10 +8,11 @@ const AboutMe = () => {
     <>
       <Navbar />
       <main className="min-h-screen pt-[10%] md:pt-[6%] pb-8 container mx-auto px-4">
+        <div className="page-title mx-auto text-center">
+          <h1>Sobre mí</h1>
+        </div>
+        
         <Card className="mb-8">
-          <CardHeader>
-            <CardTitle className="text-4xl">Sobre mí</CardTitle>
-          </CardHeader>
           <CardContent className="px-6 py-8 space-y-10">
             <h3 className="text-2xl">Cristina Minguillón</h3>
             <h3 className="text-xl text-muted-foreground">Madrid, 1959</h3>
