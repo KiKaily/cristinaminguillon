@@ -41,6 +41,7 @@
     font-feature-settings: "rlig" 1, "calt" 1;
     background-color: #ffffff;
     position: relative;
+    font-size: 1.125rem;
   }
 
   /* Actualizado el fondo con la nueva imagen y opacidad 80% */
@@ -75,71 +76,31 @@
   }
 }
 
-/* Card styling with subtle texture to complement the background - updated to match new color */
-.card, .Card {
-  position: relative;
-  background-color: rgba(220, 208, 186, 0.95) !important;
-  backdrop-filter: blur(8px);
-  background-image: linear-gradient(to right, rgba(225, 212, 190, 0.95), rgba(212, 199, 175, 0.9));
-  border: 1px solid rgba(200, 187, 166, 0.3) !important;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.07), 
-              0 4px 8px rgba(0, 0, 0, 0.05), 
-              0 2px 4px rgba(0, 0, 0, 0.03), 
-              0 0 1px rgba(0, 0, 0, 0.1) !important;
-  overflow: hidden;
-  transform-style: preserve-3d;
-  transform: perspective(1000px) translateZ(0);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover, .Card:hover {
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.09),
-              0 6px 12px rgba(0, 0, 0, 0.07),
-              0 4px 8px rgba(0, 0, 0, 0.05), 
-              0 0 1px rgba(0, 0, 0, 0.1) !important;
-  transform: perspective(1000px) translateZ(5px);
-}
-
-.card::before, .Card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 600 600' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='paperTexture'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='3' seed='5'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.07 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23paperTexture)'/%3E%3C/svg%3E");
-  pointer-events: none;
-  opacity: 0.5;
-  z-index: 1;
-}
-
-.card::after, .Card::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: 
-    linear-gradient(45deg, rgba(180, 170, 150, 0.02) 0px, transparent 2px),
-    linear-gradient(-45deg, rgba(180, 170, 150, 0.02) 0px, transparent 2px);
-  pointer-events: none;
-  z-index: 2;
-}
-
 /* Text not in cards should use handwritten font */
 h1, h2, h3, h4, h5, h6, p, span, a, button, li {
   @apply font-handwritten;
 }
 
+/* Adjust default text sizes */
+h1 {
+  @apply text-4xl md:text-5xl font-bold;
+}
+
+h2 {
+  @apply text-3xl md:text-4xl font-semibold;
+}
+
+h3 {
+  @apply text-2xl md:text-3xl font-semibold;
+}
+
+p, li, a, span {
+  @apply text-lg md:text-xl;
+}
+
 /* Preserve the homemade font for the logo in navbar */
 .font-homemade {
   font-family: "Homemade Apple", cursive !important;
-}
-
-/* Make card content use the default font */
-.card *, .Card * {
-  @apply font-sans;
 }
 
 .fade-in {
