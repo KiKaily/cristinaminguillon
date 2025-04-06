@@ -1,7 +1,6 @@
 
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const ArticlesAndVideos = () => {
   const articles = [
@@ -19,35 +18,33 @@ const ArticlesAndVideos = () => {
   return (
     <>
       <Navbar />
-      <main className="min-h-screen pt-[10%] md:pt-[8%] container mx-auto px-4">
-        <h1 className="text-4xl font-bold mb-8 mt-20 md:mt-0">Videos y Artículos</h1>
+      <main className="min-h-screen pt-[10%] md:pt-[8%] container mx-auto px-8">
+        <h1 className="text-5xl font-bold mb-12 mt-20 md:mt-0">Videos y Artículos</h1>
         
-        <section className="mb-12">
-          <h2 className="text-2xl font-semibold mb-6">Artículos</h2>
-          <Card>
-            <CardContent className="px-[2%] py-[4%] space-y-2">
-              <ul className="list-disc list-inside space-y-2">
-                {articles.map((article, index) => (
-                  <li key={index}>
-                    <a 
-                      href={article.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary hover:underline"
-                    >
-                      {article.title}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </CardContent>
-          </Card>
+        <section className="mb-16">
+          <h2 className="text-3xl font-semibold mb-8">Artículos</h2>
+          <div className="p-8 rounded-lg">
+            <ul className="list-disc list-inside space-y-4">
+              {articles.map((article, index) => (
+                <li key={index} className="text-xl">
+                  <a 
+                    href={article.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary hover:underline"
+                  >
+                    {article.title}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
         </section>
 
-        <section className="mb-12">
-          <h2 className="text-2xl font-semibold mb-6">Videos</h2>
-          <Card>
-            <CardContent className="px-[2%] py-[4%] space-y-12">
+        <section className="mb-16">
+          <h2 className="text-3xl font-semibold mb-8">Videos</h2>
+          <div className="p-8 rounded-lg">
+            <div className="space-y-16">
               {videos.map((videoUrl, index) => (
                 <section key={index} className="relative w-full h-0 pb-[56.25%] overflow-hidden">
                   <iframe
@@ -61,8 +58,8 @@ const ArticlesAndVideos = () => {
                   ></iframe>
                 </section>
               ))}
-            </CardContent>
-          </Card>
+            </div>
+          </div>
         </section>
       </main>
       <Footer />
