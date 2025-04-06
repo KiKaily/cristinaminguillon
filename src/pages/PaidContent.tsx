@@ -3,7 +3,6 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 
@@ -61,31 +60,27 @@ const PaidContent = () => {
         <h1 className="text-4xl font-bold mb-8 mt-20">Contenido de Pago</h1>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {paidContent.map((content) => (
-            <Card key={content.id} className="hover-lift">
-              <CardHeader>
-                <div className="flex gap-2 flex-wrap">
-                  <Badge className={content.isPaid ? "" : "bg-[#9b87f5]"}>
-                    {content.isPaid ? "contenido de pago" : "gratis"}
-                  </Badge>
-                  <Badge className="bg-[#F2FCE2] hover:bg-[#E2ECD2] text-black">
-                    {content.type}
-                  </Badge>
-                </div>
-                <CardTitle>{content.title}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground mb-4">
-                  {content.description}
-                </p>
-                <Button 
-                  onClick={() => navigate(`/contenido/${content.id}`)}
-                  variant="outline"
-                  className="w-full"
-                >
-                  Acceder al contenido
-                </Button>
-              </CardContent>
-            </Card>
+            <div key={content.id} className="hover-lift p-8 bg-accent/20 rounded-lg">
+              <div className="flex gap-2 flex-wrap mb-4">
+                <Badge className={content.isPaid ? "" : "bg-[#9b87f5]"}>
+                  {content.isPaid ? "contenido de pago" : "gratis"}
+                </Badge>
+                <Badge className="bg-[#F2FCE2] hover:bg-[#E2ECD2] text-black">
+                  {content.type}
+                </Badge>
+              </div>
+              <h3 className="text-2xl font-semibold mb-4">{content.title}</h3>
+              <p className="text-xl text-muted-foreground mb-6">
+                {content.description}
+              </p>
+              <Button 
+                onClick={() => navigate(`/contenido/${content.id}`)}
+                variant="outline"
+                className="w-full text-xl"
+              >
+                Acceder al contenido
+              </Button>
+            </div>
           ))}
         </div>
       </main>
