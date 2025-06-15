@@ -1,5 +1,4 @@
-
-import { Menu, Globe } from "lucide-react";
+import { Menu } from "lucide-react";
 import { Button } from "./ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 import { Link, useNavigate } from "react-router-dom";
@@ -70,7 +69,10 @@ export function Navbar() {
   }, []);
 
   const toggleLanguage = () => {
-    setLanguage((prev) => (prev === "es" ? "en" : "es"));
+    const newLang = language === "es" ? "en" : "es";
+    setLanguage(newLang);
+    // For now, we'll just keep the path since translations aren't implemented yet
+    // This is where you would implement logic to update the app route for i18n in the future
   };
 
   return (
@@ -122,12 +124,12 @@ export function Navbar() {
           ))}
           <Button
             variant="ghost"
-            size="icon"
+            size="default"
             onClick={toggleLanguage}
-            className="ml-2"
-            title={language === "es" ? "Switch to English" : "Cambiar a Español"}
+            className="ml-2 px-4 py-2 font-manuscript text-lg"
+            title={language === "es" ? "Ver en inglés" : "View in Spanish"}
           >
-            <Globe className="h-5 w-5" />
+            {language === "es" ? "ENG" : "ESP"}
           </Button>
         </div>
 
@@ -171,10 +173,9 @@ export function Navbar() {
               <Button
                 variant="ghost"
                 onClick={toggleLanguage}
-                className="justify-start font-manuscript text-lg"
+                className="justify-start font-manuscript text-lg px-4 py-2"
               >
-                <Globe className="h-5 w-5 mr-2" />
-                {language === "es" ? "Switch to English" : "Cambiar a Español"}
+                {language === "es" ? "ENG" : "ESP"}
               </Button>
             </div>
           </SheetContent>
