@@ -31,7 +31,7 @@ const ArticlesAndVideos = () => {
                     href={article.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-primary hover:underline"
+                    className="text-black hover:underline"
                   >
                     {article.title}
                   </a>
