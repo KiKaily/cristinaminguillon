@@ -26,12 +26,12 @@ const ArticlesAndVideos = () => {
           <div className="p-8 rounded-lg">
             <ul className="list-disc list-inside space-y-4">
               {articles.map((article, index) => (
-                <li key={index} className="text-xl">
+                <li key={index} className="text-xl text-black">
                   <a 
                     href={article.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-primary hover:underline"
+                    className="text-black hover:underline"
                   >
                     {article.title}
                   </a>
