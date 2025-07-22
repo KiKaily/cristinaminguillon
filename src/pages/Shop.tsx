@@ -12,13 +12,13 @@ const Shop = () => {
         <h1 className="text-5xl font-bold mb-10">Tienda</h1>
         <div className="space-y-8 py-8">
           <p className="text-2xl text-muted-foreground mb-8">
-            Puedes encontrar mis obras disponibles para compra en mi tienda de Etsy. Allí encontrarás cerámicas, pinturas y más piezas únicas.
+            Próximamente, podrás encontrar mis obras disponibles para compra en mi tienda de Etsy. Allí encontrarás cerámicas, pinturas y más piezas únicas.
           </p>
           <p className="text-2xl text-muted-foreground mb-10">
             Etsy en un comercio virtual enfocado en artistas y artesanos de todo el mundo. Es una plataforma segura y confiable para comprar arte y productos hechos a mano o pequeñas producciones.
           </p>
           <Button className="hover-lift bg-[#DCD0BA] hover:bg-[#DCD0BA]/90 border-[#DCD0BA]/20 text-2xl px-8 py-6" onClick={() => window.open("https://www.etsy.com", "_blank")}>
-            Visitar mi tienda en Etsy
+            Próximamente...
             <ExternalLink className="ml-2 h-6 w-6" />
           </Button>
         </div>
