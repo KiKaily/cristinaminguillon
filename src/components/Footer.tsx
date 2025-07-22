@@ -36,10 +36,10 @@ export function Footer() {
           <div className="border-r border-brown-700 pr-4">
             <h3 className="font-semibold text-2xl mb-4">Contacto</h3>
             <div className="space-y-2 text-muted-foreground">
-              <p className="text-xl">Email: <a href="mailto:cminguillon1@gmail.com">cminguillon@gmail.com</a></p>
+              <p className="text-xl">Email: <a href="mailto:cminguillon1@gmail.com">cminguillon1@gmail.com</a></p>
               <p className="text-xl">Tel: +34 600 000 000</p>
               <p className="text-xl">Orba, Alicante</p>
-              <p className="text-xl">web creada por <a href="https://rcrear.com" target="_blank" rel="noopener noreferrer" className="hover:underline">rcrear.com</a></p>
+              
             </div>
           </div>
 
@@ -99,6 +99,7 @@ export function Footer() {
               <Link to="/legal" className="block text-lg text-muted-foreground hover:text-primary transition-colors">
                 Aviso Legal
               </Link>
+              <p className="text-xl">web creada por <a href="https://rcrear.com" target="_blank" rel="noopener noreferrer" className="hover:underline">rcrear.com</a></p>
             </div>
           </div>
         </div>
