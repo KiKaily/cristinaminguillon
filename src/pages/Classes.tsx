@@ -25,15 +25,15 @@ const Classes = () => {
     <>
       <Navbar />
       <main className="min-h-screen pt-[10%] md:pt-[8%] container mx-auto px-8">
-        <h1 className="text-5xl font-bold mb-12 mt-20 md:mt-0">Cursos</h1>
+        <h1 className="text-5xl font-bold mb-12 mt-20 md:mt-0">Cursos Online y Grabados</h1>
         
         <section className="mb-16">
           <div className="bg-accent/30 p-8 rounded-lg">
-            <h2 className="text-3xl font-semibold mb-6">Próximas Clases y Ofertas</h2>
+            <h2 className="text-3xl font-semibold mb-6">Información Destacada</h2>
             <div className="space-y-4">
               <div className="flex items-center gap-2">
                 <Badge variant="secondary">Nuevo</Badge>
-                <span className="text-2xl">Historia del Arte Moderno - Inicio 15 de Mayo</span>
+                <span className="text-2xl">Cambio de fechas en el curso "Historia del Arte"</span>
               </div>
               <div className="flex items-center gap-2">
                 <Badge variant="destructive">Oferta</Badge>
@@ -49,8 +49,8 @@ const Classes = () => {
             <div className="bg-white/90 backdrop-blur-sm p-12 rounded-xl shadow-lg">
               <h2 className="text-4xl font-bold mb-6 text-black">Cursos Online</h2>
               <p className="text-2xl text-black mb-8">
-                Únete a nuestros cursos en vivo con interacción directa, preguntas en tiempo real y comunidad de aprendizaje. Clases programadas con horarios fijos y participación activa.
-              </p>
+                Únete a nuestros cursos en directo, vía ZOOM, con interacción entre alumnado y Cristina, preguntas en tiempo real y comunidad de aprendizaje. Clases programadas con horarios fijos y participación activa.
+                </p>
               <Link to="/contenido-envivo">
                 <Button className="bg-[#DCD0BA] hover:bg-[#DCD0BA]/90 text-black text-xl px-8 py-4">
                   Ver Cursos
@@ -60,10 +60,10 @@ const Classes = () => {
 
             {/* Pre-recorded Classes */}
             <div className="bg-white/90 backdrop-blur-sm p-12 rounded-xl shadow-lg">
-              <h2 className="text-4xl font-bold mb-6 text-black">Clases Pregrabadas</h2>
+              <h2 className="text-4xl font-bold mb-6 text-black">Cursos Grabados</h2>
               <p className="text-2xl text-black mb-8">
-                Accede a nuestro catálogo completo de clases grabadas disponibles las 24 horas. Aprende a tu ritmo con contenido de alta calidad que puedes revisar cuantas veces necesites.
-              </p>
+                Accede a nuestro catálogo completo de clases grabadas disponibles las 24 horas. Aprende a tu ritmo con contenido que puedes revisar cuantas veces necesites.
+                </p>
               <Link to="/contenido-premium">
                 <Button className="bg-[#DCD0BA] hover:bg-[#DCD0BA]/90 text-black text-xl px-8 py-4">
                   Ver Cursos
@@ -73,10 +73,20 @@ const Classes = () => {
           </div>
         </section>
 
+
         <section className="text-center mb-16">
           <Link to="/contenido-premium">
             <Button size="lg" className="animate-pulse bg-[#DCD0BA] hover:bg-[#DCD0BA]/90 text-2xl px-8 py-6">
-              Acceder a los cursos y clases
+              Apuntarme 
+            </Button>
+          </Link>
+        </section>
+
+
+        <section className="text-center mb-16">
+          <Link to="/contenido-premium">
+            <Button size="lg" className="animate-pulse bg-[#DCD0BA] hover:bg-[#DCD0BA]/90 text-2xl px-8 py-6">
+              Acceder a los cursos grabados
             </Button>
           </Link>
         </section>
