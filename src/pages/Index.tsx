@@ -2,6 +2,7 @@
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
 
 const Index = () => {
@@ -34,16 +35,24 @@ const Index = () => {
           <div className="max-w-6xl mx-auto">
             <h1 className="text-6xl font-bold text-center mb-16 text-black">Cursos</h1>
             
+            {/* Discount Highlight */}
+            <div className="bg-accent/30 p-8 rounded-lg mb-12 text-center">
+              <div className="flex items-center justify-center gap-2 mb-4">
+                <Badge variant="destructive">Oferta</Badge>
+                <span className="text-2xl font-semibold">20% descuento en pack de 3 meses</span>
+              </div>
+            </div>
+            
             <div className="grid md:grid-cols-2 gap-12">
               {/* Online Courses */}
               <div className="bg-white/90 backdrop-blur-sm p-12 rounded-xl shadow-lg">
                 <h2 className="text-4xl font-bold mb-6 text-black">Cursos Online</h2>
                 <p className="text-2xl text-black mb-8">
-                  Únete a nuestros cursos en vivo con interacción directa y comunidad de aprendizaje.
+                  Únete a nuestros cursos en vivo con interacción directa, preguntas en tiempo real y comunidad de aprendizaje. Clases programadas con horarios fijos y participación activa.
                 </p>
-                <Link to="/classes">
+                <Link to="/contenido-envivo">
                   <Button className="bg-[#DCD0BA] hover:bg-[#DCD0BA]/90 text-black text-xl px-8 py-4">
-                    Ver Cursos Online
+                    Ver Cursos
                   </Button>
                 </Link>
               </div>
@@ -52,11 +61,11 @@ const Index = () => {
               <div className="bg-white/90 backdrop-blur-sm p-12 rounded-xl shadow-lg">
                 <h2 className="text-4xl font-bold mb-6 text-black">Clases Pregrabadas</h2>
                 <p className="text-2xl text-black mb-8">
-                  Accede a nuestro catálogo de clases grabadas disponibles para compra inmediata.
+                  Accede a nuestro catálogo completo de clases grabadas disponibles las 24 horas. Aprende a tu ritmo con contenido de alta calidad que puedes revisar cuantas veces necesites.
                 </p>
-                <Link to="/classes">
+                <Link to="/contenido-premium">
                   <Button className="bg-[#DCD0BA] hover:bg-[#DCD0BA]/90 text-black text-xl px-8 py-4">
-                    Comprar Clases
+                    Ver Cursos
                   </Button>
                 </Link>
               </div>
