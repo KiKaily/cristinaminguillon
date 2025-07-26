@@ -18,14 +18,14 @@ export function EventHero() {
             >
               Cursos online 25-26 
             </Button>
-            <Button
-              variant="default"
-              className="bg-[#DCD0BA]/85 hover:bg-[#DCD0BA] text-black text-2xl font-normal mb-0 ml-4"
-              as={Link}
-              to="/classes"
-            >
-              Catálogo de clases y cursos grabados
-            </Button>
+            <Link to="/classes">
+              <Button
+                variant="default"
+                className="bg-[#DCD0BA]/85 hover:bg-[#DCD0BA] text-black text-2xl font-normal mb-0 ml-4"
+              >
+                Catálogo de clases y cursos grabados
+              </Button>
+            </Link>
           </div>
           
           {isOpen && (
