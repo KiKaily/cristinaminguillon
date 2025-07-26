@@ -9,6 +9,27 @@ const Index = () => {
     <>
       <Navbar />
       <main className="min-h-[70vh] relative z-10">
+        {/* Author Introduction Section */}
+        <section className="w-full py-16 px-6 bg-white/50">
+          <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div className="flex-shrink-0">
+              <img 
+                src="/me2.jpg" 
+                alt="Autora" 
+                className="w-64 h-64 object-cover rounded-full shadow-lg"
+              />
+            </div>
+            <div className="text-center md:text-left">
+              <h2 className="text-4xl font-bold mb-6 text-black">Conoce a la Autora</h2>
+              <p className="text-2xl text-black leading-relaxed">
+                Soy una artista y educadora apasionada por el arte y la historia. 
+                Mi misión es compartir conocimiento y inspirar a otros a través de 
+                cursos dinámicos que combinan teoría, práctica y creatividad.
+              </p>
+            </div>
+          </div>
+        </section>
+
         <section className="w-full py-20 px-6">
           <div className="max-w-6xl mx-auto">
             <h1 className="text-6xl font-bold text-center mb-16 text-black">Cursos</h1>
