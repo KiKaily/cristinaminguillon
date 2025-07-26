@@ -73,13 +73,22 @@ const PaidContent = () => {
               <p className="text-xl text-muted-foreground mb-6">
                 {content.description}
               </p>
-              <Button 
-                onClick={() => navigate(`/contenido/${content.id}`)}
-                variant="outline"
-                className="w-full text-xl"
-              >
-                Acceder al contenido
-              </Button>
+              <div className="space-y-3">
+                <Button 
+                  onClick={() => navigate(`/contenido/${content.id}`)}
+                  variant="outline"
+                  className="w-full text-xl"
+                >
+                  Acceder al contenido
+                </Button>
+                <Button 
+                  onClick={() => navigate(`/curso-detalle/${content.id}`)}
+                  variant="secondary"
+                  className="w-full text-xl"
+                >
+                  Ver más sobre el curso
+                </Button>
+              </div>
             </div>
           ))}
         </div>

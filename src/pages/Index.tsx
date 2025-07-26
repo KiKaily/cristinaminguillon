@@ -28,7 +28,7 @@ const Index = () => {
                 cursos dinámicos que combinan teoría, práctica y creatividad.
               </p>
               <Link to="/sobre-mi">
-                  <Button className="bg-[#DCD0BA] hover:bg-[#DCD0BA]/90 text-black text-xl px-8 py-4">
+                  <Button className="bg-[#DCD0BA] hover:bg-[#DCD0BA]/90 text-black text-xl px-8 py-4 mt-6">
                     Más sobre mí
                   </Button>
                 </Link>

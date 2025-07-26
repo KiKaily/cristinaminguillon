@@ -21,6 +21,9 @@ import Mixed from "./pages/artwork/Mixed";
 import NotFound from "./pages/NotFound";
 import PasswordProtectedContent from "./pages/PasswordProtectedContent";
 import Shop from "./pages/Shop";
+import CourseDetail from "./pages/CourseDetail";
+import CourseDetailLive from "./pages/CourseDetailLive";
+import Inscription from "./pages/Inscription";
 
 const queryClient = new QueryClient();
 
@@ -61,6 +64,9 @@ const App = () => {
             <Route path="/contenido-premium" element={<PaidContent />} />
             <Route path="/contenido-envivo" element={<ContentoEnVivo />} />
             <Route path="/contenido-protegido/:contentId" element={<PasswordProtectedContent />} />
+            <Route path="/curso-detalle/:id" element={<CourseDetail />} />
+            <Route path="/curso-detalle-envivo/:id" element={<CourseDetailLive />} />
+            <Route path="/inscripcion/:id" element={<Inscription />} />
             <Route path="/tienda" element={<Shop />} />
             <Route path="/obras/pintura" element={<Painting />} />
             <Route path="/obras/ceramica" element={<Ceramics />} />
