@@ -10,7 +10,7 @@ const Index = () => {
       <Navbar />
       <main className="min-h-[70vh] relative z-10">
         {/* Author Introduction Section */}
-        <section className="w-full py-16 px-6 bg-white/50">
+        <section className="w-full py-16 px-6 bg-white/50 pt-32">
           <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-12">
             <div className="flex-shrink-0">
               <img 
