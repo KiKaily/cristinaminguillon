@@ -73,24 +73,6 @@ const Classes = () => {
           </div>
         </section>
 
-
-        <section className="text-center mb-16">
-          <Link to="/contenido-premium">
-            <Button size="lg" className="animate-pulse bg-[#DCD0BA] hover:bg-[#DCD0BA]/90 text-2xl px-8 py-6">
-              Apuntarme 
-            </Button>
-          </Link>
-        </section>
-
-
-        <section className="text-center mb-16">
-          <Link to="/contenido-premium">
-            <Button size="lg" className="animate-pulse bg-[#DCD0BA] hover:bg-[#DCD0BA]/90 text-2xl px-8 py-6">
-              Acceder a los cursos grabados
-            </Button>
-          </Link>
-        </section>
-
         <section className="mb-16">
           <h2 className="text-3xl font-semibold mb-8">Lo que dicen mis alumnos</h2>
           <div className="grid md:grid-cols-3 gap-8">
