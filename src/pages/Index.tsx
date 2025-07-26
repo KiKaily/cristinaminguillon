@@ -47,7 +47,7 @@ const Index = () => {
                 <span className="text-2xl font-semibold">20% descuento en pack de 3 meses</span>
               </div>
               <div className="flex items-center justify-center gap-2 mb-4">
-                <Badge variant="destructive">Nuevo</Badge>
+                <Badge variant="secondary">Nuevo</Badge>
                 <span className="text-2xl font-semibold">Cambio de fechas en el curso "Historia del Arte"</span>
               </div>
             </div>
