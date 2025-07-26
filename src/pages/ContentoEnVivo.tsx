@@ -50,12 +50,21 @@ const ContentoEnVivo = () => {
               </div>
               <h2 className="text-3xl font-semibold mb-4">{content.title}</h2>
               <p className="text-xl text-muted-foreground mb-6">{content.description}</p>
-              <Button 
-                onClick={() => handleAccessContent(content.id)}
-                className="bg-[#DCD0BA] hover:bg-[#DCD0BA]/90 text-black text-xl px-6 py-3"
-              >
-                Acceder al contenido
-              </Button>
+              <div className="space-y-3">
+                <Button 
+                  onClick={() => navigate(`/inscripcion/${content.id}`)}
+                  className="bg-[#DCD0BA] hover:bg-[#DCD0BA]/90 text-black text-xl px-6 py-3 w-full"
+                >
+                  Para inscribirme
+                </Button>
+                <Button 
+                  onClick={() => navigate(`/curso-detalle-envivo/${content.id}`)}
+                  variant="secondary"
+                  className="w-full text-xl"
+                >
+                  Ver más sobre el curso
+                </Button>
+              </div>
             </div>
           ))}
         </div>
