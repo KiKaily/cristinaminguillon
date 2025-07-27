@@ -60,7 +60,7 @@ const PaidContent = () => {
         <h1 className="text-4xl font-bold mb-8 mt-20">Contenido de Pago</h1>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {paidContent.map((content) => (
-            <div key={content.id} className="hover-lift p-8 bg-accent/20 rounded-lg">
+            <div key={content.id} className="hover-lift p-8 bg-[#E8DCC0]/90 rounded-lg">
               <div className="flex gap-2 flex-wrap mb-4">
                 <Badge className={content.isPaid ? "" : "bg-[#9b87f5]"}>
                   {content.isPaid ? "contenido de pago" : "gratis"}
