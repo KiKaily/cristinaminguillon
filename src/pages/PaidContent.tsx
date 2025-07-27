@@ -75,14 +75,20 @@ const PaidContent = () => {
               </p>
               <div className="space-y-3">
                 <Button 
-                  onClick={() => navigate(`/contenido/${content.id}`)}
+                  onClick={() => {
+                    navigate(`/contenido-protegido/${content.id}`);
+                    window.scrollTo(0, 0);
+                  }}
                   variant="outline"
                   className="w-full text-xl"
                 >
                   Acceder al contenido
                 </Button>
                 <Button 
-                  onClick={() => navigate(`/curso-detalle/${content.id}`)}
+                  onClick={() => {
+                    navigate(`/curso-detalle/${content.id}`);
+                    window.scrollTo(0, 0);
+                  }}
                   variant="secondary"
                   className="w-full text-xl"
                 >

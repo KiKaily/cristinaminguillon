@@ -52,13 +52,19 @@ const ContentoEnVivo = () => {
               <p className="text-xl text-muted-foreground mb-6">{content.description}</p>
               <div className="space-y-3">
                 <Button 
-                  onClick={() => navigate(`/inscripcion/${content.id}`)}
+                  onClick={() => {
+                    navigate(`/inscripcion/${content.id}`);
+                    window.scrollTo(0, 0);
+                  }}
                   className="bg-[#DCD0BA] hover:bg-[#DCD0BA]/90 text-black text-xl px-6 py-3 w-full"
                 >
                   Para inscribirme
                 </Button>
                 <Button 
-                  onClick={() => navigate(`/curso-detalle-envivo/${content.id}`)}
+                  onClick={() => {
+                    navigate(`/curso-detalle-envivo/${content.id}`);
+                    window.scrollTo(0, 0);
+                  }}
                   variant="secondary"
                   className="w-full text-xl"
                 >
