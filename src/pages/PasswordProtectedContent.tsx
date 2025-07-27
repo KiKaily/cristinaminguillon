@@ -26,6 +26,36 @@ const contentTitles: { [key: string]: string } = {
   "workshops": "Workshops en Directo"
 };
 
+const contentVideos: { [key: string]: Array<{title: string, videoId: string}> } = {
+  "curso-historia": [
+    { title: "Introducción a la Historia del Arte", videoId: "dQw4w9WgXcQ" },
+    { title: "Arte Clásico y Renacentista", videoId: "dQw4w9WgXcQ" },
+    { title: "Arte Moderno y Contemporáneo", videoId: "dQw4w9WgXcQ" }
+  ],
+  "masterclass": [
+    { title: "Tendencias del Arte Contemporáneo", videoId: "dQw4w9WgXcQ" },
+    { title: "Análisis de Artistas Actuales", videoId: "dQw4w9WgXcQ" }
+  ],
+  "tecnicas": [
+    { title: "Técnicas de Pintura Avanzadas", videoId: "dQw4w9WgXcQ" },
+    { title: "Escultura y Materiales", videoId: "dQw4w9WgXcQ" },
+    { title: "Arte Digital", videoId: "dQw4w9WgXcQ" }
+  ],
+  "analisis": [
+    { title: "La Mona Lisa de Da Vinci", videoId: "dQw4w9WgXcQ" },
+    { title: "La Guernica de Picasso", videoId: "dQw4w9WgXcQ" }
+  ],
+  "recursos": [
+    { title: "Biblioteca de Recursos", videoId: "dQw4w9WgXcQ" },
+    { title: "Materiales de Estudio", videoId: "dQw4w9WgXcQ" }
+  ],
+  "workshops": [
+    { title: "Workshop de Pintura en Vivo", videoId: "dQw4w9WgXcQ" },
+    { title: "Taller de Creatividad", videoId: "dQw4w9WgXcQ" },
+    { title: "Sesión de Preguntas y Respuestas", videoId: "dQw4w9WgXcQ" }
+  ]
+};
+
 const PasswordProtectedContent = () => {
   const { contentId } = useParams();
   const { toast } = useToast();
@@ -56,14 +86,22 @@ const PasswordProtectedContent = () => {
         <main className="min-h-screen pt-20 container mx-auto px-4">
           <h1 className="text-4xl font-bold mb-8">{contentTitles[contentId]}</h1>
           <div className="grid gap-6">
-            {[1, 2, 3].map((videoNumber) => (
-              <Card key={videoNumber}>
+            {contentVideos[contentId]?.map((video, index) => (
+              <Card key={index} className="bg-[#E8DCC0]/90">
                 <CardHeader>
-                  <CardTitle>Video {videoNumber}</CardTitle>
+                  <CardTitle>{video.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">
-                    <p className="text-muted-foreground">Video contenido {videoNumber}</p>
+                  <div className="aspect-video rounded-lg overflow-hidden">
+                    <iframe
+                      width="100%"
+                      height="100%"
+                      src={`https://www.youtube.com/embed/${video.videoId}?rel=0`}
+                      title={video.title}
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    ></iframe>
                   </div>
                 </CardContent>
               </Card>
@@ -79,7 +117,7 @@ const PasswordProtectedContent = () => {
     <>
       <Navbar />
       <main className="min-h-screen pt-[10%] md:pt-[8%] container mx-auto px-4">
-        <Card>
+        <Card className="bg-[#E8DCC0]/90">
           <CardHeader>
             <CardTitle>Acceso Protegido</CardTitle>
           </CardHeader>
