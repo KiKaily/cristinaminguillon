@@ -25,7 +25,7 @@ const Index = () => {
               <p className="text-2xl text-black leading-relaxed">
                 Soy una artista y educadora apasionada por el arte y la historia. 
                 Mi misión es compartir conocimiento y inspirar a otros a través de 
-                cursos dinámicos que combinan teoría, práctica y creatividad.
+                cursos que incluyen salidas en grupo, a veces encontrándonos con artistas.
               </p>
               <Link to="/sobre-mi">
                   <Button className="bg-[#DCD0BA] hover:bg-[#DCD0BA]/90 text-black text-xl px-8 py-4 mt-6">
@@ -57,7 +57,7 @@ const Index = () => {
               <div className="bg-white/90 backdrop-blur-sm p-12 rounded-xl shadow-lg">
                 <h2 className="text-4xl font-bold mb-6 text-black">Cursos Online</h2>
                 <p className="text-2xl text-black mb-8">
-                  Únete a nuestros cursos en directo, vía ZOOM, con interacción entre alumnado y Cristina, preguntas en tiempo real y comunidad de aprendizaje. Clases programadas con horarios fijos y participación activa.
+                  Únete a nuestros cursos en directo, vía ZOOM, con interacción conmigo y el resto de alumnado, preguntas en tiempo real y comunidad de aprendizaje. Clases programadas con horarios fijos y participación activa.
                 </p>
                 <Link to="/contenido-envivo">
                   <Button className="bg-[#DCD0BA] hover:bg-[#DCD0BA]/90 text-black text-xl px-8 py-4">
