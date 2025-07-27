@@ -59,7 +59,7 @@ const Index = () => {
                 <p className="text-2xl text-black mb-8">
                   Únete a nuestros cursos en directo, vía ZOOM, con interacción entre alumnado y Cristina, preguntas en tiempo real y comunidad de aprendizaje. Clases programadas con horarios fijos y participación activa.
                 </p>
-                <Link to="/contenido-envivo">
+                <Link to="/clases">
                   <Button className="bg-[#DCD0BA] hover:bg-[#DCD0BA]/90 text-black text-xl px-8 py-4">
                     Ver más
                   </Button>
@@ -72,7 +72,7 @@ const Index = () => {
                 <p className="text-2xl text-black mb-8">
                   Accede a nuestro catálogo completo de clases grabadas disponibles las 24 horas. Aprende a tu ritmo con contenido que puedes revisar cuantas veces necesites.
                 </p>
-                <Link to="/contenido-premium">
+                <Link to="/clases">
                   <Button className="bg-[#DCD0BA] hover:bg-[#DCD0BA]/90 text-black text-xl px-8 py-4">
                     Ver más
                   </Button>
