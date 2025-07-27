@@ -76,7 +76,7 @@ Saludos cordiales.`;
             </div>
           </div>
 
-          <div className="bg-white/90 backdrop-blur-sm p-8 rounded-xl shadow-lg mb-8">
+          <div className="bg-[#E8DCC0]/90 backdrop-blur-sm p-8 rounded-xl shadow-lg mb-8">
             <h3 className="text-3xl font-semibold mb-6">Cómo inscribirte</h3>
             <p className="text-xl mb-6">
               Para inscribirte en este curso, envía un email a <strong>{course.email}</strong> con la siguiente información:
